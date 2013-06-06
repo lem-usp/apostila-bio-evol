@@ -39,13 +39,13 @@
 
 #Modularidade e Integração
 
-##Tipos de Modulos
+##Tipos de Módulos
 
-###Modulos Funcionais
+###Módulos Funcionais
 
-###Modulos Ontogenéticos
+###Módulos Ontogenéticos
 
-###Modulos Variacionais
+###Módulos Variacionais
 
 ##Consequências Evolutivas
 
