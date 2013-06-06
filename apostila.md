@@ -7,24 +7,32 @@
 
 #Caracteres Contínuos
 
-##Distâncias
-
-##Variâncias, Covariâncias e Correlações
-
-#Equação do criador
-
-#A equação de Lande
-
-#$\Delta z$
+##Distâncias e Vetores
 
 ##Correlação de vetores
 
-#Matriz G
+##Variâncias, Covariâncias e Correlações
 
-##Matriz genética
-
-##Matriz fenotípica
+##Matrizes
 
 ##Comparação de Matrizes
 
-#$\beta$
+#Equação do criador
+
+##Médias
+
+##Diferencial de seleção
+
+##Herdabilidade
+
+#A equação de Lande
+
+##$\Delta z$
+
+##Matriz G
+
+###Matriz genética
+
+###Matriz fenotípica
+
+##$\beta$
