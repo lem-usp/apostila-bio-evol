@@ -1,13 +1,13 @@
 FILE = apostila
 
 all :
-	pandoc -o $(FILE).pdf --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
+	pandoc -o $(FILE).pdf --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
 
 doc :
-	pandoc -o $(FILE).docx $(FILE).md
+	pandoc -o $(FILE).docx --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
 
 html :
-	pandoc -o $(FILE).html $(FILE).md
+	pandoc -o $(FILE).html --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
 
 clean : 
 	rm *.pdf *.docx *.html
