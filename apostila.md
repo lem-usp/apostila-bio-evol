@@ -9,7 +9,7 @@
 
 ##Distâncias e Vetores
 
-##Correlação de vetores
+##Correlação de Vetores
 
 ##Variâncias, Covariâncias e Correlações
 
@@ -17,15 +17,15 @@
 
 ##Comparação de Matrizes
 
-#Equação do criador
+#Equação do Criador
 
 ##Médias
 
-##Diferencial de seleção
+##Diferencial de Seleção
 
 ##Herdabilidade
 
-#A equação de Lande
+#A Equação de Lande
 
 ##$\Delta z$
 
@@ -33,7 +33,7 @@
 
 ##Matriz G
 
-###Matriz genética
+###Matriz Genética
 
-###Matriz fenotípica
+###Matriz Fenotípica
 
