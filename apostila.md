@@ -5,7 +5,7 @@
 
 #Introdução
 
-#Caractéres Contínuos
+#Caracteres Contínuos
 
 ##Distâncias
 
@@ -28,5 +28,3 @@
 ##Comparação de Matrizes
 
 #$\beta$
-
-
