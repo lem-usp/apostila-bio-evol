@@ -10,6 +10,8 @@ sudo apt-get install pandoc libghc-hs-bibutils-*
 
 ```
 
+Guia de uso do pandoc: http://johnmacfarlane.net/pandoc/README.html
+
 
 ##Para compilar
 
