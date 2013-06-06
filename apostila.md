@@ -29,10 +29,11 @@
 
 ##$\Delta z$
 
+##$\beta$
+
 ##Matriz G
 
 ###Matriz genética
 
 ###Matriz fenotípica
 
-##$\beta$
