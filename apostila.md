@@ -97,8 +97,8 @@ sendo cada tipo de relação adequada a um nível de complexidade ou
 organização.
 As partes do organismo as quais nos referimos podem ser as
 bases nitrogenadas de uma molécula de RNA [@Ancel2000], genes
-[@Costanzo2010], proteínas [@Han2004], caracteres morfológicos como
-temos visto até agora [@Klingenberg2008; @Porto2009; Marroig2009].
+[@Costanzo2010], proteínas [@Han2004], ou caracteres morfológicos, como
+temos visto até agora [@Klingenberg2008; @Porto2009; @Marroig2009].
 Essas relações podem ser medidas de diversas formas, como interação
 física entre proteínas, padrões de expressão conjunta entre genes,
 ou, no nosso caso, correlação entre caracteres quantitativos.
@@ -111,21 +111,27 @@ relativa independência de outros módulos.
   vivos. As setes representam qualquer tipo de relação entre as partes
   de um indivíduo. Adaptado de [@Klingenberg2008]. \label{modulos}](./figuras/modulos.png)
 
-##Tipos de Módulos
+Podemos classificar os tipos de módulos de acordo com o tipo de
+interação que o define [@Wagner2007].
+Porem, todos os níveis de modularidade estão relacionados, e não
+podemos tratar de um sem considerar o outro.
 
 Módulo funcional: 
 
-:   Caracteres que agem conjuntamente no desempenho de alguma função
-    biológica.
-    Pensando no crânio de mamíferos, podemos mostrar que
-    medidas em ossos que compõem a face são mais correlacionadas entre si
-    do que com medidas em ossos que compõem o neurocrânio, e vice-versa.
-    Portanto, as correlações entre os caracteres desses diferentes
-    módulos são menores. As características da região da face dos
-    mamíferos está intimamente envolvida na alimentação, especificamente
-    no processo de mastigação.
-    Já os ossos que compõem o neurocrânio
-    estão relacionados com a proteção do cérebro dos mamíferos.
+:   Alguns caracteres agem conjuntamente no desempenho de funções
+    biológicas.
+    Pensando no crânio de mamíferos, os ossos da região da face
+    estão envolvidos em diversas funções, como mastigação, olfação ou
+    visão.
+    No caso da mastigação, por exemplo, se espera que as mandíbulas
+    inferiores e superiores trabalhem de forma conjunta no desempenho
+    dessa função, e isso impõem restrições na forma e tamanho dos
+    ossos envolvidos nessa tarefa.
+    Já os ossos que compõem o neurocrânio estão relacionados com
+    a proteção do cérebro dos mamíferos, e tem relação direta com a
+    mastigação.
+    Essa separação em regiões funcionais diferentes tem consequências
+    para o organismo.
 
 Módulo de desenvolvimento: 
 
@@ -156,9 +162,9 @@ Módulo variacional:
     populacional, pois cada indivíduo representará apenas um ponto na
     determinação da covariância (ou correlação).
 
-No contexto de caracteres continuos, a teoria da integração
+No contexto de caracteres contínuos, a teoria da integração
 morfológica foi inicialmente elaborada por Olson e Miller em seu livro
-de 1958 intitulado “Integração Morfológica”.
+de 1958 intitulado "Integração Morfológica".
 Segundo os autores, estudos em integração morfológica exploram a
 evolução dos animais como organismos totais, concebendo-os como uma
 abstração baseada em associações de medidas [@Olson1958].
