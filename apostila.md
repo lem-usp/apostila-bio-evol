@@ -7,7 +7,8 @@
 
 <!--Isso é um comentário, não vai aparecer no arquivo final-->
 <!--Exemplo de figura:-->
-<!--![Legenda da figura](./figuras/cranio02.png)-->
+<!--![Legenda da figura \label{nomedafigura}](./figuras/cranio02.png)-->
+<!--Ai no texto vc pode se referir a figura como \ref{nomedafigura}-->
 
 <!--Exemplo de referencia:-->
 <!--Wagner e Falconer é legal [@Wagner1984; @Falconer1996]-->
