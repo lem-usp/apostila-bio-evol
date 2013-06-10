@@ -13,7 +13,7 @@
 <!--Wagner e Falconer é legal [@Wagner1984; @Falconer1996]-->
 
 O objetivo dessa apostila é explorar os princípios da genética
-quantitativa, passando pelos tipos de dados tratados, sua descrição e
+quantitativa, passando pelos tipos de dados tratados, sua descrição
 analise, e como isso se insere na teoria evolutiva moderna.
 
 #Caracteres Contínuos
@@ -56,7 +56,7 @@ $R = h^2S$
 ##Diferencial de Seleção
 
 ##Herdabilidade
- 
+
 ###Efeitos genéticos
 
 Valor média do alelo, efeitos aditivos, efeitos de dominância e epistasia.
@@ -69,7 +69,7 @@ $\Delta z = G\beta$
 
 ##$\beta$
 
-##Matriz G
+##Matriz
 
 ###Matriz Genética
 
@@ -77,18 +77,123 @@ $\Delta z = G\beta$
 
 #Modularidade e Integração
 
-A teoria da integração morfológica foi inicialmente elaborada por Olsson e Miller em seu livro de 1958 intitulado “ ”. Segundo os autores, estudos em integração morfológica exploram a evolução dos animais como organismos totais, concebendo-os como uma abstração baseada em associações de medidas (Olson  e Miller, 1958, pág. 20). Estas associações de medidas são representadas nessa teoria por correlações fenotípicas. A relevância em se investigar complexos de caracteres em vez de caracteres isolados está na visão de que mudanças em um caráter podem não ser independentes de mudanças em outros caracteres do organismo (Olson e Miller, 1958). Olson e Miller (1958) já ponderavam sobre as relações entre magnitude de integração e evolução, perguntando-se sobre a influência da intensidade de integração (ou seja, o quão fortemente os caracteres estão associados entre si) na evolução de organismos mais complexos e no grau de adaptabilidade destes. Pensando em magnitudes de integração, esses autores compreenderam a importância da dualidade integração-modularidade no potencial de evolução morfológica, ou seja, entenderam que esses dois conceitos são os dois lados de uma mesma moeda.
-Modularidade refere-se às propriedades de discrição e dissociabilidade entre partes e integração dentro das partes [de um organismo] (West-Eberhard, 2003, pág. 56). Uma maneira simples de captar o conceito de modularidade é entender que os caracteres que compõem um módulo possuem altas correlações entre si (indicando uma integração dentro do módulo) e baixas correlações com outros caracteres fora do módulo. Günter P. Wagner (1996) ressaltou que é preciso haver uma razão biológica para que o plano corpóreo dos organismos seja organizado de maneira tão obviamente modular, tornando facilmente reconhecíveis suas unidades naturais (como mostrado pela nossa capacidade de apontar estruturas homólogas). Para ele, considerar as unidades naturais como unidades de transformação evolutiva (ou seja, a modularidade como uma propriedade variacional do genoma) traz o sentido biológico dessa organização. Segundo ele, três critérios precisam ser satisfeitos para um complexo de caracteres ser considerado como uma unidade modular: (1) servir a uma função primária; (2) ser integrado por efeitos pleiotrópicos; e (3) ser relativamente independente de outras unidades.
-Em uma revisão recente sobre modularidade [@Wagner2007] referem-se à modularidade como diferentes conexões e elementos: interações físicas moleculares (entre proteínas, por exemplo) levam a conexões dinâmicas, como as vias de desenvolvimento, que por sua vez levam a conexões de variação entre caracteres fenotípicos macroscópicos; sendo uma propriedade biológica que se manifesta em diversos níveis hierárquicos. Esses autores apontaram diferentes tipos de módulos dependendo do processo subjacente à associação dos caracteres: módulo funcional, módulo de desenvolvimento e módulo variacional.
+Na imensa maioria dos organismos, conseguimos identificar partes
+relativamente discretas e separadas, frequentemente envolvidas no
+desempenho de alguma função.
+Em organismos unicelulares podemos distinguir organelas desempenhando
+funções específicas, bem como regiões internas ou na membrana
+responsáveis por processos distintos.
+Já nos multicelulares, tipos celulares são organizados em tecidos
+espacialmente separados, formando órgãos de funções distintas, que
+por sua vez são organizados em sistemas responsáveis por funções
+distintas.
+Modularidade se refere a esse padrão de organização dos seres vivos,
+onde algumas partes são mais relacionadas entre si do que com outras
+partes do mesmo organismo.
+Podemos descrever, e entender, a organização entre partes
+constituintes dos organismos através das relações entre elas,
+sendo cada tipo de relação adequada a um nível de complexidade ou
+organização.
+As partes do organismo as quais nos referimos podem ser as
+bases nitrogenadas de uma molécula de RNA [@Ancel2000], genes
+[@Costanzo2010], proteínas [@Han2004], caracteres morfológicos como
+temos visto até agora [@Klingenberg2008; @Porto2009; Marroig2009].
+Essas relações podem ser medidas de diversas formas, como interação
+física entre proteínas, padrões de expressão conjunta entre genes,
+ou, no nosso caso, correlação entre caracteres quantitativos.
+Esse grupo de características muito relacionadas entre si constituem um
+módulo, como esquematizado na figura \ref{modulos}.
+Módulos, então, são caracterizados por uma alta conectividade interna e
+relativa independência de outros módulos.
+
+![Representação esquemática da organização modular dos seres
+  vivos. As setes representam qualquer tipo de relação entre as partes
+  de um indivíduo. Adaptado de [@Klingenberg2008]. \label{modulos}](./figuras/modulos.png)
 
 ##Tipos de Módulos
 
-Módulo funcional
-Caracteres que agem conjuntamente no desempenho de alguma função fisiológica. Pensando no crânio de mamíferos, podemos mostrar que medidas em ossos que compõem a face são mais correlacionadas entre si do que com medidas em ossos que compõem o neurocrânio, e vice-versa. Portanto, as correlações entre os caracteres desses diferentes módulos são menores. As características da região da face dos mamíferos está intimamente envolvida na alimentação, especificamente no processo de mastigação. Já os ossos que compõem o neurocrânio estão relacionados com a proteção do cérebro dos mamíferos. 
-Módulo de desenvolvimento
-Uma parte quase autônoma de um embrião quanto aos processos de crescimento e diferenciação ou uma cascata autônoma de sinalização que faz parte do desenvolvimento do organismo. Voltando ao exemplo acima dos dois módulos funcionais nos mamíferos, estes mesmos módulos possuem origem embrionária distinta. O desenvolvimento da face dos mamíferos provém do crescimento e da diferenciação de células da X, enquanto que o desenvolvimento do neurocrânio se dá a partir das células da Y. Esses dois tecidos embrionários não influenciam o desenvolvimento um do outro, portanto são partes praticamente autônomas do embrião. Portanto, os dois módulos funcionais face e neurocrânio dos mamíferos também são dois módulos de desenvolvimento distintos.
-Módulo variacional
-Enquanto as duas definições de módulo acima referem-se a fenômenos do indivíduo, o módulo variacional apenas pode ser identificado em populações. Os módulos variacionais são compostos de caracteres que covariam de maneira independente de outros caracteres do organismo. Apesar dos caracteres pertencerem a organismos individuais, suas covariâncias apenas podem ser determinadas em um estudo populacional, pois cada indivíduo representará apenas um ponto na determinação da covariância (ou correlação). 
+Módulo funcional: 
+
+:   Caracteres que agem conjuntamente no desempenho de alguma função
+    biológica.
+    Pensando no crânio de mamíferos, podemos mostrar que
+    medidas em ossos que compõem a face são mais correlacionadas entre si
+    do que com medidas em ossos que compõem o neurocrânio, e vice-versa.
+    Portanto, as correlações entre os caracteres desses diferentes
+    módulos são menores. As características da região da face dos
+    mamíferos está intimamente envolvida na alimentação, especificamente
+    no processo de mastigação.
+    Já os ossos que compõem o neurocrânio
+    estão relacionados com a proteção do cérebro dos mamíferos.
+
+Módulo de desenvolvimento: 
+
+:   Uma parte quase autônoma de um embrião quanto aos processos de
+    crescimento e diferenciação ou uma cascata autônoma de sinalização que
+    faz parte do desenvolvimento do organismo.
+    Voltando ao exemplo acima dos dois módulos funcionais nos
+    mamíferos, estes mesmos módulos possuem origem embrionária
+    distinta.
+    O desenvolvimento da face dos mamíferos provém do crescimento e da
+    diferenciação de células da X, enquanto que o desenvolvimento do
+    neurocrânio se dá a partir das células da Y.
+    Esses dois tecidos embrionários não influenciam o desenvolvimento
+    um do outro, portanto são partes praticamente autônomas do
+    embrião.
+    Portanto, os dois módulos funcionais face e neurocrânio dos
+    mamíferos também são dois módulos de desenvolvimento distintos.
+
+Módulo variacional:
+
+:   Enquanto as duas definições de módulo acima referem-se a fenômenos
+    do indivíduo, o módulo variacional apenas pode ser identificado em
+    populações.
+    Os módulos variacionais são compostos de caracteres que covariam
+    de maneira independente de outros caracteres do organismo.
+    Apesar dos caracteres pertencerem a organismos individuais,
+    suas covariâncias apenas podem ser determinadas em um estudo
+    populacional, pois cada indivíduo representará apenas um ponto na
+    determinação da covariância (ou correlação).
+
+No contexto de caracteres continuos, a teoria da integração
+morfológica foi inicialmente elaborada por Olson e Miller em seu livro
+de 1958 intitulado “Integração Morfológica”.
+Segundo os autores, estudos em integração morfológica exploram a
+evolução dos animais como organismos totais, concebendo-os como uma
+abstração baseada em associações de medidas [@Olson1958].
+Estas associações de medidas são representadas nessa teoria por
+correlações fenotípicas.
+A relevância em se investigar complexos
+de caracteres em vez de caracteres isolados está na visão de que
+mudanças em um caráter podem não ser independentes de mudanças
+em outros caracteres do organismo [@Olson1958].
+Olson e Miller [-@Olson1958] já ponderavam sobre as relações
+entre magnitude de integração e evolução, perguntando-se sobre a
+influência da intensidade de integração (ou seja, o quão fortemente
+os caracteres estão associados entre si) na evolução de organismos
+mais complexos e no grau de adaptabilidade destes.
+Pensando em magnitudes de integração, esses autores compreenderam
+a importância da dualidade integração-modularidade no potencial
+de evolução morfológica, ou seja, entenderam que esses dois
+conceitos são os dois lados de uma mesma moeda.
+Modularidade refere-se às propriedades de discrição e
+dissociabilidade entre partes e integração dentro das partes [de um organismo] (West-Eberhard, 2003, pág. 56).
+Uma maneira simples de captar o conceito de modularidade é entender que
+os caracteres que compõem um módulo possuem altas correlações entre
+si (indicando uma integração dentro do módulo) e baixas correlações
+com outros caracteres fora do módulo.
+Günter P. Wagner [-@Wagner1996] ressaltou que é preciso haver uma
+razão biológica para que o plano corpóreo dos organismos seja
+organizado de maneira tão obviamente modular, tornando facilmente
+reconhecíveis suas unidades naturais (como mostrado pela nossa
+capacidade de apontar estruturas homólogas).
+Para ele, considerar as unidades naturais como unidades de
+transformação evolutiva (ou seja, a modularidade como uma propriedade
+variacional do genoma) traz o sentido biológico dessa organização.
+Segundo ele, três critérios precisam ser satisfeitos para um complexo
+de caracteres ser considerado como uma unidade modular: (1) servir a uma
+função primária; (2) ser integrado por efeitos pleiotrópicos; e (3)
+ser relativamente independente de outras unidades.
 
 ##Consequências Evolutivas
 
