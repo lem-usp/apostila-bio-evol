@@ -168,33 +168,32 @@ Módulo variacional:
     no desenvolvimento quanto na estrutura genética dos individuos, e são
     moldadas por demandas evolutivas [@Klingenberg2008].
 
+##Integração Morfológica
+
 No contexto de caracteres contínuos, a teoria da integração
 morfológica foi inicialmente elaborada por Olson e Miller em seu livro
 de 1958 intitulado "Integração Morfológica".
-Segundo os autores, estudos em integração morfológica exploram a
-evolução dos animais como organismos totais, concebendo-os como uma
-abstração baseada em associações de medidas [@Olson1958].
-Estas associações de medidas são representadas nessa teoria por
-correlações fenotípicas.
-A relevância em se investigar complexos
-de caracteres em vez de caracteres isolados está na visão de que
-mudanças em um caráter podem não ser independentes de mudanças
-em outros caracteres do organismo [@Olson1958].
+Neste livre, os autores apresentam a integração morfológica como
+uma forma de estudar a evolução dos animais como organismos totais,
+concebendo-os como uma abstração baseada em associações de medidas
+[@Olson1958].
+Estas associações de medidas são representadas por correlações
+fenotípicas e organizadas em módulos variacionais.
+A relevância em se investigar complexos de caracteres em vez de
+caracteres isolados está na visão de que mudanças em um caráter
+podem não ser independentes de mudanças em outros caracteres do
+organismo [@Lande1979].
 Olson e Miller [-@Olson1958] já ponderavam sobre as relações
-entre magnitude de integração e evolução, perguntando-se sobre a
-influência da intensidade de integração (ou seja, o quão fortemente
-os caracteres estão associados entre si) na evolução de organismos
-mais complexos e no grau de adaptabilidade destes.
-Pensando em magnitudes de integração, esses autores compreenderam
-a importância da dualidade integração-modularidade no potencial
-de evolução morfológica, ou seja, entenderam que esses dois
-conceitos são os dois lados de uma mesma moeda.
-Modularidade refere-se às propriedades de discrição e
-dissociabilidade entre partes e integração dentro das partes [de um organismo] (West-Eberhard, 2003, pág. 56).
-Uma maneira simples de captar o conceito de modularidade é entender que
-os caracteres que compõem um módulo possuem altas correlações entre
-si (indicando uma integração dentro do módulo) e baixas correlações
-com outros caracteres fora do módulo.
+entre magnitude de integração e evolução.
+Seria a intensidade de integração, ou seja, o quão fortemente os
+caracteres estão associados entre si, capaz de influenciar a evolução
+de organismos mais complexos e seu grau de adaptabilidade?
+Pensando em magnitudes de integração, esses autores compreenderam a
+importância da dualidade integração-modularidade no potencial de
+evolução morfológica, ou seja, que esses dois conceitos são os dois
+lados de uma mesma moeda.
+<!--TODO: Descrever separação entre módulos e integração dentro de módulos.-->
+
 Günter P. Wagner [-@Wagner1996] ressaltou que é preciso haver uma
 razão biológica para que o plano corpóreo dos organismos seja
 organizado de maneira tão obviamente modular, tornando facilmente
