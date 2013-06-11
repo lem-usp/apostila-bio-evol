@@ -6,7 +6,7 @@ Guia de aulas práticas da disciplina BIO507 - Biologia Evolutiva
 ##Requisitos
 
 ```
-sudo apt-get install pandoc libghc-hs-bibutils-* 
+sudo apt-get install pandoc libghc-hs-bibutils-dev libghc-hs-bibutils-doc libghc-hs-bibutils-prof
 
 ```
 
