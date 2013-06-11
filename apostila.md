@@ -156,14 +156,17 @@ Módulo de desenvolvimento:
 
 Módulo variacional:
 
-:   Enquanto as duas definições de módulo acima referem-se a fenômenos
-    do indivíduo, o módulo variacional é um fenômeno populacional.
-    Os módulos variacionais são compostos de caracteres que covariam
-    de maneira independente de outros caracteres do organismo.
-    Apesar dos caracteres pertencerem a organismos individuais,
-    suas covariâncias apenas podem ser determinadas em um estudo
-    populacional, pois cada indivíduo representará apenas um ponto na
-    determinação da covariância (ou correlação).
+:   Os módulos variacionais são caracterizados por correlações
+    altas entre caracteres dentro do módulo e correlações baixas entre
+    caractéres de módulos diferentes.
+    Enquanto as definições de módulos funcionais e de desenvolvimento
+    referem-se a fenômenos do indivíduo, o módulo variacional é um
+    fenômeno populacional.
+    Apesar dos caracteres pertencerem a organismos individuais, suas
+    correlações só podem ser determinadas em um estudo populacional.
+    As correlações encontradas refletem organizações modulares tanto
+    no desenvolvimento quanto na estrutura genética dos individuos, e são
+    moldadas por demandas evolutivas [@Klingenberg2008].
 
 No contexto de caracteres contínuos, a teoria da integração
 morfológica foi inicialmente elaborada por Olson e Miller em seu livro
