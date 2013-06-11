@@ -113,7 +113,7 @@ relativa independência de outros módulos.
 
 Podemos classificar os tipos de módulos de acordo com o tipo de
 interação que o define [@Wagner2007].
-Porem, todos os níveis de modularidade estão relacionados, e não
+Porém, todos os níveis de modularidade estão relacionados, e não
 podemos tratar de um sem considerar o outro.
 
 Módulo funcional: 
@@ -128,33 +128,36 @@ Módulo funcional:
     dessa função, e isso impõem restrições na forma e tamanho dos
     ossos envolvidos nessa tarefa.
     Já os ossos que compõem o neurocrânio estão relacionados com
-    a proteção do cérebro dos mamíferos, e tem relação direta com a
+    a proteção do cérebro dos mamíferos, e não tem relação direta com a
     mastigação.
     Essa separação em regiões funcionais diferentes tem consequências
     para o organismo.
 
 Módulo de desenvolvimento: 
 
-:   Uma parte quase autônoma de um embrião quanto aos processos de
-    crescimento e diferenciação ou uma cascata autônoma de sinalização que
-    faz parte do desenvolvimento do organismo.
-    Voltando ao exemplo acima dos dois módulos funcionais nos
-    mamíferos, estes mesmos módulos possuem origem embrionária
-    distinta.
-    O desenvolvimento da face dos mamíferos provém do crescimento e da
-    diferenciação de células da X, enquanto que o desenvolvimento do
-    neurocrânio se dá a partir das células da Y.
+:   Durante o desenvolvimento, caracteres podem se comportar de forma
+    quase autônoma dentro de um embrião com relação aos seus processos
+    de crescimento e diferenciação.
+    Ou ainda, genes e proteínas podem estar envolvidos em uma cascata
+    autônoma de sinalização que faz parte do desenvolvimento do
+    organismo.
+    Voltando ao exemplo acima dos dois módulos
+    funcionais nos mamíferos, estes mesmos módulos possuem origem
+    embrionária distinta.
+    O desenvolvimento da face dos mamíferos provém do crescimento e
+    da diferenciação de células da mesoderme paraxial, enquanto que
+    o desenvolvimento do neurocrânio se dá a partir das células da
+    crista neural.
     Esses dois tecidos embrionários não influenciam o desenvolvimento
     um do outro, portanto são partes praticamente autônomas do
     embrião.
-    Portanto, os dois módulos funcionais face e neurocrânio dos
-    mamíferos também são dois módulos de desenvolvimento distintos.
+    Assim, os dois módulos funcionais, face e neurocrânio dos
+    mamíferos, também são dois módulos de desenvolvimento distintos.
 
 Módulo variacional:
 
 :   Enquanto as duas definições de módulo acima referem-se a fenômenos
-    do indivíduo, o módulo variacional apenas pode ser identificado em
-    populações.
+    do indivíduo, o módulo variacional é um fenômeno populacional.
     Os módulos variacionais são compostos de caracteres que covariam
     de maneira independente de outros caracteres do organismo.
     Apesar dos caracteres pertencerem a organismos individuais,
