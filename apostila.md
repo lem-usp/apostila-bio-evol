@@ -158,21 +158,21 @@ Módulo variacional:
 
 :   Os módulos variacionais são caracterizados por correlações
     altas entre caracteres dentro do módulo e correlações baixas entre
-    caractéres de módulos diferentes.
+    caracteres de módulos diferentes.
     Enquanto as definições de módulos funcionais e de desenvolvimento
     referem-se a fenômenos do indivíduo, o módulo variacional é um
     fenômeno populacional.
     Apesar dos caracteres pertencerem a organismos individuais, suas
     correlações só podem ser determinadas em um estudo populacional.
     As correlações encontradas refletem organizações modulares tanto
-    no desenvolvimento quanto na estrutura genética dos individuos, e são
+    no desenvolvimento quanto na estrutura genética dos indivíduos, e são
     moldadas por demandas evolutivas [@Klingenberg2008].
 
 ##Integração Morfológica
 
 No contexto de caracteres contínuos, a teoria da integração
-morfológica foi inicialmente elaborada por Olson e Miller em seu livro
-de 1958 intitulado "Integração Morfológica".
+morfológica foi inicialmente elaborada por Olson e Miller [-@Olson1958]
+em seu livro "Integração Morfológica".
 Neste livre, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
 concebendo-os como uma abstração baseada em associações de medidas
@@ -183,7 +183,7 @@ A relevância em se investigar complexos de caracteres em vez de
 caracteres isolados está na visão de que mudanças em um caráter
 podem não ser independentes de mudanças em outros caracteres do
 organismo [@Lande1979].
-Olson e Miller [-@Olson1958] já ponderavam sobre as relações
+Olson e Miller já ponderavam sobre as relações
 entre magnitude de integração e evolução.
 Seria a intensidade de integração, ou seja, o quão fortemente os
 caracteres estão associados entre si, capaz de influenciar a evolução
@@ -211,8 +211,12 @@ Segundo ele, três critérios precisam ser satisfeitos para um complexo
 de caracteres ser considerado como uma unidade modular: (1) servir a uma
 função primária; (2) ser integrado por efeitos pleiotrópicos; e (3)
 ser relativamente independente de outras unidades.
-A visão de Wagner leva a visão particular do mapa genótipo-fenótipo
-dentro de um individuo.
+A visão de Wagner leva a uma estrutura particular do mapa
+genótipo-fenótipo dentro de um individuo, no qual genes estariam
+divididos em grupos com efeitos pleiotrópicos localizados, restritos a
+caracteres envolvidos com uma determinada função.
+Essa organização modular do mapa genótipo-fenótipo seria responsável
+ela organização dos caracteres em módulos variacionais.
 
 ![Mapa genótipo-fenótipo modular clássico, e mapa incluindo
 efeitos do desenvolvimento. Adaptado de [@Klingenberg2008].
