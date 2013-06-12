@@ -192,7 +192,12 @@ Pensando em magnitudes de integração, esses autores compreenderam a
 importância da dualidade integração-modularidade no potencial de
 evolução morfológica, ou seja, que esses dois conceitos são os dois
 lados de uma mesma moeda.
-<!--TODO: Descrever separação entre módulos e integração dentro de módulos.-->
+Modularidade permite com que caracteres se comportem de forma
+independente, enquanto integração garante que mudanças em um caráter
+sejam coordenadas com mudanças nos demais caracteres que interagem com
+o primeiro.
+Na próxima seção vamos discutir essa dualidade em detalhes num
+contexto evolutivo.
 
 Günter P. Wagner [-@Wagner1996] ressaltou que é preciso haver uma
 razão biológica para que o plano corpóreo dos organismos seja
