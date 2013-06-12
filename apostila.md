@@ -211,6 +211,12 @@ Segundo ele, três critérios precisam ser satisfeitos para um complexo
 de caracteres ser considerado como uma unidade modular: (1) servir a uma
 função primária; (2) ser integrado por efeitos pleiotrópicos; e (3)
 ser relativamente independente de outras unidades.
+A visão de Wagner leva a visão particular do mapa genótipo-fenótipo
+dentro de um individuo.
+
+![Mapa genótipo-fenótipo modular clássico, e mapa incluindo
+efeitos do desenvolvimento. Adaptado de [@Klingenberg2008].
+\label{mapagenfen}](./figuras/mapgenfen.png)
 
 ##Consequências Evolutivas
 
