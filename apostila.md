@@ -71,6 +71,7 @@ medidas tomadas.
 Para 4 medidas, por exemplo, os vetores são listas de 4 números,
 como $(4.94, 9.94, 15.11, 20.17)$, cada um representando um dado
 caráter de um indivíduo.
+O morfoespaço nesse caso seria um hiperplano com 4 dimensões.
 
 Vetores podem representar também mudanças em fenótipos.
 Suponha que a média bivariada de uma população tenha se alterado
@@ -85,10 +86,26 @@ $$
 
 Ou seja, o primeiro caráter aumentou em 5 unidades na sua média,
 enquanto o segundo caráter diminuiu em 3 unidades.
-O vetor de mudança, $\Delta \overline z$, representa matematicamente  o
+O vetor de mudança, $\Delta \overline z$, representa matematicamente o
 evento evolutivo.
 
 ##Correlação de Vetores
+
+Frequentemente estaremos interessados em comparar vetores. 
+Por exemplo, será que as mudanças nas médias de duas populações
+foram na mesma direção do morfoespaço?
+Caso não tenham sido, o quão diferente elas são?
+Nas próximas seções veremos casos onde essas perguntas aparecem de
+forma bastante natural em outros contextos.
+Para isso, precisamos de uma forma de comparar vetores, tanto em suas
+magnitude quando em suas direção.
+A figura \ref{deltazes} mostra algumas possibilidades de vetores de
+mudanças evolutivas de duas populações.
+
+![Possíveis mudanças nas médias de duas populações. No caso
+(a) magnitudes de mudança iguais mas direções diferentes. (b)
+direções iguais mas magnitudes diferentes e (c) magnitudes e direções
+diferentes.\label{deltazes}](./figuras/deltazes.png)
 
 Com comparar vetores?
 Correlação de vetores, ângulo entre vetores, Pitágoras em dimensão alta.
