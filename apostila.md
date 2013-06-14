@@ -21,12 +21,55 @@ analise, e como isso se insere na teoria evolutiva moderna.
 
 Quais tipos de caracteres são usados na genética quantitativa?
 Como escolher caracteres?
+Homologia.
 
 ##Distâncias e Vetores
 
-Como representar os dados?
-Conceito de morfoespaço ou espaço fenotípico.
-Representação gráfica de vetores.
+Uma vez escolhidos quais serão os caracteres usados no estudo,
+precisamos fazer as medidas e representar esses dados de forma
+conveniente.
+Existem diversas formas de tomar dados quantitavos, para distâncias
+podemos usar paquimetros, réguas, programas de computador que podem
+obter distâncias de imagens bidimensionais ou representações
+tridimensionais, digitalizadores digitais; além disso, podemos tomar
+medidas como peso, com uma balança; expressão gênica, quantidade de
+RNA mensageiro, consentração de proteinas, atividade enzimatica, todos
+com tecnicas de biologia molecular; pigmentação ou brilho podem ser
+quantificados digitalmente.
+Todos esses dados representam medias continuas, potencialmente
+herdáveis, que portanto podem ser estudadas dentro do paradigma da
+genética quantitativa.
+
+Com os dados em mão, podemos representá-los matematicamente.
+A maneira mais conveniente de fazer isso é utilizando o conceito de um vetor.
+A figura \ref{vetores} ilustra a representação de um par de medidas
+utilizando um vetor bidimensional.
+A partir dessa abstração, podemos construir uma teoria bastante completa.
+
+![Representação de medidas reais na forma vetorial. Vemos duas
+medidas de tamanho linear de ossos do braço representadas num vetor.
+\label{vetores}](./figuras/medidas-vetores.png)
+
+No plano $(x,y)$ representado na figura \ref{vetores}, podemos
+representar qualquer combinação de tamanhos do braço e do antebraço.
+Por exemplo, um individuo com 15cm de braço e 20 de antebraço é
+representando pelo vetor $(20, 15)$.
+Qualquer fenótipo do tamanho desses dois ossos pode ser descrito por um
+par de números.
+Como todos os fenótipos possiveis estão representados nesse plano, ele
+é chamado de morfoespaço.
+
+No morfoespaço bidimensional, ou mesmo tridimensional, os vetores
+representando os fenótipos podem ser imaginados com facilidade.
+Porém, em genética quantitativa, é comum trabalharmos com um número
+muito maior de medidas, chegando até centenas variáveis observadas em
+cada indivíduo.
+Ainda assim, podemos continuar representando nossos individuos por
+vetores, agora compostos por muito mais números, representando todas as
+medidas tomadas.
+Para 4 medidas. por exemplo. os vetores são listas de 4 numeros,
+como $(4.94, 9.94, 15.11, 20.17)$, cada um representando uma dada
+caracteristica de um indivíduo.
 
 ##Correlação de Vetores
 
