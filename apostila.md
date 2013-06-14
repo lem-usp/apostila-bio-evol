@@ -107,8 +107,28 @@ mudanças evolutivas de duas populações.
 direções iguais mas magnitudes diferentes e (c) magnitudes e direções
 diferentes.\label{deltazes}](./figuras/deltazes.png)
 
-Com comparar vetores?
-Correlação de vetores, ângulo entre vetores, Pitágoras em dimensão alta.
+Vemos então que uma forma natural de comparar vetores é
+representando-os pela sua magnitude e direção.
+Para calcular a magnitude de um vetor, podemos nos valer da teorema de
+Pitágoras para triângulos retângulos (figura \ref{pitagoras}).
+Para um vetor $\Delta z$ com componentes $(\Delta z_x, \Delta z_y)$, podemos calcular sua norma (ou magnitude) $|\Delta z|$ como:
+
+$$
+|\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2}
+$$
+
+
+A boa notícia é que essa formula continua valendo para dimensionalidades altas.
+Suponha que queiramos calcular a norma de um vetor em 4 dimensões $\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)$.
+A conta seria simplesmente:
+
+$$
+|\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2+ \Delta z_z^2 + \Delta z_w^2}
+$$
+
+![Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras. \label{pitagoras}](./figuras/pitagoras.png)
+
+
 
 ##Variâncias, Covariâncias e Correlações
 
