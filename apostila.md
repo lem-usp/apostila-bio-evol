@@ -52,15 +52,16 @@ medidas de tamanho linear de ossos do braço representadas num vetor.
 
 No plano $(x,y)$ representado na figura \ref{vetores}, podemos
 representar qualquer combinação de tamanhos do braço e do antebraço.
-Por exemplo, um individuo com 15cm de braço e 20 de antebraço é
-representando pelo vetor $(20, 15)$.
+Por exemplo, na convenção da figura \ref{vetores}, um individuo com
+15 cm de braço e 20 cm de antebraço é representando pelo vetor $(20,
+15)$.
 Qualquer fenótipo do tamanho desses dois ossos pode ser descrito por um
 par de números.
 Como todos os fenótipos possíveis estão representados nesse plano, ele
 é chamado de morfoespaço.
 
 No morfoespaço bidimensional, ou mesmo tridimensional, os vetores
-representando os fenótipos podem ser imaginados com facilidade.
+representando os fenótipos podem ser visualizados com facilidade.
 Porém, em genética quantitativa, é comum trabalharmos com um número
 muito maior de medidas, chegando até centenas variáveis observadas em
 cada indivíduo.
@@ -70,6 +71,22 @@ medidas tomadas.
 Para 4 medidas, por exemplo, os vetores são listas de 4 números,
 como $(4.94, 9.94, 15.11, 20.17)$, cada um representando um dado
 caráter de um indivíduo.
+
+Vetores podem representar também mudanças em fenótipos.
+Suponha que a média bivariada de uma população tenha se alterado
+entre os momentos a e b, passando de $\overline z_a=(10, 50)$ para $\overline z_b=(15, 47)$.
+Essa mudança pode ter uma série de motivos, um episodio de seleção
+direcional ou um gargalo populacional, por exemplo.
+Podemos representar essa mudança na média como um vetor:
+
+$$
+\overline z_b - \overline z_a = \Delta \overline z_{ba} = (15, 47)_b - (10, 50)_a = (5, -3)
+$$
+
+Ou seja, o primeiro caráter aumentou em 5 unidades na sua média,
+enquanto o segundo caráter diminuiu em 3 unidades.
+O vetor de mudança, $\Delta \overline z$, representa matematicamente  o
+evento evolutivo.
 
 ##Correlação de Vetores
 
