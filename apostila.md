@@ -94,27 +94,28 @@ evento evolutivo.
 Frequentemente estaremos interessados em comparar vetores. 
 Por exemplo, será que as mudanças nas médias de duas populações
 foram na mesma direção do morfoespaço?
-Caso não tenham sido, o quão diferente elas são?
-Nas próximas seções veremos casos onde essas perguntas aparecem de
+Caso não tenham sido, quão diferentes são elas?
+Nas próximas seções, veremos casos onde essas perguntas aparecem de
 forma bastante natural em outros contextos.
 Para isso, precisamos de uma forma de comparar vetores, tanto em suas
 magnitude quando em suas direção.
-A figura \ref{deltazes} mostra algumas possibilidades de vetores de
-mudanças evolutivas de duas populações.
+A figura \ref{deltazes} mostra algumas possibilidades para as
+diferenças entre vetores de mudanças evolutivas de duas populações.
 
 ![Possíveis mudanças nas médias de duas populações. No caso
 (a) magnitudes de mudança iguais mas direções diferentes. (b)
 direções iguais mas magnitudes diferentes e (c) magnitudes e direções
 diferentes.\label{deltazes}](./figuras/deltazes.png)
 
-Vemos então que uma forma natural de comparar vetores é
+Vemos, então, que uma forma natural de comparar vetores é
 representando-os pela sua magnitude e direção.
 
 ###Magnitude ou norma de vetores
 
 Para calcular a magnitude de um vetor, podemos nos valer da teorema de
 Pitágoras para triângulos retângulos (figura \ref{pitagoras}).
-Para um vetor $\Delta z$ com componentes $(\Delta z_x, \Delta z_y)$, podemos calcular sua norma (ou magnitude) $|\Delta z|$ como:
+Para um vetor $\Delta z$ com componentes $(\Delta z_x, \Delta z_y)$,
+podemos calcular sua norma (ou magnitude) $|\Delta z|$ como:
 
 $$
 |\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2}
@@ -122,14 +123,16 @@ $$
 
 
 A boa notícia é que essa formula continua valendo para dimensionalidades altas.
-Suponha que queiramos calcular a norma de um vetor em 4 dimensões $\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)$.
+Suponha que queiramos calcular a norma de um vetor em 4 dimensões
+$\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)$.
 A conta seria simplesmente:
 
 $$
 |\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2+ \Delta z_z^2 + \Delta z_w^2}
 $$
 
-Para um vetor de dimensionalidade arbitraria $\mathbf{x} = (x_1, x_2, \cdots, x_n)$, sua norma pode ser expressa como:
+Para um vetor de dimensionalidade arbitraria $\mathbf{x} = (x_1, x_2,
+\cdots, x_n)$, sua norma pode ser expressa como:
 
 $$           
 |\mathbf{x}| = \sqrt{\sum_{i=1}^n x_i^2}
@@ -141,7 +144,8 @@ $$
 
 Além de comparações de magnitudes, podemos comparar vetores pelo
 angulo formado entre eles, ou seja, a diferença em suas direções.
-Uma escala bastante conveniente é a do cosseno do angulo formado entre dois vetores.
+Uma escala bastante conveniente é a do cosseno do angulo formado entre
+dois vetores.
 Caso eles tenham a mesma direção, o cosseno do angulo entre eles é
 um, caso eles tenham direções completamente ortogonais, ou seja, um
 angulo de 90 graus entre deles, o cosseno do angulo é zero.
@@ -173,7 +177,7 @@ $$
 \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
 $$
 
-Com isso, podemos definir a correlação de vetores como:
+Com isso, podemos definir a correlação de vetores de qualquer dimensão como:
 
 $$
 Corr(\mathbf{x}, \mathbf{y}) = \frac{\mathbf{x} \cdot \mathbf{y}}{|\mathbf{x}||\mathbf{y}|}
