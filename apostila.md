@@ -1,4 +1,4 @@
-% Apostila de Biologia Evolutiva - BIO507
+j Apostila de Biologia Evolutiva - BIO507
 % Diogo Melo; Gabriel Marroig; Monique Simon
 % 6 de junho de 2013
 
@@ -171,7 +171,7 @@ O termo de soma dos produto cruzados, $(x_1 x_2) + (y_1 y_2)$, é
 conhecido como o produto escalar entre dos vetores, e pode ser
 generalizado para um numero arbitrário de dimensões.
 Para dois vetores $\mathbf{x} = (x_1, x_2, \cdots, x_n)$ e $\mathbf{y} =
-(y_1, y_2, \cdots, y_n)$, o seu produto escalar é:
+(y_1, y_2, \cdots, y_n)$, o seu produto escalar é definido como:
 
 $$
 \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
@@ -192,6 +192,50 @@ cosseno do angulo $\alpha$ entre dois vetores
 
 ###Normalização de vetores
 
+Para populações uma mesma espécie, onde os indivíduos são
+relativamente parecidos, a magnitude de um vetor de mudança evolutiva
+traz informações importantes quando comparamos populações nas suas
+mudanças evolutivas.
+No entanto, se vamos trabalhar com espécies de tamanhos e níveis de
+variações muito diferentes, comparar a magnitude da resposta passa a
+ser pouca informativa.
+Esse efeito é claro quando pensamos, por exemplo, na escala geral das
+diferentes espécies.
+Um variação de 1cm no tamanho médio do antebraço de uma população
+de cavalos pode ser insignificante, mas uma mudança de mesmo tamanho em
+uma população de camundongos é brutal.
+Nesse caso, comparar a direção da resposta evolutiva é a única métrica que
+faz sentido biológico.
+Quando estamos interessados somente na direção dos vetores estudados, é
+conveniente, então, padronizar a magnitude dos vetores de todas as
+populações ou espécies envolvidas na analise.
+Normalmente modificamos os vetores para que eles tenham magnitude
+unitária, ou seja, igual a 1. 
+Esse procedimento é chamado de normalização, e se $\mathbf{x_N}$ é
+normalizado, então $|\mathbf{x_N}| = 1$.
+
+Suponha que $\mathbf{x}$ seja um vetor não normalizado (então
+$|\mathbf{x}| \neq 1$), como fazemos para obter sua versão normalizada
+$\mathbf{x_N}$?
+Basta dividir todos os elementos de $\mathbf{x}$ por $|\mathbf{x}|$!
+Note que:
+
+$$
+|\mathbf{x}| = \sqrt{\sum_{i=1}^n x_i^2}
+$$
+
+Então:
+
+$$
+|\mathbf{x_N}| = \left| \frac{\mathbf{x}}{|\mathbf{x}|} \right| = \sqrt{\sum_{i=1}^n \left (\frac{x_i}{|\mathbf{x}|} \right )^2} = \frac{1}{|\mathbf{x}|} \sqrt{\sum_{i=1}^n x_i^2} = \frac{|\mathbf{x}|}{|\mathbf{x}|} = 1
+$$
+
+Outra vantagem de usar vetores normalizados é na hora do calculo de suas correlações.
+Se $\mathbf{x}$ e $\mathbf{y}$ são normalizados, sua correlação é simplesmente seu produto interno (ou a soma dos seus produtos cruzados), pois:
+
+$$
+Corr(\mathbf{x}, \mathbf{y}) = \frac{ \mathbf{x} \cdot \mathbf{y} }{|\mathbf{x}||\mathbf{y}|} = \frac{ \mathbf{x} \cdot \mathbf{y} }{1 \cdot 1} =  \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
+$$
 
 
 
