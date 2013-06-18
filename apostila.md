@@ -1,4 +1,4 @@
-j Apostila de Biologia Evolutiva - BIO507
+% Apostila de Biologia Evolutiva - BIO507
 % Diogo Melo; Gabriel Marroig; Monique Simon
 % 6 de junho de 2013
 
@@ -91,7 +91,7 @@ evento evolutivo.
 
 ##Comparação de Vetores
 
-Frequentemente estaremos interessados em comparar vetores. 
+Frequentemente estaremos interessados em comparar vetores.
 Por exemplo, será que as mudanças nas médias de duas populações
 foram na mesma direção do morfoespaço?
 Caso não tenham sido, quão diferentes são elas?
@@ -132,10 +132,10 @@ $$
 $$
 
 Para um vetor de dimensionalidade arbitraria $\mathbf{x} = (x_1, x_2,
-\cdots, x_n)$, sua norma pode ser expressa como:
+\cdots, x_p)$, sua norma pode ser expressa como:
 
-$$           
-|\mathbf{x}| = \sqrt{\sum_{i=1}^n x_i^2}
+$$
+|\mathbf{x}| = \sqrt{\sum_{i=1}^p x_i^2}
 $$
 
 ![Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras. \label{pitagoras}](./figuras/pitagoras.png)
@@ -161,7 +161,7 @@ entre os vetores $\Delta z_1 = (x_1, y_1)$ e $\Delta z_2 = (x_2, y_2)$
 seria:
 
 $$
-Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(x_1  x_2) + (y_1  y_2)}{|\Delta z_1|  |\Delta z_2|} = \frac{(x_1  x_2) + (y_1  y_2)}{\sqrt{x_1^2 + y_1^2}  \sqrt{x_2^2 + y_2^2}} 
+Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(x_1  x_2) + (y_1  y_2)}{|\Delta z_1|  |\Delta z_2|} = \frac{(x_1  x_2) + (y_1  y_2)}{\sqrt{x_1^2 + y_1^2}  \sqrt{x_2^2 + y_2^2}}
 $$
 
 Em outras palavras, o cosseno do angulo $\alpha$ é calculado como a
@@ -170,11 +170,11 @@ norma.
 O termo de soma dos produto cruzados, $(x_1 x_2) + (y_1 y_2)$, é
 conhecido como o produto escalar entre dos vetores, e pode ser
 generalizado para um numero arbitrário de dimensões.
-Para dois vetores $\mathbf{x} = (x_1, x_2, \cdots, x_n)$ e $\mathbf{y} =
-(y_1, y_2, \cdots, y_n)$, o seu produto escalar é definido como:
+Para dois vetores $\mathbf{x} = (x_1, x_2, \cdots, x_p)$ e $\mathbf{y} =
+(y_1, y_2, \cdots, y_p)$, o seu produto escalar é definido como:
 
 $$
-\mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
+\mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^p x_iy_i
 $$
 
 Com isso, podemos definir a correlação de vetores de qualquer dimensão como:
@@ -187,7 +187,6 @@ $$
 ![Utilizando a lei dos cossenos para calcular o
 cosseno do angulo $\alpha$ entre dois vetores
 \label{leidoscossenos}](./figuras/leidoscossenos.png)
-
 
 
 ###Normalização de vetores
@@ -210,7 +209,7 @@ Quando estamos interessados somente na direção dos vetores estudados, é
 conveniente, então, padronizar a magnitude dos vetores de todas as
 populações ou espécies envolvidas na analise.
 Normalmente modificamos os vetores para que eles tenham magnitude
-unitária, ou seja, igual a 1. 
+unitária, ou seja, igual a 1.
 Esse procedimento é chamado de normalização, e se $\mathbf{x_N}$ é
 normalizado, então $|\mathbf{x_N}| = 1$.
 
@@ -221,28 +220,65 @@ Basta dividir todos os elementos de $\mathbf{x}$ por $|\mathbf{x}|$!
 Note que:
 
 $$
-|\mathbf{x}| = \sqrt{\sum_{i=1}^n x_i^2}
+|\mathbf{x}| = \sqrt{\sum_{i=1}^p x_i^2}
 $$
 
 Então:
 
 $$
-|\mathbf{x_N}| = \left| \frac{\mathbf{x}}{|\mathbf{x}|} \right| = \sqrt{\sum_{i=1}^n \left (\frac{x_i}{|\mathbf{x}|} \right )^2} = \frac{1}{|\mathbf{x}|} \sqrt{\sum_{i=1}^n x_i^2} = \frac{|\mathbf{x}|}{|\mathbf{x}|} = 1
+|\mathbf{x_N}| = \left| \frac{\mathbf{x}}{|\mathbf{x}|} \right| = \sqrt{\sum_{i=1}^p \left (\frac{x_i}{|\mathbf{x}|} \right )^2} = \frac{1}{|\mathbf{x}|} \sqrt{\sum_{i=1}^p x_i^2} = \frac{|\mathbf{x}|}{|\mathbf{x}|} = 1
 $$
 
 Outra vantagem de usar vetores normalizados é na hora do calculo de suas correlações.
 Se $\mathbf{x}$ e $\mathbf{y}$ são normalizados, sua correlação é simplesmente seu produto interno (ou a soma dos seus produtos cruzados), pois:
 
 $$
-Corr(\mathbf{x}, \mathbf{y}) = \frac{ \mathbf{x} \cdot \mathbf{y} }{|\mathbf{x}||\mathbf{y}|} = \frac{ \mathbf{x} \cdot \mathbf{y} }{1 \cdot 1} =  \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
+Corr(\mathbf{x}, \mathbf{y}) = \frac{ \mathbf{x} \cdot \mathbf{y} }{|\mathbf{x}||\mathbf{y}|} = \frac{ \mathbf{x} \cdot \mathbf{y} }{1 \cdot 1} =  \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^p x_iy_i
 $$
-
-
 
 ##Variâncias, Covariâncias e Correlações
 
-Evolução e variação.
-Como descrever variação.
+###Um caráter
+
+Variação é o combustível da evolução, queimado nas fogueiras da seleção (WOOA!).
+Quantificar variação é uma tarefa complicada.
+Mesmo trabalhando com apenas um caráter, existem muitas possibilidades.
+A variância é uma medida comum, que quantifica desvios de cada
+individuo em relação à média global.
+A variância de um caráter contínuo $z$, expresso em uma população
+com $n$ indivíduos $z_1$ a $z_n$, e média $\overline z$, é dada por:
+
+$$
+var(z) = \frac{1}{n-1}\sum_{i=1}^n (z_i - \overline z)^2
+$$
+
+O procedimento para calculo da variância é, então, bastante simples,
+basta calcular a diferença de cada indivíduo da média, elevar essas
+diferenças ao quadrado, e somar tudo.
+
+Como as diferenças da média são elevadas ao quadrado, a variância
+tem unidades quadráticas em relação às unidades iniciais.
+Ou seja, se estamos trabalhando com distâncias e medindo os caracteres
+em cm, a variância tem unidades de cm$^2$.
+Alternativamente, podemos trabalhar com a raiz quadrada da variância,
+chamada desvio padrão, que tem unidades iguais às medidas originais e
+frequentemente é mais simples de ser interpretada intuitivamente.
+Em uma distribuição normal, 95% dos indivíduos se encontra a uma
+distância de no máximo 2 desvios padrões da média.
+Ainda outra possibilidade, caso queiramos comparar populações com
+escalas muito distintas, é medir variação em uma escala adimensional.
+Um exemplo de estatística adimensional de variação é o coeficiente
+de variação, que nada mais é que a razão entre o desvio padrão e a
+média da população.
+Para caracteres ósseos de mamíferos, esperamos um coeficiente de
+variação de no máximo 0.1, ou seja, o desvio padrão é cerca de 10%
+dá média.
+Essas regras gerais podem ser bastante úteis quando confrontados
+com dados pela primeira vez, pois permitem rapidamente identificar
+particularidades ou detectar erros nas medidas.
+
+###Mais de um caráter
+
 Como a variação entre vários caracteres pode ser estruturada.
 Diferença entre covariância e correlação.
 
@@ -322,7 +358,7 @@ interação que o define [@Wagner2007].
 Porém, todos os níveis de modularidade estão relacionados, e não
 podemos tratar de um sem considerar o outro.
 
-Módulo funcional: 
+Módulo funcional:
 
 :   Alguns caracteres agem conjuntamente no desempenho de funções
     biológicas.
@@ -339,7 +375,7 @@ Módulo funcional:
     Essa separação em regiões funcionais diferentes tem consequências
     para o organismo.
 
-Módulo de desenvolvimento: 
+Módulo de desenvolvimento:
 
 :   Durante o desenvolvimento, caracteres podem se comportar de forma
     quase autônoma dentro de um embrião com relação aos seus processos
