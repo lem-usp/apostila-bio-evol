@@ -21,17 +21,179 @@ analise, e como isso se insere na teoria evolutiva moderna.
 
 Quais tipos de caracteres são usados na genética quantitativa?
 Como escolher caracteres?
+Homologia.
 
 ##Distâncias e Vetores
 
-Como representar os dados?
-Conceito de morfoespaço ou espaço fenotípico.
-Representação gráfica de vetores.
+Uma vez escolhidos quais serão os caracteres usados no estudo,
+precisamos fazer as medidas e representar esses dados de forma
+conveniente.
+Existem diversas formas de tomar dados quantitativos, para distâncias
+podemos usar paquímetros, réguas, programas de computador que podem
+obter distâncias de imagens bidimensionais ou representações
+tridimensionais, digitalizadores digitais; além disso, podemos tomar
+medidas como peso, com uma balança; expressão gênica, quantidade de
+RNA mensageiro, concentração de proteínas, atividade enzimática, todos
+com técnicas de biologia molecular; pigmentação ou brilho podem ser
+quantificados digitalmente.
+Todos esses dados representam medias continuas, potencialmente
+herdáveis, que portanto podem ser estudadas dentro do paradigma da
+genética quantitativa.
 
-##Correlação de Vetores
+Com os dados em mão, podemos representá-los matematicamente.
+A maneira mais conveniente de fazer isso é utilizando o conceito de um vetor.
+A figura \ref{vetores} ilustra a representação de um par de medidas
+utilizando um vetor bidimensional.
+A partir dessa abstração, podemos construir uma teoria bastante completa.
 
-Com comparar vetores?
-Correlação de vetores, ângulo entre vetores, Pitágoras em dimensão alta.
+![Representação de medidas reais na forma vetorial. Vemos duas
+medidas de tamanho linear de ossos do braço representadas num vetor.
+\label{vetores}](./figuras/medidas-vetores.png)
+
+No plano $(x,y)$ representado na figura \ref{vetores}, podemos
+representar qualquer combinação de tamanhos do braço e do antebraço.
+Por exemplo, na convenção da figura \ref{vetores}, um individuo com
+15 cm de braço e 20 cm de antebraço é representando pelo vetor $(20,
+15)$.
+Qualquer fenótipo do tamanho desses dois ossos pode ser descrito por um
+par de números.
+Como todos os fenótipos possíveis estão representados nesse plano, ele
+é chamado de morfoespaço.
+
+No morfoespaço bidimensional, ou mesmo tridimensional, os vetores
+representando os fenótipos podem ser visualizados com facilidade.
+Porém, em genética quantitativa, é comum trabalharmos com um número
+muito maior de medidas, chegando até centenas variáveis observadas em
+cada indivíduo.
+Ainda assim, podemos continuar representando nossos indivíduos por
+vetores, agora compostos por muito mais números, representando todas as
+medidas tomadas.
+Para 4 medidas, por exemplo, os vetores são listas de 4 números,
+como $(4.94, 9.94, 15.11, 20.17)$, cada um representando um dado
+caráter de um indivíduo.
+O morfoespaço nesse caso seria um hiperplano com 4 dimensões.
+
+Vetores podem representar também mudanças em fenótipos.
+Suponha que a média bivariada de uma população tenha se alterado
+entre os momentos a e b, passando de $\overline z_a=(10, 50)$ para $\overline z_b=(15, 47)$.
+Essa mudança pode ter uma série de motivos, um episodio de seleção
+direcional ou um gargalo populacional, por exemplo.
+Podemos representar essa mudança na média como um vetor:
+
+$$
+\overline z_b - \overline z_a = \Delta \overline z_{ba} = (15, 47)_b - (10, 50)_a = (5, -3)
+$$
+
+Ou seja, o primeiro caráter aumentou em 5 unidades na sua média,
+enquanto o segundo caráter diminuiu em 3 unidades.
+O vetor de mudança, $\Delta \overline z$, representa matematicamente o
+evento evolutivo.
+
+##Comparação de Vetores
+
+Frequentemente estaremos interessados em comparar vetores. 
+Por exemplo, será que as mudanças nas médias de duas populações
+foram na mesma direção do morfoespaço?
+Caso não tenham sido, quão diferentes são elas?
+Nas próximas seções, veremos casos onde essas perguntas aparecem de
+forma bastante natural em outros contextos.
+Para isso, precisamos de uma forma de comparar vetores, tanto em suas
+magnitude quando em suas direção.
+A figura \ref{deltazes} mostra algumas possibilidades para as
+diferenças entre vetores de mudanças evolutivas de duas populações.
+
+![Possíveis mudanças nas médias de duas populações. No caso
+(a) magnitudes de mudança iguais mas direções diferentes. (b)
+direções iguais mas magnitudes diferentes e (c) magnitudes e direções
+diferentes.\label{deltazes}](./figuras/deltazes.png)
+
+Vemos, então, que uma forma natural de comparar vetores é
+representando-os pela sua magnitude e direção.
+
+###Magnitude ou norma de vetores
+
+Para calcular a magnitude de um vetor, podemos nos valer da teorema de
+Pitágoras para triângulos retângulos (figura \ref{pitagoras}).
+Para um vetor $\Delta z$ com componentes $(\Delta z_x, \Delta z_y)$,
+podemos calcular sua norma (ou magnitude) $|\Delta z|$ como:
+
+$$
+|\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2}
+$$
+
+
+A boa notícia é que essa formula continua valendo para dimensionalidades altas.
+Suponha que queiramos calcular a norma de um vetor em 4 dimensões
+$\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)$.
+A conta seria simplesmente:
+
+$$
+|\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2+ \Delta z_z^2 + \Delta z_w^2}
+$$
+
+Para um vetor de dimensionalidade arbitraria $\mathbf{x} = (x_1, x_2,
+\cdots, x_n)$, sua norma pode ser expressa como:
+
+$$           
+|\mathbf{x}| = \sqrt{\sum_{i=1}^n x_i^2}
+$$
+
+![Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras. \label{pitagoras}](./figuras/pitagoras.png)
+
+###Correlação de vetores
+
+Além de comparações de magnitudes, podemos comparar vetores pelo
+angulo formado entre eles, ou seja, a diferença em suas direções.
+Uma escala bastante conveniente é a do cosseno do angulo formado entre
+dois vetores.
+Caso eles tenham a mesma direção, o cosseno do angulo entre eles é
+um, caso eles tenham direções completamente ortogonais, ou seja, um
+angulo de 90 graus entre deles, o cosseno do angulo é zero.
+Caso os vetores apontem para direções opostas, formando um angulo de
+180 graus, o cosseno do angulo entre eles é -1.
+O cosseno do angulo entre dois vetores também é chamado de
+correlação de vetores.
+Para calcular o cosseno do angulo entre dois vetores a partir de
+suas componentes, devemos fazer uso da lei dos cossenos (figura
+\ref{leidoscossenos}).
+Utilizando a notação da figura \ref{leidoscossenos}, a correlação
+entre os vetores $\Delta z_1 = (x_1, y_1)$ e $\Delta z_2 = (x_2, y_2)$
+seria:
+
+$$
+Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(x_1  x_2) + (y_1  y_2)}{|\Delta z_1|  |\Delta z_2|} = \frac{(x_1  x_2) + (y_1  y_2)}{\sqrt{x_1^2 + y_1^2}  \sqrt{x_2^2 + y_2^2}} 
+$$
+
+Em outras palavras, o cosseno do angulo $\alpha$ é calculado como a
+soma dos produtos cruzados entre os dois vetores dividido pela sua
+norma.
+O termo de soma dos produto cruzados, $(x_1 x_2) + (y_1 y_2)$, é
+conhecido como o produto escalar entre dos vetores, e pode ser
+generalizado para um numero arbitrário de dimensões.
+Para dois vetores $\mathbf{x} = (x_1, x_2, \cdots, x_n)$ e $\mathbf{y} =
+(y_1, y_2, \cdots, y_n)$, o seu produto escalar é:
+
+$$
+\mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^n x_iy_i
+$$
+
+Com isso, podemos definir a correlação de vetores de qualquer dimensão como:
+
+$$
+Corr(\mathbf{x}, \mathbf{y}) = \frac{\mathbf{x} \cdot \mathbf{y}}{|\mathbf{x}||\mathbf{y}|}
+$$
+
+
+![Utilizando a lei dos cossenos para calcular o
+cosseno do angulo $\alpha$ entre dois vetores
+\label{leidoscossenos}](./figuras/leidoscossenos.png)
+
+
+
+###Normalização de vetores
+
+
+
 
 ##Variâncias, Covariâncias e Correlações
 
