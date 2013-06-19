@@ -240,11 +240,16 @@ $$
 
 ###Um caráter
 
+REESCREVER
+
 Variação é o combustível da evolução, queimado nas fogueiras da seleção (WOOA!).
 Quantificar variação é uma tarefa complicada.
 Mesmo trabalhando com apenas um caráter, existem muitas possibilidades.
+
+REESCREVER
+
 A variância é uma medida comum, que quantifica desvios de cada
-individuo em relação à média global.
+indivíduo em relação à média global.
 A variância de um caráter contínuo $z$, expresso em uma população
 com $n$ indivíduos $z_1$ a $z_n$, e média $\overline z$, é dada por:
 
@@ -252,33 +257,38 @@ $$
 var(z) = \frac{1}{n-1}\sum_{i=1}^n (z_i - \overline z)^2
 $$
 
-O procedimento para calculo da variância é, então, bastante simples,
+O procedimento para calculo da variância é, então, bastante simples:
 basta calcular a diferença de cada indivíduo da média, elevar essas
-diferenças ao quadrado, e somar tudo.
+diferenças ao quadrado, e somar todas.
 
 Como as diferenças da média são elevadas ao quadrado, a variância
 tem unidades quadráticas em relação às unidades iniciais.
-Ou seja, se estamos trabalhando com distâncias e medindo os caracteres
+Ou seja, se estamos trabalhando com distâncias, e medindo os caracteres
 em cm, a variância tem unidades de cm$^2$.
 Alternativamente, podemos trabalhar com a raiz quadrada da variância,
 chamada desvio padrão, que tem unidades iguais às medidas originais e
 frequentemente é mais simples de ser interpretada intuitivamente.
 Em uma distribuição normal, 95% dos indivíduos se encontra a uma
-distância de no máximo 2 desvios padrões da média.
+distância de, no máximo, 2 desvios padrões da média.
 Ainda outra possibilidade, caso queiramos comparar populações com
 escalas muito distintas, é medir variação em uma escala adimensional.
 Um exemplo de estatística adimensional de variação é o coeficiente
 de variação, que nada mais é que a razão entre o desvio padrão e a
 média da população.
 Para caracteres ósseos de mamíferos, esperamos um coeficiente de
-variação de no máximo 0.1, ou seja, o desvio padrão é cerca de 10%
+variação por volta de 0.1, ou seja, o desvio padrão é cerca de 10%
 dá média.
 Essas regras gerais podem ser bastante úteis quando confrontados
 com dados pela primeira vez, pois permitem rapidamente identificar
-particularidades ou detectar erros nas medidas.
+particularidades ou erros nas medidas.
 
 ###Mais de um caráter
 
+Quando trabalhamos com mais de um caráter, além de quantificar a
+variância individual de cada um, devemos também medir a interação
+entre eles.
+Esse tipo de medida é fundamental no estudo de modularidade, como
+veremos nas próximas seções.
 Como a variação entre vários caracteres pode ser estruturada.
 Diferença entre covariância e correlação.
 
@@ -300,6 +310,8 @@ $R = h^2S$
 
 ##Herdabilidade
 
+###Partição de variância
+
 ###Efeitos genéticos
 
 Valor média do alelo, efeitos aditivos, efeitos de dominância e epistasia.
@@ -318,7 +330,7 @@ $\Delta z = G\beta$
 
 ###Matriz Fenotípica
 
-#Modularidade e Integração
+#Modularidade e Integração 
 
 Na imensa maioria dos organismos, conseguimos identificar partes
 relativamente discretas e separadas, frequentemente envolvidas no
