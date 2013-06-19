@@ -5,17 +5,22 @@
 
 #Introdução
 
-<!--Isso é um comentário, não vai aparecer no arquivo final-->
-<!--Exemplo de figura:-->
-<!--![Legenda da figura \label{nomedafigura}](./figuras/cranio02.png)-->
-<!--Ai no texto vc pode se referir a figura como \ref{nomedafigura}-->
-
-<!--Exemplo de referencia:-->
-<!--Wagner e Falconer é legal [@Wagner1984; @Falconer1996]-->
-
 O objetivo dessa apostila é explorar os princípios da genética
 quantitativa, passando pelos tipos de dados tratados, sua descrição
 analise, e como isso se insere na teoria evolutiva moderna.
+
+#Fundamentos da Genética Quantitativa
+
+A teoria da Genética Quantitativa refere-se à herança de caracteres contínuos nos quais as diferenças entre indivíduos são quantitativas em vez de qualitativas.
+Como exemplo, podemos pensar no caráter "altura" em uma determinada população e verificar que possuí uma distribuição contínua de valores individuais e não apenas tipos distintos separados em classes bem definidas (como textura por exemplo, lisa ou rugosa).  A compreensão da herança dos caracteres contínuos é de fundamental importância para a teoria evolutiva, pois diferenças individuais quantitativas constituem a base na qual a seleção natural pode atuar para promover mudanças entre gerações de uma população.
+Os princípios da teoria foram desenvolvidos por volta da década de 1920 em resposta a uma histórica controvérsia na teoria evolutiva referente à aparente incompatibilidade entre a genética mendeliana e a escola biométrica.
+A primeira lidava com a herança de caracteres discretos por meio da segregação independente dos alelos de um ou mais loci e o cálculo de razões mendelianas para expressar as proporções de diferentes genótipos da prole gerada a partir de combinações particulares de genótipos parentais.Os mendelianos defendiam que o aparecimento de novas macromutações (mutações de grande efeito) propiciava variação nos caracteres discretos e sua evolução. 
+Já a escola biométrica, liderada por Karl Pearson e W.F.R. Weldon, focava na herança de caracteres contínuos e na ideia de evolução como resultado da seleção natural atuando em sua distribuição. Pearson elaborou diversos métodos para se estudar a variação de caracteres contínuos, como as teorias de regressão e de correlação, dando início a ciência da estatística. O grande debate entre as duas linhas de pensamento recaia sobre a dúvida de os caracteres discretos possuírem as mesmas propriedades de hereditariedade e evolução que os caracteres contínuos.
+A reconciliação foi alcançada pelos trabalhos independentes de Ronald Fisher, J.B.S. Haldane e Sewall Wright na elaboração da Síntese Moderna da teoria evolutiva. Fisher (1918) demonstrou que os resultados obtidos pelos biometricistas podiam ser derivados de princípios mendelianos postulando a existência de múltiplos alelos atuando sobre um único caráter. Nesse artigo, ele introduz o conceito de partição de variância, que permite a discriminação de efeitos genéticos e ambientais na distribuição dos caracteres, extensivamente utilizado na genética quantitativa. 
+
+Aqui inserir a figura dos vários alelos dando uma distribuição contínua de coloração.
+
+     
 
 #Caracteres Contínuos
 
