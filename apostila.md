@@ -258,8 +258,9 @@ var(z) = \frac{1}{n-1}\sum_{i=1}^n (z_i - \overline z)^2
 $$
 
 O procedimento para calculo da variância é, então, bastante simples:
-basta calcular a diferença de cada indivíduo da média, elevar essas
-diferenças ao quadrado, e somar todas.
+basta calcular a diferença de cada indivíduo da média, elevar
+essas diferenças ao quadrado, somar todas e dividir pelo número de
+indivíduos menos um.
 
 Como as diferenças da média são elevadas ao quadrado, a variância
 tem unidades quadráticas em relação às unidades iniciais.
@@ -289,8 +290,59 @@ variância individual de cada um, devemos também medir a interação
 entre eles.
 Esse tipo de medida é fundamental no estudo de modularidade, como
 veremos nas próximas seções.
-Como a variação entre vários caracteres pode ser estruturada.
-Diferença entre covariância e correlação.
+
+De forma análoga ao calculo da variância, a covariância mede a
+variação conjunta de dois caracteres.
+Para dois caráteres $z_1$ e $z_2$, expressos em uma população com
+$n$ indivíduos, com médias $\overline z_1$ e $\overline z_2$, a
+covariância entre eles é dada por:
+
+$$
+cov(z_1, z_2) = \frac{1}{n-1} \sum_{i=1}^n (z_{1i} - \overline z_1)(z_{2i} - \overline z_2)
+$$
+
+Ou seja, a média do produto entre as diferenças da média para
+os caracteres de cada indivíduo.
+
+Se os desvios da média dos dois caracteres forem na mesma direção, ou
+seja, se um crescer ou diminuir junto com o outro em cada indivíduo, a
+covariação será alta.
+Ou, se os desvios forem em direções opostas, com um aumentando e o
+outro diminuindo, a covariação será negativa.
+Se, ainda, os desvios não tiverem relação nenhuma, desvios
+coordenados e opostos tendem a se cancelar, e a covariação será
+próxima de zero.
+
+Suponha agora que estivéssemos estudando um grande numero de caracteres
+métricos, numerados de $1$ a $p$, que descrevem de forma completa
+alguma estrutura anatômica.
+O fenótipo de cada um dos $n$ indivíduos da população estudada pode ser
+representado por um vetor $\mathbf{z}_j = (z_{1j}, z_{2j}, \cdots, z_{pj})$.
+Como podemos descrever a variação nessa população?
+Primeiro, calculamos o vetor de médias da população,
+$\mathbf{\overline z} = (\overline z_1, \overline z_2, \cdots, \overline z_p)$, onde:
+
+$$
+\overline z_i = \frac{1}{n} \sum_{j=1}^n z_{ij}
+$$
+
+Lembre-se que $z_{ij}$ significa o caráter $i$ do indivíduo $j$.
+
+Com as médias, podemos calcular a variância de cada caráter na população:
+
+$$
+var(z_i) = \frac{1}{n-1} \sum_{j=1}^n (z_{ij} - \overline z_i)^2
+$$
+
+E, como são muitos caracteres, devemos também calcular a covariâncias entre eles:
+
+$$
+cov(z_i, z_k)_{i \ne k} = \frac{1}{n-1} \sum_{j=1}^n (z_{ij} - \overline z_i)(z_{kj} - \overline z_k)
+$$
+
+Vale notar que a formula da covariância se torna igual a da variância quando $i=k$.
+
+
 
 ##Matrizes
 
