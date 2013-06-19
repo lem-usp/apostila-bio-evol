@@ -340,9 +340,14 @@ $$
 cov(z_i, z_k)_{i \ne k} = \frac{1}{n-1} \sum_{j=1}^n (z_{ij} - \overline z_i)(z_{kj} - \overline z_k)
 $$
 
-Vale notar que a formula da covariância se torna igual a da variância quando $i=k$.
+Vale notar que a fórmula da covariância se torna igual a da variância quando $i=k$.
 
 
+###Correlação
+
+Assim como no caso da variância, a covariância sofre efeitos da escala da medida em questão.
+Caracteres maiores tendem a ter covariâncias mais altas que caracteres menores.
+Para contornar esse problema e 
 
 ##Matrizes
 
