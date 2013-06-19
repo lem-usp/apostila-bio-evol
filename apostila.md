@@ -53,7 +53,8 @@ que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
 quantitativa.
 
-Aqui inserir a figura dos vários alelos dando uma distribuição contínua de coloração.
+![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
+
 
 #Caracteres Contínuos
 
