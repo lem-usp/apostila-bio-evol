@@ -384,9 +384,15 @@ Vale notar que a fórmula da covariância se torna igual a da variância quando 
 
 ###Correlação
 
-Assim como no caso da variância, a covariância sofre efeitos da escala da medida em questão.
-Caracteres maiores tendem a ter covariâncias mais altas que caracteres menores.
-Para contornar esse problema e 
+Assim como no caso da variância, a covariância sofre efeitos da escala
+da medida em questão.
+Caracteres maiores tendem a ter covariâncias mais altas que caracteres
+menores.
+Para contornar esse problema, podemos escalonar as covariâncias
+pelas variâncias, dividindo a covariância pela raiz do produto das
+variâncias.
+Como ambas as quantidades são representadas em unidades quadráticas, a
+estatística resultante, chamada correlação, é adimensional.
 
 ##Matrizes
 
