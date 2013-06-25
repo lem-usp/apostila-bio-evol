@@ -391,8 +391,21 @@ menores.
 Para contornar esse problema, podemos escalonar as covariâncias
 pelas variâncias, dividindo a covariância pela raiz do produto das
 variâncias.
+
+$$
+Corr(x, y) = \frac{cov(x, y)}{\sqrt(var(x)var(y))} = \frac{\sum_{i=1}^n (x_i - \overline x)(y_i - \overline y)}{(\sum_{j=1}^n (x_j - \overline x)^2\sum_{j=1}^n(y_j - \overline y)^2)^{1/2}}
+$$
+
+
 Como ambas as quantidades são representadas em unidades quadráticas, a
-estatística resultante, chamada correlação, é adimensional.
+estatística resultante, chamada correlação, é adimensional e varia de -1 a 1.
+Correlação zero indica que as variáveis não tem relação linear,
+enquanto correlação de 1 ou -1 indica total dependência entre
+as variáveis, variando da mesma direção no caso de correlação
+positiva, e variando em sentido oposto no caso de correlação negativa.
+Por ser adimensional e sempre variar entre -1 e 1, a correlação
+pode ser comparada entre pares de caracteres ou entre populações
+diferentes.
 
 ##Matrizes
 
