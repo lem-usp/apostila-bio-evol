@@ -474,6 +474,150 @@ $$
 
 ##Operações com Matrizes
 
+Para trabalhar com matrizes, precisamos relembrar algumas regras de operação matricial.
+A mais simples é a soma de matrizes, que é feita simplesmente somando os elementos equivalentes.
+Para somar matrizes duas matrizes $\mathbf{A}$ e $\mathbf{B}$, elas devem ter a mesma dimensão.
+Por exemplo, se $\mathbf{A}$ e $\mathbf{B}$ forem matrizes $2$ por $2$:
+
+$$
+\mathbf{A} + \mathbf{B} =
+\left (
+\begin{matrix}
+A_{11} & A_{12}\\
+A_{21} & A_{22}  \\
+\end{matrix}
+\right )
++
+\left (
+\begin{matrix}
+B_{11} & B_{12}\\
+B_{21} & B_{22}  \\
+\end{matrix}
+\right )
+=
+ \left (
+\begin{matrix}
+A_{11}+B_{11} & A_{12}+B_{12}\\
+A_{21}+B_{21} & A_{22}+B_{22} \\
+\end{matrix}
+\right )
+$$
+
+Outra operação comum é a de multiplicação de matrizes.
+Essa operação já é mais complicada, e NÃO se resume apenas a
+multiplicar os elementos equivalentes.
+Na multiplicação de matrizes, uma dada posição é definida como
+o produto escalar entre a linha equivalente da primeira matriz com a
+coluna da segunda.
+Ou seja, a posição $ij$ da matriz produto é o poduto escalar da linha
+$i$ da primeira matriz com a coluna $j$ da segunda.
+Para que essa operação seja possivel, a primeira matriz deve ter o
+mesmo numero que linhas que a segunda tenha de colunas.
+A matriz desultante terá o mesmo numero de linhas que a primeira e o
+mesmo numero de colunas que a segunda.
+Se $\mathbf{A}$ for uma matriz $3$ por $2$ e $\mathbf{B}$ uma matriz $2$
+por $3$, o produto entre elas seria a seguinte matrix $3$ por $3$:
+
+$$
+\mathbf{A}\mathbf{B} =
+\left (
+\begin{matrix}
+A_{11} & A_{12} \\
+A_{21} & A_{22}  \\
+A_{31} & A_{32} \\
+\end{matrix}
+\right )
+\left (
+\begin{matrix}
+B_{11} & B_{12} & B_{13} \\
+B_{21} & B_{22} & B_{23} \\
+\end{matrix}
+\right )
+=
+\left (
+\begin{smallmatrix}
+A_{11}B_{11} +  A_{12}B_{21} & A_{11}B_{12} +  A_{12}B_{22} & A_{11}B_{13} +  A_{12}B_{23} \\
+A_{21}B_{11} +  A_{22}B_{21} & A_{21}B_{12} +  A_{22}B_{22} & A_{21}B_{13} +  A_{22}B_{23} \\
+A_{31}B_{11} +  A_{32}B_{21} & A_{31}B_{12} +  A_{32}B_{22} & A_{31}B_{13} +  A_{32}B_{23} \\
+\end{smallmatrix}
+\right )
+$$
+
+Na verdade, o caso mais interessante para nós será o de
+multiplicação de uma matriz por um vetor, que pode ser pensado como
+uma matriz de uma coluna.
+A mesma regra vale, e temos, para uma matriz $\mathbf{A}$ e um vetor $\mathbf{x}$:
+
+$$
+\mathbf{A}\mathbf{x}  =
+\left (
+\begin{matrix}
+A_{11} & A_{12} & A_{13}\\
+A_{21} & A_{22} & A_{23} \\
+A_{31} & A_{32} & A_{33}\\
+\end{matrix}
+\right )
+\left (
+\begin{matrix}
+x_{1}  \\
+x_{2}   \\
+x_{3}  \\
+\end{matrix}
+\right )
+=
+\left (
+\begin{matrix}
+A_{11}x_{1} +  A_{12}x_{2} +  A_{13}x_{3}\\
+A_{21}x_{1} +  A_{22}x_{2} +  A_{22}x_{3}\\
+A_{31}x_{1} +  A_{32}x_{2} +  A_{32}x_{3}\\
+\end{matrix}
+\right )
+$$
+
+Uma última operação importante, que geralmente é feita de forma
+exclusivamente computacional, devido à sua dificuldade operacional, é
+a de inversão de matrizes.
+A inversão permite definir o análogo matricial de divisão.
+A inversa de uma matriz $\mathbf{A}$ é denominada $\mathbf{A}^{-1}$ e definida pela propriedade:
+
+$$
+\mathbf{A}\mathbf{A}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}
+$$
+
+onde $\mathbf{I}$ representa a matriz identidade, que tem apenas 1 na
+diagonal e zero fora dela.
+A matriz identidade é o elemento neutro da multiplicação de matrizes, ou seja:
+
+$$
+\mathbf{A}\mathbf{I} = \mathbf{I}\mathbf{A} = \mathbf{A}
+$$
+
+Isso é exatamente análogo à divisão nos numero reais, por exemplo:
+
+$$
+aa^{-1} = a^{-1}a = a\frac{1}{a} = 1
+$$
+
+como exercicio, verifique que as seguintes matrizes são inversa uma da outra:
+
+$$
+\left (
+\begin{matrix}
+1 & 2 \\
+2 & 1 \\
+\end{matrix}
+\right )
+\text{ e }
+\left (
+\begin{matrix}
+-1/3 & 2/3 \\
+2/3 & -1/3 \\
+\end{matrix}
+\right )
+$$
+
+
+
 ##Comparação de Matrizes
 
 Comparando padrões e estruturas.
