@@ -396,7 +396,6 @@ $$
 Corr(x, y) = \frac{cov(x, y)}{\sqrt(var(x)var(y))} = \frac{\sum_{i=1}^n (x_i - \overline x)(y_i - \overline y)}{(\sum_{j=1}^n (x_j - \overline x)^2\sum_{j=1}^n(y_j - \overline y)^2)^{1/2}}
 $$
 
-
 Como ambas as quantidades são representadas em unidades quadráticas, a
 estatística resultante, chamada correlação, é adimensional e varia de -1 a 1.
 Correlação zero indica que as variáveis não tem relação linear,
@@ -407,9 +406,73 @@ Por ser adimensional e sempre variar entre -1 e 1, a correlação
 pode ser comparada entre pares de caracteres ou entre populações
 diferentes.
 
+Vale ressaltar que, caso as médias das variáveis sejam zero, a formula
+apresentada para correlação entre medidas se reduz à formula de correlação ou
+cosseno entre vetores, justificando o uso do mesmo nome para a
+correlação entre medidas e a correlação de vetores.
+
 ##Matrizes
 
-Organizando as descrições de variação em matrizes.
+Variâncias, covariâncias e correlações são formas de descrever a
+variação de caracteres morfológicos, e, frequentemente, estudamos um
+grande número de caracteres descrevendo uma estrutura complexa.
+Como podemos organizar todas essas estatísticas de forma a representar a
+variação de uma estrutura formada de vários caracteres?
+A representação matricial resolve esse problema, além de fornecer
+muitas facilidades matemáticas e computacionais no estudo da variação em
+populações biológicas.
+
+Suponha que estejamos trabalhando com dois caráteres, $x$ e $y$, medidos em
+uma população qualquer que descrevem uma estrutura $z$.
+Após a medição, calculamos as médias, $\overline x$ e $\overline
+y$, as variâncias, $var(x)$ e $var(y)$, e, por fim, as covariâncias e
+correlações $cov(x, y)$ e $corr(x, y)$.
+Como esses dados seriam representados?
+As médias seriam um vetor $\overline z = (\overline x, \overline y)$.
+Já as variâncias e covariâncias seriam organizadas em uma matriz,
+chamada matriz de variância-covariância, ou, simplesmente, matriz de
+covariância.
+A estrutura dessa matriz seria:
+
+$$
+Var(z) = \left (
+\begin{smallmatrix}
+var(x) & cov(x, y) \\
+cov(x,y) & var(y)  \\
+\end{smallmatrix}
+\right )
+$$
+
+Ou seja, na diagonal, temos as variâncias de cada medida, e, fora da
+diagonal, as covariâncias.
+A matriz de correlação tem exatamente a mesma forma, porem com $1$ na
+diagonal, representando a correlação de uma medida com ela mesma.
+
+$$
+Corr(z) = \left (
+\begin{smallmatrix}
+1 & corr(x, y) \\
+corr(x,y) & 1  \\
+\end{smallmatrix}
+\right )
+$$
+
+Essas representações de estendem trivialmente para dimensões mais altas.
+Por exemplo, se medirmos $p$ distâncias de uma estrutura $z = (z_1, z_2, \cdots, z_n)$,
+sua matriz de covariância seria:
+
+$$
+Var(z) = \left (
+\begin{matrix}
+var(z_1) & cov(z_1, z_2) & \cdots & cov(z_1, z_p) \\
+cov(z_1, z_2) & var(z_2) & \cdots & cov(z_2, z_p) \\
+\vdots & \vdots  & \ddots & \vdots                \\
+cov(z_1, z_p) & cov(z_1, z_p) & \cdots & var(z_p) \\
+\end{matrix}
+\right )
+$$
+
+##Operações com Matrizes
 
 ##Comparação de Matrizes
 
@@ -445,7 +508,7 @@ $\Delta z = G\beta$
 
 ###Matriz Fenotípica
 
-#Modularidade e Integração 
+#Modularidade e Integração
 
 Na imensa maioria dos organismos, conseguimos identificar partes
 relativamente discretas e separadas, frequentemente envolvidas no
