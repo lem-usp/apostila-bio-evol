@@ -511,6 +511,8 @@ o produto escalar entre a linha equivalente da primeira matriz com a
 coluna da segunda.
 Ou seja, a posição $ij$ da matriz produto é o poduto escalar da linha
 $i$ da primeira matriz com a coluna $j$ da segunda.
+Isso significa que, em geral, $\mathbf{A}\mathbf{B}$ pode ser diferente
+de $\mathbf{B}\mathbf{A}$.
 Para que essa operação seja possivel, a primeira matriz deve ter o
 mesmo numero que linhas que a segunda tenha de colunas.
 A matriz desultante terá o mesmo numero de linhas que a primeira e o
