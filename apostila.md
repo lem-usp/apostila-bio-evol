@@ -398,7 +398,6 @@ $$
 Corr(x, y) = \frac{cov(x, y)}{\sqrt(var(x)var(y))} = \frac{\sum_{i=1}^n (x_i - \overline x)(y_i - \overline y)}{(\sum_{j=1}^n (x_j - \overline x)^2\sum_{j=1}^n(y_j - \overline y)^2)^{1/2}}
 $$
 
-
 Como ambas as quantidades são representadas em unidades quadráticas, a
 estatística resultante, chamada correlação, é adimensional e varia de -1 a 1.
 Correlação zero indica que as variáveis não tem relação linear,
@@ -409,9 +408,219 @@ Por ser adimensional e sempre variar entre -1 e 1, a correlação
 pode ser comparada entre pares de caracteres ou entre populações
 diferentes.
 
+Vale ressaltar que, caso as médias das variáveis sejam zero, a formula
+apresentada para correlação entre medidas se reduz à formula de correlação ou
+cosseno entre vetores, justificando o uso do mesmo nome para a
+correlação entre medidas e a correlação de vetores.
+
 ##Matrizes
 
-Organizando as descrições de variação em matrizes.
+Variâncias, covariâncias e correlações são formas de descrever a
+variação de caracteres morfológicos, e, frequentemente, estudamos um
+grande número de caracteres descrevendo uma estrutura complexa.
+Como podemos organizar todas essas estatísticas de forma a representar a
+variação de uma estrutura formada de vários caracteres?
+A representação matricial resolve esse problema, além de fornecer
+muitas facilidades matemáticas e computacionais no estudo da variação em
+populações biológicas.
+
+Suponha que estejamos trabalhando com dois caráteres, $x$ e $y$, medidos em
+uma população qualquer que descrevem uma estrutura $z$.
+Após a medição, calculamos as médias, $\overline x$ e $\overline
+y$, as variâncias, $var(x)$ e $var(y)$, e, por fim, as covariâncias e
+correlações $cov(x, y)$ e $corr(x, y)$.
+Como esses dados seriam representados?
+As médias seriam um vetor $\overline z = (\overline x, \overline y)$.
+Já as variâncias e covariâncias seriam organizadas em uma matriz,
+chamada matriz de variância-covariância, ou, simplesmente, matriz de
+covariância.
+A estrutura dessa matriz seria:
+
+$$
+Var(z) = \left (
+\begin{smallmatrix}
+var(x) & cov(x, y) \\
+cov(x,y) & var(y)  \\
+\end{smallmatrix}
+\right )
+$$
+
+Ou seja, na diagonal, temos as variâncias de cada medida, e, fora da
+diagonal, as covariâncias.
+A matriz de correlação tem exatamente a mesma forma, porem com $1$ na
+diagonal, representando a correlação de uma medida com ela mesma.
+
+$$
+Corr(z) = \left (
+\begin{smallmatrix}
+1 & corr(x, y) \\
+corr(x,y) & 1  \\
+\end{smallmatrix}
+\right )
+$$
+
+Essas representações de estendem trivialmente para dimensões mais altas.
+Por exemplo, se medirmos $p$ distâncias de uma estrutura $z = (z_1, z_2, \cdots, z_n)$,
+sua matriz de covariância seria:
+
+$$
+Var(z) = \left (
+\begin{matrix}
+var(z_1) & cov(z_1, z_2) & \cdots & cov(z_1, z_p) \\
+cov(z_1, z_2) & var(z_2) & \cdots & cov(z_2, z_p) \\
+\vdots & \vdots  & \ddots & \vdots                \\
+cov(z_1, z_p) & cov(z_1, z_p) & \cdots & var(z_p) \\
+\end{matrix}
+\right )
+$$
+
+##Operações com Matrizes
+
+Para trabalhar com matrizes, precisamos relembrar algumas regras de operação matricial.
+A mais simples é a soma de matrizes, que é feita simplesmente somando os elementos equivalentes.
+Para somar matrizes duas matrizes $\mathbf{A}$ e $\mathbf{B}$, elas devem ter a mesma dimensão.
+Por exemplo, se $\mathbf{A}$ e $\mathbf{B}$ forem matrizes $2$ por $2$:
+
+$$
+\mathbf{A} + \mathbf{B} =
+\left (
+\begin{matrix}
+A_{11} & A_{12}\\
+A_{21} & A_{22}  \\
+\end{matrix}
+\right )
++
+\left (
+\begin{matrix}
+B_{11} & B_{12}\\
+B_{21} & B_{22}  \\
+\end{matrix}
+\right )
+=
+ \left (
+\begin{matrix}
+A_{11}+B_{11} & A_{12}+B_{12}\\
+A_{21}+B_{21} & A_{22}+B_{22} \\
+\end{matrix}
+\right )
+$$
+
+Outra operação comum é a de multiplicação de matrizes.
+Essa operação já é mais complicada, e NÃO se resume apenas a
+multiplicar os elementos equivalentes.
+Na multiplicação de matrizes, uma dada posição é definida como
+o produto escalar entre a linha equivalente da primeira matriz com a
+coluna da segunda.
+Ou seja, a posição $ij$ da matriz produto é o poduto escalar da linha
+$i$ da primeira matriz com a coluna $j$ da segunda.
+Isso significa que, em geral, $\mathbf{A}\mathbf{B}$ pode ser diferente
+de $\mathbf{B}\mathbf{A}$.
+Para que essa operação seja possivel, a primeira matriz deve ter o
+mesmo numero que linhas que a segunda tenha de colunas.
+A matriz desultante terá o mesmo numero de linhas que a primeira e o
+mesmo numero de colunas que a segunda.
+Se $\mathbf{A}$ for uma matriz $3$ por $2$ e $\mathbf{B}$ uma matriz $2$
+por $3$, o produto entre elas seria a seguinte matrix $3$ por $3$:
+
+$$
+\mathbf{A}\mathbf{B} =
+\left (
+\begin{matrix}
+A_{11} & A_{12} \\
+A_{21} & A_{22}  \\
+A_{31} & A_{32} \\
+\end{matrix}
+\right )
+\left (
+\begin{matrix}
+B_{11} & B_{12} & B_{13} \\
+B_{21} & B_{22} & B_{23} \\
+\end{matrix}
+\right )
+=
+\left (
+\begin{smallmatrix}
+A_{11}B_{11} +  A_{12}B_{21} & A_{11}B_{12} +  A_{12}B_{22} & A_{11}B_{13} +  A_{12}B_{23} \\
+A_{21}B_{11} +  A_{22}B_{21} & A_{21}B_{12} +  A_{22}B_{22} & A_{21}B_{13} +  A_{22}B_{23} \\
+A_{31}B_{11} +  A_{32}B_{21} & A_{31}B_{12} +  A_{32}B_{22} & A_{31}B_{13} +  A_{32}B_{23} \\
+\end{smallmatrix}
+\right )
+$$
+
+Na verdade, o caso mais interessante para nós será o de
+multiplicação de uma matriz por um vetor, que pode ser pensado como
+uma matriz de uma coluna.
+A mesma regra vale, e temos, para uma matriz $\mathbf{A}$ e um vetor $\mathbf{x}$:
+
+$$
+\mathbf{A}\mathbf{x}  =
+\left (
+\begin{matrix}
+A_{11} & A_{12} & A_{13}\\
+A_{21} & A_{22} & A_{23} \\
+A_{31} & A_{32} & A_{33}\\
+\end{matrix}
+\right )
+\left (
+\begin{matrix}
+x_{1}  \\
+x_{2}   \\
+x_{3}  \\
+\end{matrix}
+\right )
+=
+\left (
+\begin{matrix}
+A_{11}x_{1} +  A_{12}x_{2} +  A_{13}x_{3}\\
+A_{21}x_{1} +  A_{22}x_{2} +  A_{22}x_{3}\\
+A_{31}x_{1} +  A_{32}x_{2} +  A_{32}x_{3}\\
+\end{matrix}
+\right )
+$$
+
+Uma última operação importante, que geralmente é feita de forma
+exclusivamente computacional, devido à sua dificuldade operacional, é
+a de inversão de matrizes.
+A inversão permite definir o análogo matricial de divisão.
+A inversa de uma matriz $\mathbf{A}$ é denominada $\mathbf{A}^{-1}$ e definida pela propriedade:
+
+$$
+\mathbf{A}\mathbf{A}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}
+$$
+
+onde $\mathbf{I}$ representa a matriz identidade, que tem apenas 1 na
+diagonal e zero fora dela.
+A matriz identidade é o elemento neutro da multiplicação de matrizes, ou seja:
+
+$$
+\mathbf{A}\mathbf{I} = \mathbf{I}\mathbf{A} = \mathbf{A}
+$$
+
+Isso é exatamente análogo à divisão nos numero reais, por exemplo:
+
+$$
+aa^{-1} = a^{-1}a = a\frac{1}{a} = 1
+$$
+
+como exercicio, verifique que as seguintes matrizes são inversa uma da outra:
+
+$$
+\left (
+\begin{matrix}
+1 & 2 \\
+2 & 1 \\
+\end{matrix}
+\right )
+\text{ e }
+\left (
+\begin{matrix}
+-1/3 & 2/3 \\
+2/3 & -1/3 \\
+\end{matrix}
+\right )
+$$
+
+
 
 ##Comparação de Matrizes
 
@@ -477,7 +686,7 @@ $\Delta z = G\beta$
 
 ###Matriz Fenotípica
 
-#Modularidade e Integração 
+#Modularidade e Integração
 
 Na imensa maioria dos organismos, conseguimos identificar partes
 relativamente discretas e separadas, frequentemente envolvidas no
