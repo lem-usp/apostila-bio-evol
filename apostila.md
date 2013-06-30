@@ -6,14 +6,14 @@
 #Introdução
 
 O objetivo dessa apostila é explorar os princípios da genética
-quantitativa, passando pelos tipos de dados tratados, sua descrição
-analise, e como isso se insere na teoria evolutiva moderna.
+quantitativa, passando pelos tipos de dados tratados, sua descrição e
+análise, e como isso se insere na teoria evolutiva moderna.
 
-#Fundamentos da Genética Quantitativa
+#Fundamentos históricos da Genética Quantitativa
 
 A teoria da Genética Quantitativa refere-se à herança de caracteres
 contínuos, nos quais as diferenças entre indivíduos são
-quantitativas, e não qualitativas.
+quantitativas, e não qualitativas [@Falconer1996].
 Como exemplo, podemos pensar no caráter "altura" em uma determinada
 população, e verificar que ele possuí uma distribuição contínua de
 valores individuais, não apenas tipos distintos separados em classes
@@ -21,7 +21,7 @@ bem definidas (como textura por exemplo, lisa ou rugosa).
 A compreensão da herança dos caracteres contínuos é de fundamental
 importância para a teoria evolutiva, pois diferenças individuais
 quantitativas constituem a base na qual a seleção natural pode atuar
-e promover mudanças entre as gerações de uma população.
+e promover mudanças entre as gerações de uma população[@Falconer1996].
 Os princípios da teoria foram desenvolvidos por volta da década de
 1920, em resposta a uma histórica controvérsia na teoria evolutiva,
 referente à aparente incompatibilidade entre a genética mendeliana e a
@@ -41,26 +41,28 @@ Pearson elaborou diversos métodos para se estudar a variação de
 caracteres contínuos, como as teorias de regressão e de correlação.
 O grande debate entre as duas linhas de pensamento recaia sobre a
 dúvida de os caracteres discretos possuírem as mesmas propriedades de
-hereditariedade e evolução que os caracteres contínuos.
+hereditariedade e evolução que os caracteres contínuos[@Lynch1998].
 A reconciliação foi alcançada pelos trabalhos independentes de Ronald
 Fisher, J.B.S. Haldane e Sewall Wright, culminando na elaboração da Síntese
 Moderna da teoria evolutiva.
 Fisher (1918) demonstrou que os resultados obtidos pelos biometricistas
 podiam ser derivados de princípios mendelianos, postulando a existência
-de múltiplos alelos atuando sobre um único caráter.
+de múltiplos alelos atuando sobre um único caráter (Fig. 1).
 Nesse artigo, ele introduz o conceito de partição de variância,
 que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
-quantitativa.
+quantitativa. Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright demostraram que a seleção natural pode funcionar com os tipos de variação observados em populações naturais e com as leis de herança mendelianas [@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o aprofundamento dos estudos em genética de populações e genética quantitativa em temas macroevoutivos, como especiação por exemplo. 
 
 ![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
 
 
-#Caracteres Contínuos
+##Homologia dos caracteres contínuos
 
-Quais tipos de caracteres são usados na genética quantitativa?
-Como escolher caracteres?
-Homologia.
+Agora que sabemos o que são e como podem ser herdados os caracteres contínuos, podemos pensar em quais critérios podemos utilizar para escolher os caracteres em um estudo. É preciso garantir que as medidas que se realizam em um indivíduo (ou em indivíduos de uma espécie) representem os mesmos caracteres nos outros indivíduos (ou nos indivíduos das outras espécies, no caso de estudos macroevolutivos). Esse cuidado precisa ser tomado para que a variação que se observa nos dados (que é o foco dos estudos quantitativos) não tenha uma fonte a mais de erro referente a heterogeneidade de caracteres medidos entre indivíduos ou entre espécies. 
+O critério fundamental para garantirmos que são os mesmos caracteres em todos os indivíduos é o de homologia.
+Nós reconhecemos estruturas homólogas como homólogas por serem discretas e reconhecíveis em todos os indivíduos [@Zelditch]. Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira, podemos estudar diferenças em caracteres homólogos em um contexto evolutivo usando de informações de parentesco dos indivíduos amostrados.
+
+#Princípios matemáticos em Genética Quantitativa
 
 ##Distâncias e Vetores
 
@@ -415,31 +417,61 @@ Organizando as descrições de variação em matrizes.
 
 Comparando padrões e estruturas.
 
-#Equação do Criador
+#Seleção natural e Genética Quantitativa
 
-$R = h^2S$
+A teoria da genética quantitativa nos permite estudar a mudança evolutiva nos caracteres contínuos ao longo do tempo. Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e frequência de genótipos e as diferenças quantitativas observadas em caracteres contínuos.
+Essa conexão é realizada com a compreensão dos conceitos de valor genotípico e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de variância. Nas seções seguintes veremos a definição desses conceitos. 
 
-##Médias
+##Valores genotípico e fenotípico
 
-##Diferencial de Seleção
+O valor observado para um caráter medido em um indivíduo qualquer é o valor fenotípico desse indivíduo.
+Para podermos analisar as propriedades genéticas de populações temos que dividir o valor fenotípico em componentes 
 
-##Herdabilidade
+Para conseguirmos 
+
+##Um caráter: Equação do Criador
+
+Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção (S) e a herdabilidade (h^2) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador, em referência a criadores de animais e plantas que aplicavam seleção artificial (seleção da geração parental) com intuito de atingir melhoramentos em produtividade:
+
+$$
+R = h^2S
+$$
+
+###Médias
+
+Apesar de um episódio de seleção alterar as frequências alélicas do caráter, os efeitos da seleção passíveis de observação restringem-se às mudanças mensuradas na média da população. 
+Portanto, a resposta à seleção é uma diferença entre as médias fenotípicas do caráter na prole dos pais selecionados e na geração parental antes da seleção.
+
+###Diferencial de Seleção
+
+O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 5). 
+Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção. 
+A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter. 
+O diferencial de seleção padronizado é chamado de intensidade de seleção (i):
+
+$$
+S = i\sigma_P
+$$
+
+Inserir figura parent-offspring
+
+###Herdabilidade
+
+Olhando para a regressão pais-prole da figura 5, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
+
+
 
 ###Partição de variância
 
-###Efeitos genéticos
+##Mais de um caráter: Equação de Lande
 
-Valor média do alelo, efeitos aditivos, efeitos de dominância e epistasia.
-
-#A Equação de Lande
+Acabamos de entender como se estudar a resposta univariada à seleção natural com os conceitos de resposta fenotípica, diferencial de seleção e herdabilidade. Porém, a teoria da genética quantitativa também permite que estudemos a resposta multivariada à seleção natural, considerando vários caracteres (e subjacente a isso, vários loci) simultaneamente. A expansão da equação univariada para a multivariada foi elaborada por Russel Lande em seu artigo de 1979, apresentando a equação:
 
 $\Delta z = G\beta$
 
-##$\Delta z$
+###$\Delta z$
 
-##$\beta$
-
-##Matriz
+###$\beta$
 
 ###Matriz Genética
 
