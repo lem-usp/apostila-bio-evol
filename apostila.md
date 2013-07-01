@@ -51,7 +51,7 @@ de múltiplos alelos atuando sobre um único caráter (Fig. 1).
 Nesse artigo, ele introduz o conceito de partição de variância,
 que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
-quantitativa. Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright demostraram que a seleção natural pode funcionar com os tipos de variação observados em populações naturais e com as leis de herança mendelianas [@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o aprofundamento dos estudos em genética de populações e genética quantitativa em temas macroevoutivos, como especiação por exemplo. 
+quantitativa. Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright demonstraram que a seleção natural pode funcionar com os tipos de variação observados em populações naturais e com as leis de herança mendelianas [@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o aprofundamento dos estudos em genética de populações e genética quantitativa em temas macroevoutivos, como especiação por exemplo. 
 
 ![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
 
@@ -63,6 +63,8 @@ O critério fundamental para garantirmos que são os mesmos caracteres em todos 
 Nós reconhecemos estruturas homólogas como homólogas por serem discretas e reconhecíveis em todos os indivíduos [@Zelditch]. Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira, podemos estudar diferenças em caracteres homólogos em um contexto evolutivo usando de informações de parentesco dos indivíduos amostrados.
 
 #Princípios matemáticos em Genética Quantitativa
+
+Para podermos usar a teoria da Genética Quantitativa no estudo das propriedades genéticas e da evolução de caracteres contínuos em populações, precisamos lançar mão de certos princípios matemáticos relacionados com variação, como média, variância e covariância, e relacionados com a representação destes em um morfoespaço, como vetores e matrizes.
 
 ##Distâncias e Vetores
 
@@ -626,21 +628,75 @@ $$
 
 Comparando padrões e estruturas.
 
-#Seleção natural e Genética Quantitativa
+#Propriedades genéticas de populações
 
-A teoria da genética quantitativa nos permite estudar a mudança evolutiva nos caracteres contínuos ao longo do tempo. Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e frequência de genótipos e as diferenças quantitativas observadas em caracteres contínuos.
-Essa conexão é realizada com a compreensão dos conceitos de valor genotípico e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de variância. Nas seções seguintes veremos a definição desses conceitos. 
+A teoria da genética quantitativa nos permite estimar as propriedades genéticas de caracteres contínuos em populações. Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e frequência de genótipos e as diferenças quantitativas observadas em caracteres contínuos [@Falconer1996].
+Essa conexão é realizada com a compreensão dos conceitos de valores genotípico e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de variância. Nas seções seguintes veremos a definição desses conceitos. O texto a seguir foi adaptado de [@Falconer]. 
 
 ##Valores genotípico e fenotípico
 
 O valor observado para um caráter medido em um indivíduo qualquer é o valor fenotípico desse indivíduo.
-Para podermos analisar as propriedades genéticas de populações temos que dividir o valor fenotípico em componentes 
+Para podermos analisar as propriedades genéticas de populações temos que dividir o valor fenotípico em componentes atribuídos a diferentes causas: influência do genótipo e influência do ambiente (considerando todas as circunstâncias não-genéticas que influenciam o fenótipo).
+Podemos pensar que o genótipo confere um determinado valor de um caráter ao indivíduo e o ambiente causa um desvio desse valor: 
+$$
+P = G + E, 
+$$
+sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
+Assume-se que o desvio ambiental médio em uma população é  zero, considerando-se que os desvios individuais ocorrerm em diversas direções e se cancelam.
+Portanto, o valor médio fenotípico é equivalente ao valor médio genotípico em uma população.
+Essa derivação teórica é bastante relevante, pois permite que estudemos as propriedades genéticas das populações por meio de seus fenótipos, que é na prática o que pode ser mensurado nos indivíduos.
+A propósito de dedução dos conceitos de efeito médio de um alelo e valor de acasalamento, valores arbitrários foram determinados para os genótipos de um único locus com dois alelos A1 e A2: +a, valor genotípico do homozigoto A1A1; -a, valor do homozigoto A2A2; e finalmente d, valor do heterozigoto A1A2 (Fig.6).
 
-Para conseguirmos 
+Inserir figura dos valores genotípicos
+
+Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e conhecendo seus genótipos, podemos chegar nos seus valores genotípicos correspondentes. Por exemplo, digamos que o gene P determine o peso em uma determinada população de ratos e ao pesarmos uma amostra encontramos: P1P1 = 14g; P1P2 = 12g; e P2P2 = 6g. 
+Então, para calcularmos o ponto zero, temos que achar o valor intermediário entre os dois homozigotos: $(14 + 6)/2 = 10$. Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 = -4$; e o valor de d é: $12-10 = 2$. 
+Uma questão fundamental a se compreender sobre os valores médios populacionais é que eles dependem das frequências gênicas. 
+Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento aleatório), podemos calcular o valor médio populacional de um determinado caráter multiplicando as frequências genotípicas pelos valores genotípicos e somando os resultados para os três genótipos (Tabela 1). 
+
+Inserir tabela 1: dependência da média populacional das frequêncas gênicas
+
+-------------------------------------------------------------
+ Centered   Default           Right Left
+  Header    Aligned         Aligned Aligned
+----------- ------- --------------- ------------------------
+   First    row                12.0 Example of a row that
+                                    spans multiple lines.
+
+  Second    row                 5.0 Here's another one. Note
+                                    the blank line between
+                                    rows.
+-------------------------------------------------------------
+
+Podemos ver então que a contribuição de qualquer locus para a média populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e $2dpq$ atribuído aos heterozigotos. Se o alelo A1 fosse fixado na população ($p = 1$), a média populacional seria a; se o alelo A2 fosse fixado ($q = 1$), a média seria -a. 
+Vamos voltar ao exemplo do gene P que determina o peso nos ratos, e calcular a média populacional. Digamos que a frequência de P1 seja $p = 0,6$, e lembrando que $a = 4$ e $d = 2$, então:
+$$
+M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76
+$$
+
+Se o caráter peso fosse determinado por mais de um gene, teríamos que computar a contribuição de todos os loci e achar seu efeito combinado na média populacional. Supondo que essa combinação seja aditiva, ou seja, que o efeito de um locus sobre a média seja independente do efeito dos outros loci, a média populacional será:
+$$
+M = \Sigma_{a(p-q)} + 2\Sigma_{dpq}
+$$
+
+##Efeito médio de um alelo
+
+Para entendermos a herança de caracteres quantitativos, temos que lidar com a transmissão de valor dos pais para a prole.
+Isso não pode ser feito com o uso dos valores genotípicos somente, pois os pais passam seus genes para sua prole e não seu genótipo. 
+O efeito médio de um alelo é justamente uma medida associada com os genes e não com os genótipos. 
+Essa medida depende dos valores genotípicos, a e d, e também das frequências gênicas. 
+Trata-se, portanto, de uma propriedade não só dos genes, mas também da população.
+O efeito médio de um alelo particular é o valor médio dos indivíduos que receberam esse alelo de um dos pais descontado da média populacional, sendo o outro alelo proveniente ao acaso da população.
+Dito de uma outra maneira: vamos considerar um número de gametas carregando o alelo A1 unindo-se ao acaso com gametas da população. O genótipo médio produzido desvia da média populacional por uma quantidade que é o efeito médio do alelo A1.
+
+
+
+#Seleção Natural e Genética Quantitativa
+  
 
 ##Um caráter: Equação do Criador
 
-Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção (S) e a herdabilidade (h^2) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador, em referência a criadores de animais e plantas que aplicavam seleção artificial (seleção da geração parental) com intuito de atingir melhoramentos em produtividade:
+Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador, em referência a criadores de animais e plantas que aplicavam seleção artificial (seleção da geração parental) com intuito de atingir melhoramentos em produtividade:
 
 $$
 R = h^2S
@@ -653,7 +709,7 @@ Portanto, a resposta à seleção é uma diferença entre as médias fenotípica
 
 ###Diferencial de Seleção
 
-O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 5). 
+O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 7). 
 Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção. 
 A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter. 
 O diferencial de seleção padronizado é chamado de intensidade de seleção (i):
@@ -667,8 +723,6 @@ Inserir figura parent-offspring
 ###Herdabilidade
 
 Olhando para a regressão pais-prole da figura 5, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
-
-
 
 ###Partição de variância
 
