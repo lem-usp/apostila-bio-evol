@@ -714,18 +714,18 @@ somando os resultados para os três genótipos (Tabela 1).
 
 Tabela 1. Dependência da média populacional das frequências gênicas
 
---------------------------------------------------
-  Genótipo     Frequência      Valor     Freq. X Valor
+-------------------------------------------------------
+  Genótipo     Frequência      Valor      Freq. X Valor
 ----------- ----------------  -------   ---------------
-
  A1A1          $p^2$           +a         $p^2a$
                            
  A1A2          $2pq$            d         $2pqd$  
                          
  A2A2          $q^2$           -a         $-q^2a$
--------------------------------------------------------
                            
-                               $Soma =   a(p-q) + 2dpq$
+                                         Soma =
+					 $a(p-q)+2dpq$
+
 -------------------------------------------------------
 
 
