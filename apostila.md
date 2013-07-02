@@ -664,19 +664,18 @@ Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento aleat�
 
 Tabela 1. Dependência da média populacional das frequências gênicas
 
---------------------------------------------------
-  Genótipo     Frequência      Valor     Freq. X Valor
+--------------------------------------------------------
+  Genótipo     Frequência      Valor      Freq. X Valor
 ----------- ----------------  -------   ---------------
+A1A1          $p^2$             +a        $p^2a$
 
-A1A1        $p^2$             +a        $p^2a$
-                                   
-A1A2        $2pq$             d         $2pqd$  
-                                 
-A2A2        $q^2$             -a        $-q^2a$
--------------------------------------------------------
-                           
-                               $Soma =   a(p-q) + 2dpq$
--------------------------------------------------------
+A1A2          $2pq$             d         $2pqd$  
+
+A2A2          $q^2$             -a        $-q^2a$
+
+                                         Soma =
+                                         $a(p-q) + 2dpq$
+--------------------------------------------------------
 
 
 Podemos ver então que a contribuição de qualquer locus para a média populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e $2dpq$ atribuído aos heterozigotos. 
@@ -709,15 +708,19 @@ Tabela 2. Efeito médio dos alelos A1 e A2.
 
 -------------------------------------------------------------
 Tipo de		Valores e Freq.  Valor médio		Média pop. 		   
-gameta    dos genótipos    dos genótipos  a ser descontada
--------------------------------------------------------------
-					A1A1	A1A2	A2A2
+gameta    dos genótipos     dos genótipos  a ser descontada
+-------- ------------------ -------------- ------------------
+ A1A1	   		a		      $pa + qd$       $-qa + pd$
 
-					a			d			-a
--------------------------------------------------------------
-A1				p			q						$pa + qd$			$-[a(p-q) + 2dpq]$
+ A1A2	   		d   		 $-[a(p-q) +
+                                 2dpq]$   				
+ 
+ A2A2           -a                           $-[a(p-q) +
+                                                 2dpq]$
 
-A2							p			q			$-qa + pd$		$-[a(p-q) + 2dpq]$
+A1				p			q									
+
+A2				q   		p		               q					
 -------------------------------------------------------------
 
 O efeito médio de um alelo é representado pelo símbolo $\alpha_1$, para o alelo A1, e $\alpha_2$ para o alelo A2.
