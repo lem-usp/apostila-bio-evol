@@ -56,14 +56,14 @@ de múltiplos alelos atuando sobre um único caráter (Fig. 1).
 Nesse artigo, ele introduz o conceito de partição de variância,
 que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
-quantitativa. 
+quantitativa.
 Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright
 demonstraram que a seleção natural pode funcionar com os tipos de variação
 observados em populações naturais e com as leis de herança mendelianas
 [@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a
 biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
-temas macroevoutivos, como especiação por exemplo. 
+temas macroevoutivos, como especiação por exemplo.
 
 ![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
 
@@ -79,18 +79,18 @@ morfoespaço, como vetores e matrizes.
 
 Agora que temos uma noção do que são e como podem ser herdados os caracteres
 contínuos, podemos pensar em quais critérios podemos utilizar para escolher os
-caracteres em um estudo. 
+caracteres em um estudo.
 É preciso garantir que as medidas que se realizam em um indivíduo (ou em
 indivíduos de uma espécie) representem os mesmos caracteres nos outros
 indivíduos (ou nos indivíduos das outras espécies, no caso de estudos
 macroevolutivos). Esse cuidado precisa ser tomado para que a variação que se
 observa nos dados (que é o foco dos estudos quantitativos) não tenha uma fonte
 a mais de erro referente a heterogeneidade de caracteres medidos entre
-indivíduos ou entre espécies. 
+indivíduos ou entre espécies.
 O critério fundamental para garantirmos que são os mesmos caracteres em todos
 os indivíduos é o de homologia.
 Nós reconhecemos estruturas homólogas por serem discretas e reconhecíveis em
-todos os indivíduos [@Zelditch]. 
+todos os indivíduos [@Zelditch].
 Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira,
 podemos estudar diferenças em caracteres homólogos em um contexto evolutivo
 usando de informações de parentesco dos indivíduos amostrados.
@@ -656,14 +656,14 @@ Comparando padrões e estruturas.
 
 Antes de usarmos os princípios matemáticos acima descritos para estudarmos a
 herança e evolução dos caracteres contínuos em populações, vamos olhar as
-propriedades genéticas dos caracteres nas populações. 
+propriedades genéticas dos caracteres nas populações.
 Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e
 frequência de genótipos com as diferenças quantitativas observadas em
 caracteres contínuos [@Falconer1996].
 Essa conexão é realizada com a compreensão dos conceitos de valores genotípico
 e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de
-variância. Nas seções seguintes veremos as definições desses conceitos. 
-O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996]. 
+variância. Nas seções seguintes veremos as definições desses conceitos.
+O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996].
 
 ##Valores genotípico e fenotípico
 
@@ -674,9 +674,9 @@ dividir o valor fenotípico em componentes atribuídos a diferentes causas:
 influência do genótipo e influência do ambiente (considerando todas as
 circunstâncias não-genéticas que influenciam o fenótipo).
 Podemos pensar que o genótipo confere um determinado valor de um caráter ao
-indivíduo e o ambiente causa um desvio desse valor: 
+indivíduo e o ambiente causa um desvio desse valor:
 $$
-P = G + E, 
+P = G + E,
 $$
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
 Assume-se que o desvio ambiental médio em uma população é  zero,
@@ -689,110 +689,158 @@ propriedades genéticas das populações por meio de seus fenótipos, que é na
 prática o que pode ser mensurado nos indivíduos.
 A propósito de dedução dos conceitos de efeito médio de um alelo e valor de
 acasalamento, valores arbitrários foram determinados para os genótipos de um
-único locus com dois alelos A1 e A2: +a, valor genotípico do homozigoto A1A1;
--a, valor do homozigoto A2A2; e finalmente d, valor do heterozigoto A1A2
+único locus com dois alelos $A_1$ e $A_2$: +a, valor genotípico do homozigoto $A_1$$A_1$;
+-a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
 (Fig.6).
 
 Inserir figura dos valores genotípicos
 
 Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e
 conhecendo seus genótipos, podemos chegar nos seus valores genotípicos
-correspondentes. 
+correspondentes.
 Por exemplo, digamos que o gene P determine o peso em uma determinada população
-de ratos e ao pesarmos uma amostra encontramos: P1P1 = 14g; P1P2 = 12g; e P2P2
-= 6g. 
+de ratos e ao pesarmos uma amostra encontramos: $P_1$$P_1$ = 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$
+= 6g.
 Então, para calcularmos o ponto zero, temos que achar o valor intermediário
-entre os dois homozigotos: $(14 + 6)/2 = 10$. 
+entre os dois homozigotos: $(14 + 6)/2 = 10$.
 Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 =
--4$; e o valor de d é: $12-10 = 2$. 
+-4$; e o valor de d é: $12-10 = 2$.
 Uma questão fundamental a se compreender sobre os valores genotípico e
-fenotípico é que suas médias populacionais dependem das frequências gênicas. 
+fenotípico é que suas médias populacionais dependem das frequências gênicas.
 Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento
 aleatório), podemos calcular o valor médio populacional de um determinado
 caráter multiplicando as frequências genotípicas pelos valores genotípicos e
-somando os resultados para os três genótipos (Tabela 1). 
+somando os resultados para os três genótipos (Tabela 1).
 
 Tabela 1. Dependência da média populacional das frequências gênicas
 
 -------------------------------------------------------
   Genótipo     Frequência      Valor      Freq. X Valor
 ----------- ----------------  -------   ---------------
- A1A1          $p^2$           +a         $p^2a$
-                           
- A1A2          $2pq$            d         $2pqd$  
-                         
- A2A2          $q^2$           -a         $-q^2a$
-                           
-                                         Soma =
-					 $a(p-q)+2dpq$
+ $A_1A_1$          $p^2$           +a         $p^2a$
 
+ $A_1A_2$          $2pq$            d         $2pqd$
+
+ $A_2A_2$          $q^2$           -a         $-q^2a$
+
+                                         Soma =
+                                         $a(p-q)+2dpq$
 -------------------------------------------------------
 
 
-Podemos ver então que a contribuição de qualquer locus para a média populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e $2dpq$ atribuído aos heterozigotos. 
-Se o alelo A1 fosse fixado na população ($p = 1$), a média populacional seria a; se o alelo A2 fosse fixado ($q = 1$), a média seria -a. 
-Vamos voltar ao exemplo do gene P que determina o peso nos ratos, e calcular a média populacional. Digamos que a frequência de P1 seja $p = 0,6$, e lembrando que $a = 4$ e $d = 2$, então:
+Podemos ver então que a contribuição de qualquer locus para a média
+populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
+$2dpq$ atribuído aos heterozigotos.
+Se o alelo $A_1$ fosse fixado na população ($p = 1$), a média
+populacional seria a; se o alelo $A_2$ fosse fixado ($q = 1$), a média
+seria -a.
+Vamos voltar ao exemplo do gene P que determina o peso nos ratos, e
+calcular a média populacional. Digamos que a frequência de $P_1$ seja
+$p = 0,6$, e lembrando que $a = 4$ e $d = 2$, então:
 $$
 M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76
 $$
 
-Se o caráter peso fosse determinado por mais de um gene, teríamos que computar a contribuição de todos os loci e achar seu efeito combinado na média populacional. 
-Supondo que essa combinação seja aditiva, ou seja, que o efeito de um locus sobre a média seja independente do efeito dos outros loci, a média populacional será:
+Se o caráter peso fosse determinado por mais de um gene, teríamos que
+computar a contribuição de todos os loci e achar seu efeito combinado
+na média populacional.
+Supondo que essa combinação seja aditiva, ou seja, que o efeito de
+um locus sobre a média seja independente do efeito dos outros loci, a
+média populacional será:
 $$
 M = \Sigma_{a(p-q)} + 2\Sigma_{dpq}
 $$
 
 ##Efeito médio de um alelo
 
-Para entendermos a herança de caracteres quantitativos, temos que lidar com a transmissão de valor dos pais para a prole.
-Isso não pode ser feito com o uso dos valores genotípicos somente, pois os pais passam seus genes para sua prole e não seu genótipo. 
-O efeito médio de um alelo é justamente uma medida associada com os genes e não com os genótipos. 
-Essa medida depende dos valores genotípicos, a e d, e também das frequências gênicas. 
-Trata-se, portanto, de uma propriedade não só dos genes, mas também da população.
-O efeito médio de um alelo particular é o valor médio dos indivíduos que receberam esse alelo de um dos pais descontado da média populacional, sendo o outro alelo proveniente ao acaso da população (Tabela 2).
-Dito de uma outra maneira: vamos considerar um número de gametas carregando o alelo A1 unindo-se ao acaso com gametas da população. 
-O genótipo médio produzido desvia da média populacional por uma quantidade que é o efeito médio do alelo A1.
-A dependência do efeito médio de um alelo das frequências gênicas está na junção ao acaso do alelo específico com os provenientes da população.
-A chance desse alelo se unir a um outro qualquer é determinada pelas frequências gênicas desses outros alelos na população.
+Para entendermos a herança de caracteres quantitativos, temos que lidar
+com a transmissão de valor dos pais para a prole.
+Isso não pode ser feito com o uso dos valores genotípicos somente,
+pois os pais passam seus genes para sua prole e não seu genótipo.
+O efeito médio de um alelo é justamente uma medida associada com os
+genes e não com os genótipos.
+Essa medida depende dos valores genotípicos, a e d, e também das
+frequências gênicas.
+Trata-se, portanto, de uma propriedade não só dos genes, mas também
+da população.
+O efeito médio de um alelo particular é o valor médio dos indivíduos
+que receberam esse alelo de um dos pais descontado da média
+populacional, sendo o outro alelo proveniente ao acaso da população
+(Tabela 2).
+Dito de uma outra maneira: vamos considerar um número de gametas
+carregando o alelo $A_1$ unindo-se ao acaso com gametas da população.
+O genótipo médio produzido desvia da média populacional por uma
+quantidade que é o efeito médio do alelo $A_1$.
+A dependência do efeito médio de um alelo das frequências gênicas
+está na junção ao acaso do alelo específico com os provenientes da
+população.
+A chance desse alelo se unir a um outro qualquer é determinada pelas
+frequências gênicas desses outros alelos na população.
 
-Tabela 2. Efeito médio dos alelos A1 e A2.
+Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.
 
-------------------------------------------------------------
-Tipo de		Valores e Freq.  Valor médio		Média pop. 		   
-gameta    dos genótipos    dos genótipos  a ser descontada
---------	-----------------	------------	------------------		
-					A1A1	A1A2	A2A2
-					 a			d		 -a
-------------------------------------------------------------
-A1				 p			q					$pa + qd$			$-[a(p-q) + 2dpq]$
+\begin{centering}
+\begin{tabular}{lllllll}
+\hline
+& & & & & \\
+Tipo de & \multicolumn{3}{l} {Valores e Freq.} & Valor médio & Média populacional & Efeito médio \\
+gameta & \multicolumn{3}{l} {dos genótipos} & dos genótipos & a ser descontada & do alelo \\
+ & \multicolumn{3}{l} { produzidos } & produzidos & & \\
+& & & & & \\
+\cline{2-4}
+& & & & & \\
+ & $A_1$$A_1$ & $A_1$$A_2$ & $A_2$$A_2$ & & \\
+ & $a$ & $d$ & $-a$ & & \\
+& & & & & \\
+\hline
+& & & & & \\
+$A_1$ & $p$ & $q$ & & $pa + qd$ & $-[a(p-q) + 2dpq]$ & $q[a+d(q-p)]$ \\
+$A_2$ & & $p$ & $q$ & $-qa + pd$ & $-[a(p-q) + 2dpq]$ & $-p[a+d(q-p)]$ \\
+& & & & & \\
+\hline
+\end{tabular}
+\end{centering}
 
-A2							  p			q		$-qa + pd$		$-[a(p-q) + 2dpq]$
-------------------------------------------------------------
-
-O efeito médio de um alelo é representado pelo símbolo $\alpha_1$, para o alelo A1, e $\alpha_2$ para o alelo A2.
-Quando estamos com apenas dois alelos, podemos também calcular o efeito médio da substituição de um alelo.
-Isso sginifica que se todos os genes A2 fossem mutados para o gene A1, o efeito médio produzido será o efeito médio da substituição, representado pelo símbolo $\alpha$.
+O efeito médio de um alelo é representado pelo símbolo $\alpha_1$,
+para o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$.
+Quando estamos com apenas dois alelos, podemos também calcular o efeito
+médio da substituição de um alelo.
+Isso sginifica que se todos os genes $A_2$ fossem mutados para o
+gene $A_1$, o efeito médio produzido será o efeito médio da
+substituição, representado pelo símbolo $\alpha$.
 
 ##Valor de acasalamento
 
-Os efeitos médios de todos os alelos parentais influenciando um caráter determinam o valor genotípico médio de sua prole para esse caráter.
-Porém, é impossível medir cada efeito médio dos alelos nos indivíduos pois os valores médios dos caracteres são resultado do efeito combinado de vários loci.
-Não conseguimos atribuir uma parte do valor de um caráter para um alelo e outra parte para outro alelo.
-O que conseguimos medir é o valor de acasalamento (simbolizado pela letra A): o valor fenotípico de um indivíduo julgado pelo valor médio do caráter em sua prole.
-Se um indivíduo se reproduz com um número de parceiros retirados ao acaso da população, seu valor de acasalamento é duas vezes o desvio médio de sua prole da média populacional.
-É necessário multiplicar por dois porque o pai em questão passa somente metade dos seus genes a sua prole, a outra metade vindo ao acaso da população. 
+Os efeitos médios de todos os alelos parentais influenciando um
+caráter determinam o valor genotípico médio de sua prole para esse
+caráter.
+Porém, é impossível medir cada efeito médio dos alelos nos
+indivíduos pois os valores médios dos caracteres são resultado do
+efeito combinado de vários loci.
+Não conseguimos atribuir uma parte do valor de um caráter para um
+alelo e outra parte para outro alelo.
+O que conseguimos medir é o valor de acasalamento (simbolizado pela
+letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
+do caráter em sua prole.
+Se um indivíduo se reproduz com um número de parceiros retirados ao
+acaso da população, seu valor de acasalamento é duas vezes o desvio
+médio de sua prole da média populacional.
+É necessário multiplicar por dois porque o pai em questão passa somente metade dos seus genes a sua prole, a outra metade vindo ao acaso da população.
 Essa é a definição prática de valor de acasalamento, o valor que os pais efetivamente passam a sua prole.
 No entanto, pela teoria, assumimos que o valor de acasalamento é na verdade a soma dos efeitos médios de todos os alelos que um indivíduo carrega.
 O valor de acasalamento, portanto, pode ser expresso em termos dos efeitos médios dos alelos (ou efeito médio de uma substituição de alelo), como mostrado na tabela 3.
 
 Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.
 
-------------------------------------------------------------
-		Genótipo							Valor de acasalamento
-		---------			---------------------------------------
-			A1A1												 $2\alpha_1 = 2q\alpha$
-			A1A2						$\alpha_1 + \alpha_2 = (q-p)\alpha$
-			A2A2												$2\alpha_2 = -2p\alpha$ -------------------------------------------------------------
+-------------------------------------------------
+Genótipo    Valor de acasalamento
+---------   -------------------------------------
+$A_1$$A_1$  $2\alpha_1 = 2q\alpha$
+
+$A_1$$A_2$  $\alpha_1 + \alpha_2 = (q-p)\alpha$
+
+$A_2$$A_2$  $2\alpha_2 = -2p\alpha$
+-------------------------------------------------
 
 A extensão para vários loci é direta: o valor de acasalamento para um genótipo particular é a soma dos valores de acasalamento atribuídos a cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
@@ -817,7 +865,7 @@ Porém, quando mais loci são considerados, o valor genotípico pode ter um comp
 $$
 G = G_A + G_B + I_{AB}
 $$
-$I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G_B$, o desvio epistático. 
+$I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G_B$, o desvio epistático.
 
 ##Partição de variância
 
@@ -839,7 +887,7 @@ A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são determinados 
 #Seleção Natural e Genética Quantitativa
 
 Agora que fizemos a conexão entre efeito médio dos alelos, valor de acasalamento, variância aditiva e herdabilidade, podemos estudar a resposta de um caráter, ou de vários caracteres simultaneamente, à seleção natural.
-  
+
 ##Um caráter: Equação do Criador
 
 Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador ("Breeder's equation"), em referência a criadores de animais e de plantas que aplicavam seleção artificial com intuito de atingir melhoramentos em produtividade:
@@ -852,14 +900,14 @@ Por essa equação podemos notar a relevância da herdabilidade, ou da proporç�
 
 ###Médias
 
-Apesar de um episódio de seleção alterar as frequências alélicas do caráter, os efeitos da seleção passíveis de observação restringem-se às mudanças mensuradas na média da população. 
+Apesar de um episódio de seleção alterar as frequências alélicas do caráter, os efeitos da seleção passíveis de observação restringem-se às mudanças mensuradas na média da população.
 Portanto, a resposta à seleção (R) é uma diferença entre as médias fenotípicas do caráter na prole dos pais selecionados e na geração parental antes da seleção.
 
 ###Diferencial de Seleção
 
-O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 7). 
-Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção. 
-A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter. 
+O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 7).
+Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção.
+A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter.
 O diferencial de seleção padronizado é chamado de intensidade de seleção (i):
 
 $$
