@@ -287,14 +287,8 @@ $$
 
 ###Um caráter
 
-REESCREVER
-
-Variação é o combustível da evolução, queimado nas fogueiras da seleção (WOOA!).
-Quantificar variação é uma tarefa complicada.
-Mesmo trabalhando com apenas um caráter, existem muitas possibilidades.
-
-REESCREVER
-
+O estudo dos caracteres contínuos é centrado em sua variação, uma vez que é em termos de variação que as questões genéticas primárias são formuladas.
+A quantidade de variação é medida e expressa como a variância.
 A variância é uma medida comum, que quantifica desvios de cada
 indivíduo em relação à média global.
 A variância de um caráter contínuo $z$, expresso em uma população
@@ -668,11 +662,11 @@ Tabela 1. Dependência da média populacional das frequências gênicas
   Genótipo     Frequência      Valor     Freq. X Valor
 ----------- ----------------  -------   ---------------
 
-A1A1        $p^2$             +a        $p^2a$
+	 A1A1          $p^2$           +a         $p^2a$
                                    
-A1A2        $2pq$             d         $2pqd$  
+	 A1A2          $2pq$            d         $2pqd$  
                                  
-A2A2        $q^2$             -a        $-q^2a$
+	 A2A2          $q^2$           -a         $-q^2a$
 -------------------------------------------------------
                            
                                $Soma =   a(p-q) + 2dpq$
@@ -707,18 +701,17 @@ A chance desse alelo se unir a um outro qualquer é determinada pelas frequênci
 
 Tabela 2. Efeito médio dos alelos A1 e A2.
 
--------------------------------------------------------------
+------------------------------------------------------------
 Tipo de		Valores e Freq.  Valor médio		Média pop. 		   
 gameta    dos genótipos    dos genótipos  a ser descontada
--------------------------------------------------------------
+--------	-----------------	------------	------------------		
 					A1A1	A1A2	A2A2
+					 a			d		 -a
+------------------------------------------------------------
+A1				 p			q					$pa + qd$			$-[a(p-q) + 2dpq]$
 
-					a			d			-a
--------------------------------------------------------------
-A1				p			q						$pa + qd$			$-[a(p-q) + 2dpq]$
-
-A2							p			q			$-qa + pd$		$-[a(p-q) + 2dpq]$
--------------------------------------------------------------
+A2							  p			q		$-qa + pd$		$-[a(p-q) + 2dpq]$
+------------------------------------------------------------
 
 O efeito médio de um alelo é representado pelo símbolo $\alpha_1$, para o alelo A1, e $\alpha_2$ para o alelo A2.
 Quando estamos com apenas dois alelos, podemos também calcular o efeito médio da substituição de um alelo.
@@ -726,39 +719,85 @@ Isso sginifica que se todos os genes A2 fossem mutados para o gene A1, o efeito 
 
 ##Valor de acasalamento
 
-Os efeitos médios de todos os alelos parentais determinam o valor genotípico médio de sua prole.
+Os efeitos médios de todos os alelos parentais influenciando um caráter determinam o valor genotípico médio de sua prole para esse caráter.
 Porém, é impossível medir cada efeito médio dos alelos nos indivíduos pois os valores médios dos caracteres são resultado do efeito combinado de vários loci.
 Não conseguimos atribuir uma parte do valor de um caráter para um alelo e outra parte para outro alelo.
-O que conseguimos medir é o valor fenotípico de um indivíduo julgado pelo valor médio do caráter em sua prole.
+O que conseguimos medir é o valor de acasalamento (simbolizado pela letra A): o valor fenotípico de um indivíduo julgado pelo valor médio do caráter em sua prole.
 Se um indivíduo se reproduz com um número de parceiros retirados ao acaso da população, seu valor de acasalamento é duas vezes o desvio médio de sua prole da média populacional.
 É necessário multiplicar por dois porque o pai em questão passa somente metade dos seus genes a sua prole, a outra metade vindo ao acaso da população. 
 Essa é a definição prática de valor de acasalamento, o valor que os pais efetivamente passam a sua prole.
 No entanto, pela teoria, assumimos que o valor de acasalamento é na verdade a soma dos efeitos médios de todos os alelos que um indivíduo carrega.
+O valor de acasalamento, portanto, pode ser expresso em termos dos efeitos médios dos alelos (ou efeito médio de uma substituição de alelo), como mostrado na tabela 3.
+
+Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.
+
+------------------------------------------------------------
+		Genótipo							Valor de acasalamento
+		---------			---------------------------------------
+			A1A1												 $2\alpha_1 = 2q\alpha$
+			A1A2						$\alpha_1 + \alpha_2 = (q-p)\alpha$
+			A2A2												$2\alpha_2 = -2p\alpha$ -------------------------------------------------------------
+
+A extensão para vários loci é direta: o valor de acasalamento para um genótipo particular é a soma dos valores de acasalamento atribuídos a cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
 ##Desvio de dominância
 
+O valor de acsalamento é um componente do valor genotípico de um indivíduo. O resto do valor é denominado desvio de dominância:
+$$
+G = A + D
+$$
+Esse desvio tem origem da propriedade de dominância entre alelos de um mesmo locus, ou seja, da interação dentro do locus.
+O desvio de dominância, portanto, aparece quando os alelos são postos juntos para formar um genótipo.
+Esse efeito não pode ser previsto pelos efeitos dos alelos separadamente.
+Dado que os efeitos médios dos alelos e os valores genotípicos dependenm da frequência gênica, o desvio de dominância também possuí essa dependência, sendo uma propriedade tanto dos genes quanto da população.
+A relação entre valores genotípicos, valores de acsalamento e desvios de dominância está representada gaficamente na figura 7.
+
+Iserir fig 7. Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.
+
 ##Desvio de interação
+
+Quando apenas um locus é considerado, apenas a interação entre os alelos desse locus é adicionada ao valor de acasalamento para a determinação do valor genotípico.
+Porém, quando mais loci são considerados, o valor genotípico pode ter um componente a mais, o desvio de interação, relacionado com a interação entre alelos de diferentes locus (epistasia):
+$$
+G = G_A + G_B + I_{AB}
+$$
+$I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G_B$, o desvio epistático. 
 
 ##Partição de variância
 
+Como vimos anteriormente, a avariação dos caracteres contínuos é expressa em termos de variância.
+A ideia básica no estudo de variação, introduzida por Fisher em 1918, é de sua partição em componentes atribuídos a diferntes causas.
+A magnitude relativa desses componentes determina as propriedades genéticas de uma população, em particular o grau de semelhança entre parentes.
+Os componentes nos quais a variância é particionada são os mesmos nos quais o valor fenotípico foi dividido:
+$$
+V_P = V_A + V_D + V_I + V_E
+$$
+sendo $V_P$ a variância dos valores fenotípicos, $V_A$ a variância dos valores de acasalamento (chamada de variância aditiva), $V_D$ a variãncia dos desvios de dominância, $V_I$ a variância dos desvios epistáticos, e finalmente $V_E$ a variância dos desvios ambientais.
+A importância relativa de uma determinada fonte de variação é a variância devida a essa fonte, como uma proporção da variância fenotípica.
+
 ###Variância aditiva
 
+A variância aditiva, ou a variância devida aos efeitos médios dos alelos combinados em um genótipo, é a causa principal de semelhança entre parentes, sendo portanto o determinante das propriedades genéticas da população e de sua resposta à seleção natural.
+A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são determinados pelos genes transmitidos pelos pais, e é denominada herdabilidade.
 
 #Seleção Natural e Genética Quantitativa
-  
 
+Agora que fizemos a conexão entre efeito médio dos alelos, valor de acasalamento, variância aditiva e herdabilidade, podemos estudar a resposta de um caráter, ou de vários caracteres simultaneamente, à seleção natural.
+  
 ##Um caráter: Equação do Criador
 
-Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador, em referência a criadores de animais e plantas que aplicavam seleção artificial (seleção da geração parental) com intuito de atingir melhoramentos em produtividade:
+Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador ("Breeder's equation"), em referência a criadores de animais e de plantas que aplicavam seleção artificial com intuito de atingir melhoramentos em produtividade:
 
 $$
 R = h^2S
 $$
 
+Por essa equação podemos notar a relevância da herdabilidade, ou da proporção de variância devida aos valores de acasalamento, na determinação da resposta à seleção natural. Quanto maior for essa proporção, maior será aresposta à seleção para um mesmo diferncial de seleção.
+
 ###Médias
 
 Apesar de um episódio de seleção alterar as frequências alélicas do caráter, os efeitos da seleção passíveis de observação restringem-se às mudanças mensuradas na média da população. 
-Portanto, a resposta à seleção é uma diferença entre as médias fenotípicas do caráter na prole dos pais selecionados e na geração parental antes da seleção.
+Portanto, a resposta à seleção (R) é uma diferença entre as médias fenotípicas do caráter na prole dos pais selecionados e na geração parental antes da seleção.
 
 ###Diferencial de Seleção
 
@@ -776,8 +815,6 @@ Inserir figura parent-offspring
 ###Herdabilidade
 
 Olhando para a regressão pais-prole da figura 5, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
-
-###Partição de variância
 
 ##Mais de um caráter: Equação de Lande
 
