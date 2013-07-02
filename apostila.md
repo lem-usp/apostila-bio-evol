@@ -52,7 +52,7 @@ Fisher, J.B.S. Haldane e Sewall Wright, culminando na elaboração da Síntese
 Moderna da teoria evolutiva.
 Fisher (1918) demonstrou que os resultados obtidos pelos biometricistas
 podiam ser derivados de princípios mendelianos, postulando a existência
-de múltiplos alelos atuando sobre um único caráter (Fig. 1).
+de múltiplos alelos atuando sobre um único caráter (Fig. \ref{variosloci}).
 Nesse artigo, ele introduz o conceito de partição de variância,
 que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
@@ -65,7 +65,7 @@ biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
 temas macroevoutivos, como especiação por exemplo.
 
-![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
+![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população \label{variosloci}](./figuras/variosalelos.png)
 
 #Princípios matemáticos em Genética Quantitativa
 
@@ -691,9 +691,9 @@ A propósito de dedução dos conceitos de efeito médio de um alelo e valor de
 acasalamento, valores arbitrários foram determinados para os genótipos de um
 único locus com dois alelos $A_1$ e $A_2$: +a, valor genotípico do homozigoto $A_1$$A_1$;
 -a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
-(Fig.6).
+(Fig. \ref{valgen}).
 
-Inserir figura dos valores genotípicos
+![Valores genotípicos \label{valgen}](./figuras/placeholder.png)
 
 Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e
 conhecendo seus genótipos, podemos chegar nos seus valores genotípicos
@@ -854,9 +854,9 @@ Esse desvio tem origem da propriedade de dominância entre alelos de um mesmo lo
 O desvio de dominância, portanto, aparece quando os alelos são postos juntos para formar um genótipo.
 Esse efeito não pode ser previsto pelos efeitos dos alelos separadamente.
 Dado que os efeitos médios dos alelos e os valores genotípicos dependenm da frequência gênica, o desvio de dominância também possuí essa dependência, sendo uma propriedade tanto dos genes quanto da população.
-A relação entre valores genotípicos, valores de acsalamento e desvios de dominância está representada gaficamente na figura 7.
+A relação entre valores genotípicos, valores de acsalamento e desvios de dominância está representada gaficamente na figura \ref{valorgenotipico}.
 
-Iserir fig 7. Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.
+![Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos. \label{valorgenotipico}](./figuras/placeholder.png)
 
 ##Desvio de interação
 
@@ -887,7 +887,6 @@ A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são determinados 
 #Seleção Natural e Genética Quantitativa
 
 Agora que fizemos a conexão entre efeito médio dos alelos, valor de acasalamento, variância aditiva e herdabilidade, podemos estudar a resposta de um caráter, ou de vários caracteres simultaneamente, à seleção natural.
-
 ##Um caráter: Equação do Criador
 
 Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador ("Breeder's equation"), em referência a criadores de animais e de plantas que aplicavam seleção artificial com intuito de atingir melhoramentos em produtividade:
@@ -905,7 +904,7 @@ Portanto, a resposta à seleção (R) é uma diferença entre as médias fenotí
 
 ###Diferencial de Seleção
 
-O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. 7).
+O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. \ref{parentoff}).
 Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção.
 A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter.
 O diferencial de seleção padronizado é chamado de intensidade de seleção (i):
@@ -914,11 +913,11 @@ $$
 S = i\sigma_P
 $$
 
-Inserir figura parent-offspring
+![Regressão da média dos filhos na média dos pais \label{parentoff}](./figuras/parentregression.png)
 
 ###Herdabilidade
 
-Olhando para a regressão pais-prole da figura 5, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
+Olhando para a regressão pais-prole da figura \ref{parentoff}, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
 
 ##Mais de um caráter: Equação de Lande
 
