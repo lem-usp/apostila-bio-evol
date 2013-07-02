@@ -22,8 +22,11 @@ e promover mudanças entre as gerações de uma população[@Falconer1996].
 
 #Um pouco de história
 
-Antes de adentrarmos nos princípios e conceitos da Genética Quantitativa, vamos aprender um pouco sobre o contexto histórico no qual a teoria se desenvolveu.
-O desabrochar da Genética Quantitativa está intimamente relacionado com a elaboração da própria Síntese Moderna e grandes nomes da biologia participaram nesse desenrolar da área.
+Antes de adentrarmos nos princípios e conceitos da Genética Quantitativa, vamos
+aprender um pouco sobre o contexto histórico no qual a teoria se desenvolveu.
+O desabrochar da Genética Quantitativa está intimamente relacionado com a
+elaboração da própria Síntese Moderna e grandes nomes da biologia participaram
+nesse desenrolar da área.
 Os princípios da teoria foram desenvolvidos por volta da década de
 1920, em resposta a uma histórica controvérsia na teoria evolutiva
 referente à aparente incompatibilidade entre a genética mendeliana e a
@@ -54,21 +57,43 @@ Nesse artigo, ele introduz o conceito de partição de variância,
 que permite a discriminação de efeitos genéticos e ambientais na
 distribuição dos caracteres, extensivamente utilizado na genética
 quantitativa. 
-Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright demonstraram que a seleção natural pode funcionar com os tipos de variação observados em populações naturais e com as leis de herança mendelianas [@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o aprofundamento dos estudos em genética de populações e genética quantitativa em temas macroevoutivos, como especiação por exemplo. 
+Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright
+demonstraram que a seleção natural pode funcionar com os tipos de variação
+observados em populações naturais e com as leis de herança mendelianas
+[@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a
+biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
+aprofundamento dos estudos em genética de populações e genética quantitativa em
+temas macroevoutivos, como especiação por exemplo. 
 
 ![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população](./figuras/variosalelos.png)
 
 #Princípios matemáticos em Genética Quantitativa
 
-Para podermos usar a teoria da Genética Quantitativa no estudo das propriedades genéticas e da evolução de caracteres contínuos em populações, precisamos lançar mão de certos princípios matemáticos relacionados com variação, como média, variância e covariância, e relacionados com a representação destes em um morfoespaço, como vetores e matrizes.
+Para podermos usar a teoria da Genética Quantitativa no estudo das propriedades
+genéticas e da evolução de caracteres contínuos em populações, precisamos
+lançar mão de certos princípios matemáticos relacionados com variação, como
+média, variância e covariância, e relacionados com a representação destes em um
+morfoespaço, como vetores e matrizes.
 
 ##Caracteres contínuos
 
-Agora que temos uma noção do que são e como podem ser herdados os caracteres contínuos, podemos pensar em quais critérios podemos utilizar para escolher os caracteres em um estudo. 
-É preciso garantir que as medidas que se realizam em um indivíduo (ou em indivíduos de uma espécie) representem os mesmos caracteres nos outros indivíduos (ou nos indivíduos das outras espécies, no caso de estudos macroevolutivos). Esse cuidado precisa ser tomado para que a variação que se observa nos dados (que é o foco dos estudos quantitativos) não tenha uma fonte a mais de erro referente a heterogeneidade de caracteres medidos entre indivíduos ou entre espécies. 
-O critério fundamental para garantirmos que são os mesmos caracteres em todos os indivíduos é o de homologia.
-Nós reconhecemos estruturas homólogas por serem discretas e reconhecíveis em todos os indivíduos [@Zelditch]. 
-Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira, podemos estudar diferenças em caracteres homólogos em um contexto evolutivo usando de informações de parentesco dos indivíduos amostrados.
+Agora que temos uma noção do que são e como podem ser herdados os caracteres
+contínuos, podemos pensar em quais critérios podemos utilizar para escolher os
+caracteres em um estudo. 
+É preciso garantir que as medidas que se realizam em um indivíduo (ou em
+indivíduos de uma espécie) representem os mesmos caracteres nos outros
+indivíduos (ou nos indivíduos das outras espécies, no caso de estudos
+macroevolutivos). Esse cuidado precisa ser tomado para que a variação que se
+observa nos dados (que é o foco dos estudos quantitativos) não tenha uma fonte
+a mais de erro referente a heterogeneidade de caracteres medidos entre
+indivíduos ou entre espécies. 
+O critério fundamental para garantirmos que são os mesmos caracteres em todos
+os indivíduos é o de homologia.
+Nós reconhecemos estruturas homólogas por serem discretas e reconhecíveis em
+todos os indivíduos [@Zelditch]. 
+Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira,
+podemos estudar diferenças em caracteres homólogos em um contexto evolutivo
+usando de informações de parentesco dos indivíduos amostrados.
 
 ##Distâncias e Vetores
 
@@ -287,8 +312,9 @@ $$
 
 ###Um caráter
 
-O estudo dos caracteres contínuos é centrado em sua variação, uma vez que é em termos de variação que as questões genéticas primárias são formuladas.
-A quantidade de variação é medida e expressa como a variância.
+O estudo dos caracteres contínuos é centrado em sua variação, uma vez que é em
+termos de variação que as questões genéticas primárias são formuladas.  A
+quantidade de variação é medida e expressa como a variância.
 A variância é uma medida comum, que quantifica desvios de cada
 indivíduo em relação à média global.
 A variância de um caráter contínuo $z$, expresso em uma população
@@ -628,33 +654,63 @@ Comparando padrões e estruturas.
 
 #Propriedades genéticas de populações
 
-Antes de usarmos os princípios matemáticos acima descritos para estudarmos a herança e evolução dos caracteres contínuos em populações, vamos olhar as propriedades genéticas dos caracteres nas populações. 
-Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e frequência de genótipos com as diferenças quantitativas observadas em caracteres contínuos [@Falconer1996].
-Essa conexão é realizada com a compreensão dos conceitos de valores genotípico e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de variância. Nas seções seguintes veremos as definições desses conceitos. 
+Antes de usarmos os princípios matemáticos acima descritos para estudarmos a
+herança e evolução dos caracteres contínuos em populações, vamos olhar as
+propriedades genéticas dos caracteres nas populações. 
+Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e
+frequência de genótipos com as diferenças quantitativas observadas em
+caracteres contínuos [@Falconer1996].
+Essa conexão é realizada com a compreensão dos conceitos de valores genotípico
+e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de
+variância. Nas seções seguintes veremos as definições desses conceitos. 
 O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996]. 
 
 ##Valores genotípico e fenotípico
 
-O valor observado para um caráter medido em um indivíduo qualquer é o valor fenotípico desse indivíduo.
-Para podermos analisar as propriedades genéticas de populações temos que dividir o valor fenotípico em componentes atribuídos a diferentes causas: influência do genótipo e influência do ambiente (considerando todas as circunstâncias não-genéticas que influenciam o fenótipo).
-Podemos pensar que o genótipo confere um determinado valor de um caráter ao indivíduo e o ambiente causa um desvio desse valor: 
+O valor observado para um caráter medido em um indivíduo qualquer é o valor
+fenotípico desse indivíduo.
+Para podermos analisar as propriedades genéticas de populações temos que
+dividir o valor fenotípico em componentes atribuídos a diferentes causas:
+influência do genótipo e influência do ambiente (considerando todas as
+circunstâncias não-genéticas que influenciam o fenótipo).
+Podemos pensar que o genótipo confere um determinado valor de um caráter ao
+indivíduo e o ambiente causa um desvio desse valor: 
 $$
 P = G + E, 
 $$
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
-Assume-se que o desvio ambiental médio em uma população é  zero, considerando-se que os desvios individuais ocorrerm em diversas direções e se cancelam.
-Portanto, o valor médio fenotípico é equivalente ao valor médio genotípico em uma população.
-Essa derivação teórica é bastante relevante, pois permite que estudemos as propriedades genéticas das populações por meio de seus fenótipos, que é na prática o que pode ser mensurado nos indivíduos.
-A propósito de dedução dos conceitos de efeito médio de um alelo e valor de acasalamento, valores arbitrários foram determinados para os genótipos de um único locus com dois alelos A1 e A2: +a, valor genotípico do homozigoto A1A1; -a, valor do homozigoto A2A2; e finalmente d, valor do heterozigoto A1A2 (Fig.6).
+Assume-se que o desvio ambiental médio em uma população é  zero,
+considerando-se que os desvios individuais ocorrerm em diversas direções e se
+cancelam.
+Portanto, o valor médio fenotípico é equivalente ao valor médio genotípico em
+uma população.
+Essa derivação teórica é bastante relevante, pois permite que estudemos as
+propriedades genéticas das populações por meio de seus fenótipos, que é na
+prática o que pode ser mensurado nos indivíduos.
+A propósito de dedução dos conceitos de efeito médio de um alelo e valor de
+acasalamento, valores arbitrários foram determinados para os genótipos de um
+único locus com dois alelos A1 e A2: +a, valor genotípico do homozigoto A1A1;
+-a, valor do homozigoto A2A2; e finalmente d, valor do heterozigoto A1A2
+(Fig.6).
 
 Inserir figura dos valores genotípicos
 
-Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e conhecendo seus genótipos, podemos chegar nos seus valores genotípicos correspondentes. 
-Por exemplo, digamos que o gene P determine o peso em uma determinada população de ratos e ao pesarmos uma amostra encontramos: P1P1 = 14g; P1P2 = 12g; e P2P2 = 6g. 
-Então, para calcularmos o ponto zero, temos que achar o valor intermediário entre os dois homozigotos: $(14 + 6)/2 = 10$. 
-Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 = -4$; e o valor de d é: $12-10 = 2$. 
-Uma questão fundamental a se compreender sobre os valores genotípico e fenotípico é que suas médias populacionais dependem das frequências gênicas. 
-Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento aleatório), podemos calcular o valor médio populacional de um determinado caráter multiplicando as frequências genotípicas pelos valores genotípicos e somando os resultados para os três genótipos (Tabela 1). 
+Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e
+conhecendo seus genótipos, podemos chegar nos seus valores genotípicos
+correspondentes. 
+Por exemplo, digamos que o gene P determine o peso em uma determinada população
+de ratos e ao pesarmos uma amostra encontramos: P1P1 = 14g; P1P2 = 12g; e P2P2
+= 6g. 
+Então, para calcularmos o ponto zero, temos que achar o valor intermediário
+entre os dois homozigotos: $(14 + 6)/2 = 10$. 
+Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 =
+-4$; e o valor de d é: $12-10 = 2$. 
+Uma questão fundamental a se compreender sobre os valores genotípico e
+fenotípico é que suas médias populacionais dependem das frequências gênicas. 
+Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento
+aleatório), podemos calcular o valor médio populacional de um determinado
+caráter multiplicando as frequências genotípicas pelos valores genotípicos e
+somando os resultados para os três genótipos (Tabela 1). 
 
 Tabela 1. Dependência da média populacional das frequências gênicas
 
@@ -662,11 +718,11 @@ Tabela 1. Dependência da média populacional das frequências gênicas
   Genótipo     Frequência      Valor     Freq. X Valor
 ----------- ----------------  -------   ---------------
 
-	 A1A1          $p^2$           +a         $p^2a$
-                                   
-	 A1A2          $2pq$            d         $2pqd$  
-                                 
-	 A2A2          $q^2$           -a         $-q^2a$
+ A1A1          $p^2$           +a         $p^2a$
+                           
+ A1A2          $2pq$            d         $2pqd$  
+                         
+ A2A2          $q^2$           -a         $-q^2a$
 -------------------------------------------------------
                            
                                $Soma =   a(p-q) + 2dpq$
