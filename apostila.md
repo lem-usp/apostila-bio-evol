@@ -658,9 +658,9 @@ Antes de usarmos os princípios matemáticos acima descritos para estudarmos a
 herança e evolução dos caracteres contínuos em populações, vamos olhar as
 propriedades genéticas dos caracteres nas populações.
 Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e
-frequência de genótipos com as diferenças quantitativas observadas em
+genótipos com as diferenças quantitativas observadas em
 caracteres contínuos [@Falconer1996].
-Essa conexão é realizada com a compreensão dos conceitos de valores genotípico
+Essa conexão é feita com a compreensão dos conceitos de valores genotípico
 e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de
 variância. Nas seções seguintes veremos as definições desses conceitos.
 O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996].
@@ -669,42 +669,44 @@ O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996].
 
 O valor observado para um caráter medido em um indivíduo qualquer é o valor
 fenotípico desse indivíduo.
-Para podermos analisar as propriedades genéticas de populações temos que
+Para podermos analisar as propriedades genéticas de populações, temos que
 dividir o valor fenotípico em componentes atribuídos a diferentes causas:
 influência do genótipo e influência do ambiente (considerando todas as
 circunstâncias não-genéticas que influenciam o fenótipo).
 Podemos pensar que o genótipo confere um determinado valor de um caráter ao
-indivíduo e o ambiente causa um desvio desse valor:
+indivíduo, e o ambiente causa um desvio desse valor:
 $$
 P = G + E,
 $$
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
-Assume-se que o desvio ambiental médio em uma população é  zero,
-considerando-se que os desvios individuais ocorrerm em diversas direções e se
-cancelam.
-Portanto, o valor médio fenotípico é equivalente ao valor médio genotípico em
+Assume-se que o desvio ambiental médio em uma população é zero,
+considerando-se que os desvios individuais ocorrerm em diversas
+direções de forma independente do genótipo, e, portanto, se cancelam.
+Assim, o valor médio fenotípico é equivalente ao valor médio genotípico em
 uma população.
-Essa derivação teórica é bastante relevante, pois permite que estudemos as
-propriedades genéticas das populações por meio de seus fenótipos, que é na
-prática o que pode ser mensurado nos indivíduos.
-A propósito de dedução dos conceitos de efeito médio de um alelo e valor de
-acasalamento, valores arbitrários foram determinados para os genótipos de um
-único locus com dois alelos $A_1$ e $A_2$: +a, valor genotípico do homozigoto $A_1$$A_1$;
+Essa suposição é bastante relevante, pois permite que estudemos as
+propriedades genéticas das populações por meio de seus fenótipos, que é, na
+prática, o que pode ser mensurado nos indivíduos.
+
+Para definir os conceitos de efeito médio de um alelo e valor de
+acasalamento, podemos utilizar valores arbitrários para os genótipos de um
+único locus com dois alelos, $A_1$ e $A_2$, sendo +a, valor genotípico do homozigoto $A_1$$A_1$;
 -a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
 (Fig. \ref{valgen}).
 
 ![Valores genotípicos \label{valgen}](./figuras/placeholder.png)
 
-Portanto, ao medirmos uma amostra de indivíduos de uma população qualquer e
-conhecendo seus genótipos, podemos chegar nos seus valores genotípicos
-correspondentes.
-Por exemplo, digamos que o gene P determine o peso em uma determinada população
-de ratos e ao pesarmos uma amostra encontramos: $P_1$$P_1$ = 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$
-= 6g.
+Portanto, ao medirmos uma amostra de indivíduos de uma população
+qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
+genotípicos correspondentes.
+Por exemplo, digamos que o gene P determine o peso em uma determinada
+população de ratos, e ao pesarmos uma amostra encontramos: $P_1$$P_1$
+= 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$ = 6g.
 Então, para calcularmos o ponto zero, temos que achar o valor intermediário
 entre os dois homozigotos: $(14 + 6)/2 = 10$.
 Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 =
 -4$; e o valor de d é: $12-10 = 2$.
+
 Uma questão fundamental a se compreender sobre os valores genotípico e
 fenotípico é que suas médias populacionais dependem das frequências gênicas.
 Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento
@@ -723,20 +725,20 @@ Tabela 1. Dependência da média populacional das frequências gênicas
 
  $A_2A_2$          $q^2$           -a         $-q^2a$
 
-                                         Soma =
-                                         $a(p-q)+2dpq$
+                              soma =     $a(p-q)+2dpq$
 -------------------------------------------------------
 
 
-Podemos ver então que a contribuição de qualquer locus para a média
+Podemos ver, então, que a contribuição de qualquer locus para a média
 populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
 $2dpq$ atribuído aos heterozigotos.
 Se o alelo $A_1$ fosse fixado na população ($p = 1$), a média
 populacional seria a; se o alelo $A_2$ fosse fixado ($q = 1$), a média
 seria -a.
-Vamos voltar ao exemplo do gene P que determina o peso nos ratos, e
+Vamos voltar ao exemplo do gene P, que determina o peso nos ratos, e
 calcular a média populacional. Digamos que a frequência de $P_1$ seja
 $p = 0,6$, e lembrando que $a = 4$ e $d = 2$, então:
+
 $$
 M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76
 $$
@@ -747,6 +749,7 @@ na média populacional.
 Supondo que essa combinação seja aditiva, ou seja, que o efeito de
 um locus sobre a média seja independente do efeito dos outros loci, a
 média populacional será:
+
 $$
 M = \Sigma_{a(p-q)} + 2\Sigma_{dpq}
 $$
@@ -759,7 +762,7 @@ Isso não pode ser feito com o uso dos valores genotípicos somente,
 pois os pais passam seus genes para sua prole e não seu genótipo.
 O efeito médio de um alelo é justamente uma medida associada com os
 genes e não com os genótipos.
-Essa medida depende dos valores genotípicos, a e d, e também das
+Essa medida depende dos valores genotípicos, $a$ e $d$, e, também, das
 frequências gênicas.
 Trata-se, portanto, de uma propriedade não só dos genes, mas também
 da população.
@@ -815,7 +818,7 @@ Os efeitos médios de todos os alelos parentais influenciando um
 caráter determinam o valor genotípico médio de sua prole para esse
 caráter.
 Porém, é impossível medir cada efeito médio dos alelos nos
-indivíduos pois os valores médios dos caracteres são resultado do
+indivíduos, pois os valores médios dos caracteres são resultado do
 efeito combinado de vários loci.
 Não conseguimos atribuir uma parte do valor de um caráter para um
 alelo e outra parte para outro alelo.
@@ -825,10 +828,17 @@ do caráter em sua prole.
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
-É necessário multiplicar por dois porque o pai em questão passa somente metade dos seus genes a sua prole, a outra metade vindo ao acaso da população.
-Essa é a definição prática de valor de acasalamento, o valor que os pais efetivamente passam a sua prole.
-No entanto, pela teoria, assumimos que o valor de acasalamento é na verdade a soma dos efeitos médios de todos os alelos que um indivíduo carrega.
-O valor de acasalamento, portanto, pode ser expresso em termos dos efeitos médios dos alelos (ou efeito médio de uma substituição de alelo), como mostrado na tabela 3.
+É necessário multiplicar por dois porque o pai em questão passa
+somente metade dos seus genes a sua prole, a outra metade vindo ao acaso
+da população.
+Essa é a definição prática de valor de acasalamento, o valor que os
+pais efetivamente passam a sua prole.
+No entanto, pela teoria, assumimos que o valor de acasalamento é na
+verdade a soma dos efeitos médios de todos os alelos que um indivíduo
+carrega.
+O valor de acasalamento, portanto, pode ser expresso em termos dos
+efeitos médios dos alelos (ou efeito médio de uma substituição de
+alelo), como mostrado na tabela 3.
 
 Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.
 
@@ -842,19 +852,30 @@ $A_1$$A_2$  $\alpha_1 + \alpha_2 = (q-p)\alpha$
 $A_2$$A_2$  $2\alpha_2 = -2p\alpha$
 -------------------------------------------------
 
-A extensão para vários loci é direta: o valor de acasalamento para um genótipo particular é a soma dos valores de acasalamento atribuídos a cada loci separado (assumindo que os efeitos dos alelos são aditivos).
+A extensão para vários loci é direta: o valor de acasalamento para um
+genótipo particular é a soma dos valores de acasalamento atribuídos a
+cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
 ##Desvio de dominância
 
-O valor de acsalamento é um componente do valor genotípico de um indivíduo. O resto do valor é denominado desvio de dominância:
+O valor de acsalamento é um componente do valor genotípico de um
+indivíduo.
+O resto do valor é denominado desvio de dominância:
 $$
 G = A + D
 $$
-Esse desvio tem origem da propriedade de dominância entre alelos de um mesmo locus, ou seja, da interação dentro do locus.
-O desvio de dominância, portanto, aparece quando os alelos são postos juntos para formar um genótipo.
+Esse desvio tem origem da propriedade de dominância entre alelos de um
+mesmo locus, ou seja, da interação dentro do locus.
+O desvio de dominância, portanto, aparece quando os alelos são postos
+juntos para formar um genótipo.
 Esse efeito não pode ser previsto pelos efeitos dos alelos separadamente.
-Dado que os efeitos médios dos alelos e os valores genotípicos dependenm da frequência gênica, o desvio de dominância também possuí essa dependência, sendo uma propriedade tanto dos genes quanto da população.
-A relação entre valores genotípicos, valores de acsalamento e desvios de dominância está representada gaficamente na figura \ref{valorgenotipico}.
+Dado que os efeitos médios dos alelos e os valores genotípicos
+dependenm da frequência gênica, o desvio de dominância também
+possuí essa dependência, sendo uma propriedade tanto dos genes quanto
+da população.
+A relação entre valores genotípicos, valores de acsalamento e
+desvios de dominância está representada gaficamente na figura
+\ref{valorgenotipico}.
 
 ![Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos. \label{valorgenotipico}](./figuras/placeholder.png)
 
