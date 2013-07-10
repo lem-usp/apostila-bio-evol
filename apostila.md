@@ -671,22 +671,23 @@ Para podermos analisar as propriedades genéticas de populações, temos que
 dividir o valor fenotípico em componentes atribuídos a diferentes causas:
 influência do genótipo e influência do ambiente (considerando todas as
 circunstâncias não-genéticas que influenciam o fenótipo).
-Podemos pensar que o genótipo confere um determinado valor de um caráter ao
-indivíduo, e o ambiente causa um desvio desse valor:
+Podemos pensar que o genótipo confere um determinado valor de um
+caráter ao indivíduo, e o ambiente causa um desvio desse valor (ao
+fazer isso, estamos ignorando interações genótipo-ambiente).
 
 $$
 P = G + E,
 $$
 
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
-Assume-se que o desvio ambiental médio em uma população é zero,
-considerando-se que os desvios individuais ocorrerm em diversas
-direções de forma independente do genótipo, e, portanto, se cancelam.
-Assim, o valor médio fenotípico é equivalente ao valor médio genotípico em
-uma população.
-Essa suposição é bastante relevante, pois permite que estudemos as
-propriedades genéticas das populações por meio de seus fenótipos, que é, na
-prática, o que pode ser mensurado nos indivíduos.
+Assume-se que o desvio ambiental médio em uma população é zero, pois
+consideramos que os desvios individuais ocorrerm em diversas direções
+de forma independente do genótipo, e, na média, se cancelam.
+Assim, o valor médio fenotípico é equivalente ao valor médio
+genotípico em uma população.
+Essa suposição é fundamental, pois permite que estudemos as
+propriedades genéticas das populações por meio de seus fenótipos,
+que é, na prática, o que pode ser mensurado nos indivíduos.
 
 Para definir os conceitos de efeito médio de um alelo e valor de
 acasalamento, podemos utilizar valores arbitrários para os genótipos de um
@@ -699,20 +700,22 @@ acasalamento, podemos utilizar valores arbitrários para os genótipos de um
 Portanto, ao medirmos uma amostra de indivíduos de uma população
 qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
 genotípicos correspondentes.
-Por exemplo, digamos que o gene P determine o peso em uma determinada
-população de ratos, e ao pesarmos uma amostra encontramos: $P_1$$P_1$
-= 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$ = 6g.
-Então, para calcularmos o ponto zero, temos que achar o valor intermediário
-entre os dois homozigotos: $(14 + 6)/2 = 10$.
-Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é: $6-10 =
--4$; e o valor de d é: $12-10 = 2$.
+Por exemplo, digamos que o gene P, com dois alelos, determine o peso
+em uma determinada população de ratos, e ao pesarmos uma amostra
+encontramos: $P_1$$P_1$ = 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$ = 6g.
+Então, para calcularmos o ponto zero, temos que achar o valor
+intermediário entre os dois homozigotos: $(14 + 6)/2 = 10$.
+Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é:
+$6-10 = -4$; e o valor de d é: $12-10 = 2$.
 
 Uma questão fundamental a se compreender sobre os valores genotípico e
 fenotípico é que suas médias populacionais dependem das frequências gênicas.
-Considerando a população em equilíbrio de Hardy-Weinberg (acasalamento
-aleatório), podemos calcular o valor médio populacional de um determinado
-caráter multiplicando as frequências genotípicas pelos valores genotípicos e
-somando os resultados para os três genótipos (Tabela 1).
+Considerando a população em equilíbrio de Hardy-Weinberg
+(acasalamento aleatório em relação aos loci em questão), podemos
+calcular o valor médio populacional de um determinado caráter
+determinado por um único locus multiplicando as frequências
+genotípicas pelos valores genotípicos e somando os resultados para os
+três genótipos (Tabela 1).
 
 Tabela 1. Dependência da média populacional das frequências gênicas
 
@@ -743,16 +746,18 @@ $$
 M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76
 $$
 
-Se o caráter peso fosse determinado por mais de um gene, teríamos que
+Se o caráter peso fosse determinado por mais de um locus, teríamos que
 computar a contribuição de todos os loci e achar seu efeito combinado
 na média populacional.
-Supondo que essa combinação seja aditiva, ou seja, que o efeito de
-um locus sobre a média seja independente do efeito dos outros loci, a
-média populacional será:
+Supondo que essa combinação seja aditiva, ou seja, que o efeito de um
+locus sobre a média seja independente do efeito dos outros loci, e que
+todos os loci sejam bialélicos, a média populacional será:
 
 $$
-M = \Sigma_{a(p-q)} + 2\Sigma_{dpq}
+M = \sum_{i}a_i(p_i-q_i) + 2d_ip_iq_i
 $$
+
+ou seja, a soma das médias de todos os loci.
 
 ##Efeito médio de um alelo
 
@@ -817,22 +822,23 @@ substituição, representado pelo símbolo $\alpha$.
 Os efeitos médios de todos os alelos parentais influenciando um
 caráter determinam o valor genotípico médio de sua prole para esse
 caráter.
-Porém, é impossível medir cada efeito médio dos alelos nos
-indivíduos, pois os valores médios dos caracteres são resultado do
-efeito combinado de vários loci.
-Não conseguimos atribuir uma parte do valor de um caráter para um
-alelo e outra parte para outro alelo.
-O que conseguimos medir é o valor de acasalamento (simbolizado pela
+Porém, é impossível medir cada efeito médio de cada alelos nos
+indivíduos, pois os efeitos médios são propriedades populacionais,
+envolvendo a associação de cada alelo com todas a diferentes
+combinações genéticas existentes em cada indivíduo.
+Felizmente, podemo medir é valor de acasalamento (simbolizado pela
 letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
 do caráter em sua prole.
+O valor de acasalamento de vários indivíduos nos fornece uma medida
+indireta dos valores médios dos alelos.
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
-É necessário multiplicar por dois porque o pai em questão passa
+É necessário multiplicar por dois pois o pai em questão passa
 somente metade dos seus genes a sua prole, a outra metade vindo ao acaso
 da população.
 Essa é a definição prática de valor de acasalamento, o valor que os
-pais efetivamente passam a sua prole.
+pais efetivamente passam à sua prole.
 No entanto, pela teoria, assumimos que o valor de acasalamento é na
 verdade a soma dos efeitos médios de todos os alelos que um indivíduo
 carrega.
@@ -858,16 +864,18 @@ cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
 ##Desvio de dominância
 
-O valor de acsalamento é um componente do valor genotípico de um
+O valor de acasalamento é um componente do valor genotípico de um
 indivíduo.
 O resto do valor é denominado desvio de dominância:
+
 $$
 G = A + D
 $$
-Esse desvio tem origem da propriedade de dominância entre alelos de um
-mesmo locus, ou seja, da interação dentro do locus.
-O desvio de dominância, portanto, aparece quando os alelos são postos
-juntos para formar um genótipo.
+
+Esse desvio tem origem na propriedade de dominância entre alelos de um
+mesmo locus, ou seja, na interação dentro do locus.
+O desvio de dominância, portanto, aparece quando os alelos são unidos
+para formar um genótipo.
 Esse efeito não pode ser previsto pelos efeitos dos alelos separadamente.
 Dado que os efeitos médios dos alelos e os valores genotípicos
 dependem da frequência gênica, o desvio de dominância também
@@ -887,28 +895,38 @@ determinação do valor genotípico.
 Porém, quando mais loci são considerados, o valor genotípico pode
 ter um componente a mais, o desvio de interação, relacionado com a
 interação entre alelos de diferentes locus (epistasia):
+
 $$
 G = G_A + G_B + I_{AB}
 $$
+
 $I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G_B$, o desvio epistático.
+Interações epistáticas são fundamentais na formação de
+associações gênicas funcionais e modulares, como veremos nas
+próximas seções.
+Além disso, epistasia pode funcionar como uma forma de armazenar
+variação críptica, liberada em eventos seletivos intensos ou gargalos
+populacionais [@Cheverud1996a].
 
 ##Partição de variância
 
 Como vimos anteriormente, a avariação dos caracteres contínuos é
 expressa em termos de variância.
-A ideia básica no estudo de variação, introduzida por Fisher em 1918,
-é de sua partição em componentes atribuídos a diferntes causas.
-A magnitude relativa desses componentes determina as propriedades
-genéticas de uma população, em particular o grau de semelhança entre
-parentes.
+A ideia básica no estudo de variação, introduzida por Fisher
+[-@Fisher1918], é de sua partição em componentes atribuídos a
+diferentes causas. A magnitude relativa desses componentes determina as
+propriedades genéticas de uma população, em particular o grau de
+semelhança entre parentes.
 Os componentes nos quais a variância é particionada são os mesmos nos
 quais o valor fenotípico foi dividido:
+
 $$
 V_P = V_A + V_D + V_I + V_E
 $$
+
 sendo $V_P$ a variância dos valores fenotípicos, $V_A$ a variância
 dos valores de acasalamento (chamada de variância aditiva), $V_D$ a
-variãncia dos desvios de dominância, $V_I$ a variância dos desvios
+variância dos desvios de dominância, $V_I$ a variância dos desvios
 epistáticos, e finalmente $V_E$ a variância dos desvios ambientais.
 A importância relativa de uma determinada fonte de variação é a
 variância devida a essa fonte, como uma proporção da variância
@@ -918,7 +936,7 @@ fenotípica.
 
 A variância aditiva, ou a variância devida aos efeitos médios dos
 alelos combinados em um genótipo, é a causa principal de semelhança
-entre parentes, sendo portanto o determinante das propriedades
+entre parentes, sendo, portanto, o determinante das propriedades
 genéticas da população e de sua resposta à seleção natural.
 A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
 determinados pelos genes transmitidos pelos pais, e é denominada
@@ -930,6 +948,7 @@ Agora que fizemos a conexão entre efeito médio dos alelos, valor de
 acasalamento, variância aditiva e herdabilidade, podemos estudar a
 resposta de um caráter, ou de vários caracteres simultaneamente, à
 seleção natural.
+
 ##Um caráter: Equação do Criador
 
 Quando estamos trabalhando com apenas um caráter, podemos calcular
@@ -938,16 +957,16 @@ seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa
 resposta univariada à seleção natural foi nomeada como Equação do
 Criador ("Breeder's equation"), em referência a criadores de animais
 e de plantas que aplicavam seleção artificial com intuito de atingir
-melhoramentos em produtividade:
+maior produtividade:
 
 $$
 R = h^2S
 $$
 
-Por essa equação podemos notar a relevância da herdabilidade, ou
+Nessa equação, podemos notar a relevância da herdabilidade, ou
 da proporção de variância devida aos valores de acasalamento, na
 determinação da resposta à seleção natural. Quanto maior for essa
-proporção, maior será aresposta à seleção para um mesmo diferncial
+proporção, maior será a resposta à seleção para um mesmo diferencial
 de seleção.
 
 ###Médias
@@ -961,22 +980,19 @@ parental antes da seleção.
 
 ###Diferencial de Seleção
 
-O diferencial de seleção caracteriza-se pelo valor fenotípico médio
-dos pais selecionados expresso como um desvio da média populacional
-antes do episódio de seleção (Fig. \ref{parentoff}).
-Quando a seleção é do tipo truncada, ou seja, existe uma ordenação
-dos valores fenotípicos em termos de mais ou menos ótimo e todos os
-indivíduos selecionados possuem valores considerados melhores que os
-não-selecionados, existe uma relação entre o diferencial de seleção
-e a intensidade de seleção.
-A resposta à seleção pode ser generalizada se o diferencial de
-seleção é expresso em termos do desvio padrão fenotípico da
-distribuição do caráter.
-O diferencial de seleção padronizado é chamado de intensidade de
-seleção (i):
+O diferencial de seleção é definido como a diferença na média dos
+indivíduos selecionados e a média populacional antes da seleção.
+Na figura \ref{parentoff} podemos ver um evento de seleção de truncamento, ou seja,
+apenas indivíduos com fenótipo acima de um certo valor sobrevivem.
+O diferencial de seleção $S$ está relacionado com a intensidade de
+seleção, quando maior o $S$ mais intensa é a seleção.
+Como o diferencial de seleção é expresso na escala da medida
+original, podemos padronizá-lo pelo desvio padrão fenotípico.
+A quantidade resultante é usualmente chamada de intensidade de
+seleção ($i$) e é adimensional.
 
 $$
-S = i\sigma_P
+\frac{S}{\sigma_P} = i
 $$
 
 ![Regressão da média dos filhos na média dos pais \label{parentoff}](./figuras/parentregression.png)
@@ -995,7 +1011,7 @@ seleção e herdabilidade. Porém, a teoria da genética quantitativa
 também permite que estudemos a resposta multivariada à seleção
 natural, considerando vários caracteres (e subjacente a isso, vários
 loci) simultaneamente. A expansão da equação univariada para a
-multivariada foi elaborada por Russel Lande em seu artigo de 1979,
+multivariada foi elaborada por Russel Lande [-@Lande1979],
 apresentando a equação:
 
 $\Delta z = G\beta$
