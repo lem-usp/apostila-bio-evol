@@ -646,8 +646,6 @@ $$
 \right )
 $$
 
-
-
 ##Comparação de Matrizes
 
 Comparando padrões e estruturas.
@@ -675,9 +673,11 @@ influência do genótipo e influência do ambiente (considerando todas as
 circunstâncias não-genéticas que influenciam o fenótipo).
 Podemos pensar que o genótipo confere um determinado valor de um caráter ao
 indivíduo, e o ambiente causa um desvio desse valor:
+
 $$
 P = G + E,
 $$
+
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
 Assume-se que o desvio ambiental médio em uma população é zero,
 considerando-se que os desvios individuais ocorrerm em diversas
@@ -694,7 +694,7 @@ acasalamento, podemos utilizar valores arbitrários para os genótipos de um
 -a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
 (Fig. \ref{valgen}).
 
-![Valores genotípicos \label{valgen}](./figuras/placeholder.png)
+![Valores genotípicos arbitrários \label{valgen}](./figuras/valoresgenotipicos.png)
 
 Portanto, ao medirmos uma amostra de indivíduos de uma população
 qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
@@ -717,7 +717,7 @@ somando os resultados para os três genótipos (Tabela 1).
 Tabela 1. Dependência da média populacional das frequências gênicas
 
 -------------------------------------------------------
-  Genótipo     Frequência      Valor      Freq. X Valor
+  Genótipo     Frequência      Valor      Freq. $\times$ Valor
 ----------- ----------------  -------   ---------------
  $A_1A_1$          $p^2$           +a         $p^2a$
 
@@ -870,14 +870,14 @@ O desvio de dominância, portanto, aparece quando os alelos são postos
 juntos para formar um genótipo.
 Esse efeito não pode ser previsto pelos efeitos dos alelos separadamente.
 Dado que os efeitos médios dos alelos e os valores genotípicos
-dependenm da frequência gênica, o desvio de dominância também
+dependem da frequência gênica, o desvio de dominância também
 possuí essa dependência, sendo uma propriedade tanto dos genes quanto
 da população.
-A relação entre valores genotípicos, valores de acsalamento e
-desvios de dominância está representada gaficamente na figura
-\ref{valorgenotipico}.
+A relação entre valores genotípicos, valores de acasalamento e
+desvios de dominância está representada graficamente na figura
+\ref{desviodominancia}.
 
-![Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos. \label{valorgenotipico}](./figuras/placeholder.png)
+![Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos. \label{desviodominancia}](./figuras/desviodominancia.png)
 
 ##Desvio de interação
 
