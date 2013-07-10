@@ -881,8 +881,12 @@ desvios de dominância está representada gaficamente na figura
 
 ##Desvio de interação
 
-Quando apenas um locus é considerado, apenas a interação entre os alelos desse locus é adicionada ao valor de acasalamento para a determinação do valor genotípico.
-Porém, quando mais loci são considerados, o valor genotípico pode ter um componente a mais, o desvio de interação, relacionado com a interação entre alelos de diferentes locus (epistasia):
+Quando apenas um locus é considerado, apenas a interação entre
+os alelos desse locus é adicionada ao valor de acasalamento para a
+determinação do valor genotípico.
+Porém, quando mais loci são considerados, o valor genotípico pode
+ter um componente a mais, o desvio de interação, relacionado com a
+interação entre alelos de diferentes locus (epistasia):
 $$
 G = G_A + G_B + I_{AB}
 $$
@@ -890,45 +894,86 @@ $I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G
 
 ##Partição de variância
 
-Como vimos anteriormente, a avariação dos caracteres contínuos é expressa em termos de variância.
-A ideia básica no estudo de variação, introduzida por Fisher em 1918, é de sua partição em componentes atribuídos a diferntes causas.
-A magnitude relativa desses componentes determina as propriedades genéticas de uma população, em particular o grau de semelhança entre parentes.
-Os componentes nos quais a variância é particionada são os mesmos nos quais o valor fenotípico foi dividido:
+Como vimos anteriormente, a avariação dos caracteres contínuos é
+expressa em termos de variância.
+A ideia básica no estudo de variação, introduzida por Fisher em 1918,
+é de sua partição em componentes atribuídos a diferntes causas.
+A magnitude relativa desses componentes determina as propriedades
+genéticas de uma população, em particular o grau de semelhança entre
+parentes.
+Os componentes nos quais a variância é particionada são os mesmos nos
+quais o valor fenotípico foi dividido:
 $$
 V_P = V_A + V_D + V_I + V_E
 $$
-sendo $V_P$ a variância dos valores fenotípicos, $V_A$ a variância dos valores de acasalamento (chamada de variância aditiva), $V_D$ a variãncia dos desvios de dominância, $V_I$ a variância dos desvios epistáticos, e finalmente $V_E$ a variância dos desvios ambientais.
-A importância relativa de uma determinada fonte de variação é a variância devida a essa fonte, como uma proporção da variância fenotípica.
+sendo $V_P$ a variância dos valores fenotípicos, $V_A$ a variância
+dos valores de acasalamento (chamada de variância aditiva), $V_D$ a
+variãncia dos desvios de dominância, $V_I$ a variância dos desvios
+epistáticos, e finalmente $V_E$ a variância dos desvios ambientais.
+A importância relativa de uma determinada fonte de variação é a
+variância devida a essa fonte, como uma proporção da variância
+fenotípica.
 
 ###Variância aditiva
 
-A variância aditiva, ou a variância devida aos efeitos médios dos alelos combinados em um genótipo, é a causa principal de semelhança entre parentes, sendo portanto o determinante das propriedades genéticas da população e de sua resposta à seleção natural.
-A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são determinados pelos genes transmitidos pelos pais, e é denominada herdabilidade.
+A variância aditiva, ou a variância devida aos efeitos médios dos
+alelos combinados em um genótipo, é a causa principal de semelhança
+entre parentes, sendo portanto o determinante das propriedades
+genéticas da população e de sua resposta à seleção natural.
+A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
+determinados pelos genes transmitidos pelos pais, e é denominada
+herdabilidade.
 
 #Seleção Natural e Genética Quantitativa
 
-Agora que fizemos a conexão entre efeito médio dos alelos, valor de acasalamento, variância aditiva e herdabilidade, podemos estudar a resposta de um caráter, ou de vários caracteres simultaneamente, à seleção natural.
+Agora que fizemos a conexão entre efeito médio dos alelos, valor de
+acasalamento, variância aditiva e herdabilidade, podemos estudar a
+resposta de um caráter, ou de vários caracteres simultaneamente, à
+seleção natural.
 ##Um caráter: Equação do Criador
 
-Quando estamos trabalhando com apenas um caráter, podemos calcular sua a resposta à seleção natural (R) conforme o diferencial de seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta univariada à seleção natural foi nomeada como Equação do Criador ("Breeder's equation"), em referência a criadores de animais e de plantas que aplicavam seleção artificial com intuito de atingir melhoramentos em produtividade:
+Quando estamos trabalhando com apenas um caráter, podemos calcular
+sua a resposta à seleção natural (R) conforme o diferencial de
+seleção aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa
+resposta univariada à seleção natural foi nomeada como Equação do
+Criador ("Breeder's equation"), em referência a criadores de animais
+e de plantas que aplicavam seleção artificial com intuito de atingir
+melhoramentos em produtividade:
 
 $$
 R = h^2S
 $$
 
-Por essa equação podemos notar a relevância da herdabilidade, ou da proporção de variância devida aos valores de acasalamento, na determinação da resposta à seleção natural. Quanto maior for essa proporção, maior será aresposta à seleção para um mesmo diferncial de seleção.
+Por essa equação podemos notar a relevância da herdabilidade, ou
+da proporção de variância devida aos valores de acasalamento, na
+determinação da resposta à seleção natural. Quanto maior for essa
+proporção, maior será aresposta à seleção para um mesmo diferncial
+de seleção.
 
 ###Médias
 
-Apesar de um episódio de seleção alterar as frequências alélicas do caráter, os efeitos da seleção passíveis de observação restringem-se às mudanças mensuradas na média da população.
-Portanto, a resposta à seleção (R) é uma diferença entre as médias fenotípicas do caráter na prole dos pais selecionados e na geração parental antes da seleção.
+Apesar de um episódio de seleção alterar as frequências alélicas
+do caráter, os efeitos da seleção passíveis de observação
+restringem-se às mudanças mensuradas na média da população.
+Portanto, a resposta à seleção (R) é uma diferença entre as médias
+fenotípicas do caráter na prole dos pais selecionados e na geração
+parental antes da seleção.
 
 ###Diferencial de Seleção
 
-O diferencial de seleção caracteriza-se pelo valor fenotípico médio dos pais selecionados expresso como um desvio da média populacional antes do episódio de seleção (Fig. \ref{parentoff}).
-Quando a seleção é do tipo truncada, ou seja, existe uma ordenação dos valores fenotípicos em termos de mais ou menos ótimo e todos os indivíduos selecionados possuem valores considerados melhores que os não-selecionados, existe uma relação entre o diferencial de seleção e a intensidade de seleção.
-A resposta à seleção pode ser generalizada se o diferencial de seleção é expresso em termos do desvio padrão fenotípico da distribuição do caráter.
-O diferencial de seleção padronizado é chamado de intensidade de seleção (i):
+O diferencial de seleção caracteriza-se pelo valor fenotípico médio
+dos pais selecionados expresso como um desvio da média populacional
+antes do episódio de seleção (Fig. \ref{parentoff}).
+Quando a seleção é do tipo truncada, ou seja, existe uma ordenação
+dos valores fenotípicos em termos de mais ou menos ótimo e todos os
+indivíduos selecionados possuem valores considerados melhores que os
+não-selecionados, existe uma relação entre o diferencial de seleção
+e a intensidade de seleção.
+A resposta à seleção pode ser generalizada se o diferencial de
+seleção é expresso em termos do desvio padrão fenotípico da
+distribuição do caráter.
+O diferencial de seleção padronizado é chamado de intensidade de
+seleção (i):
 
 $$
 S = i\sigma_P
@@ -938,11 +983,20 @@ $$
 
 ###Herdabilidade
 
-Olhando para a regressão pais-prole da figura \ref{parentoff}, podemos ver que a razão R/S é equivalente à inclinação da reta de regressão.
+Olhando para a regressão pais-prole da figura \ref{parentoff},
+podemos ver que a razão R/S é equivalente à inclinação da reta de
+regressão.
 
 ##Mais de um caráter: Equação de Lande
 
-Acabamos de entender como se estudar a resposta univariada à seleção natural com os conceitos de resposta fenotípica, diferencial de seleção e herdabilidade. Porém, a teoria da genética quantitativa também permite que estudemos a resposta multivariada à seleção natural, considerando vários caracteres (e subjacente a isso, vários loci) simultaneamente. A expansão da equação univariada para a multivariada foi elaborada por Russel Lande em seu artigo de 1979, apresentando a equação:
+Acabamos de entender como se estudar a resposta univariada à seleção
+natural com os conceitos de resposta fenotípica, diferencial de
+seleção e herdabilidade. Porém, a teoria da genética quantitativa
+também permite que estudemos a resposta multivariada à seleção
+natural, considerando vários caracteres (e subjacente a isso, vários
+loci) simultaneamente. A expansão da equação univariada para a
+multivariada foi elaborada por Russel Lande em seu artigo de 1979,
+apresentando a equação:
 
 $\Delta z = G\beta$
 
