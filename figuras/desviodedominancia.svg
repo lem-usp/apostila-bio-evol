@@ -77,7 +77,10 @@
      transform="translate(0,2.2302535e-5)">
     <g
        id="g6092"
-       transform="matrix(1.2933112,0,0,1.2933112,-265.19874,-213.07767)">
+       transform="matrix(1.2933112,0,0,1.2933112,-265.19874,-213.07767)"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/rect6201.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
       <rect
          inkscape:export-ydpi="200"
          inkscape:export-xdpi="200"
@@ -817,6 +820,8 @@
        height="1049.3464"
        x="-1.4142135"
        y="0.18729693"
-       transform="translate(0,-2.2302535e-5)" />
+       transform="translate(0,-2.2302535e-5)"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
   </g>
 </svg>

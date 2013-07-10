@@ -995,7 +995,7 @@ $$
 \frac{S}{\sigma_P} = i
 $$
 
-![Regressão da média dos filhos na média dos pais \label{parentoff}](./figuras/parentregression.png)
+![Regressão da média dos filhos na média dos pais \label{parentoff}](./figuras/parent-offspring.png)
 
 ###Herdabilidade
 
