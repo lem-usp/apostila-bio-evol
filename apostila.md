@@ -65,7 +65,7 @@ biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
 temas macroevoutivos, como especiação por exemplo.
 
-![Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população \label{variosloci}](./figuras/variosalelos.png)
+![**Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população.** \label{variosloci}](./figuras/variosalelos.png)
 
 #Princípios matemáticos em Genética Quantitativa
 
@@ -118,7 +118,7 @@ A figura \ref{vetores} ilustra a representação de um par de medidas
 utilizando um vetor bidimensional.
 A partir dessa abstração, podemos construir uma teoria bastante completa.
 
-![Representação de medidas reais na forma vetorial. Vemos duas
+![**Representação de medidas reais na forma vetorial.** Vemos duas
 medidas de tamanho linear de ossos do braço representadas num vetor.
 \label{vetores}](./figuras/medidas-vetores.png)
 
@@ -174,7 +174,7 @@ magnitude quando em suas direção.
 A figura \ref{deltazes} mostra algumas possibilidades para as
 diferenças entre vetores de mudanças evolutivas de duas populações.
 
-![Possíveis mudanças nas médias de duas populações. No caso
+![**Possíveis mudanças nas médias de duas populações.** No caso
 (a) magnitudes de mudança iguais mas direções diferentes. (b)
 direções iguais mas magnitudes diferentes e (c) magnitudes e direções
 diferentes.\label{deltazes}](./figuras/deltazes.png)
@@ -210,7 +210,7 @@ $$
 |\mathbf{x}| = \sqrt{\sum_{i=1}^p x_i^2}
 $$
 
-![Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras. \label{pitagoras}](./figuras/pitagoras.png)
+![**Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras.** \label{pitagoras}](./figuras/pitagoras.png)
 
 ###Correlação de vetores
 
@@ -256,8 +256,8 @@ Corr(\mathbf{x}, \mathbf{y}) = \frac{\mathbf{x} \cdot \mathbf{y}}{|\mathbf{x}||\
 $$
 
 
-![Utilizando a lei dos cossenos para calcular o
-cosseno do angulo $\alpha$ entre dois vetores
+![**Utilizando a lei dos cossenos para calcular o
+cosseno do angulo $\alpha$ entre dois vetores.**
 \label{leidoscossenos}](./figuras/leidoscossenos.png)
 
 
@@ -380,7 +380,7 @@ Se, ainda, os desvios não tiverem relação nenhuma, desvios
 coordenados e opostos tendem a se cancelar, e a covariação será
 próxima de zero.
 
-Suponha agora que estivéssemos estudando um grande numero de caracteres
+Suponha agora que estivéssemos estudando um grande número de caracteres
 métricos, numerados de $1$ a $p$, que descrevem de forma completa
 alguma estrutura anatômica.
 O fenótipo de cada um dos $n$ indivíduos da população estudada pode ser
@@ -695,7 +695,7 @@ acasalamento, podemos utilizar valores arbitrários para os genótipos de um
 -a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
 (Fig. \ref{valgen}).
 
-![Valores genotípicos arbitrários \label{valgen}](./figuras/valoresgenotipicos.png)
+![**Valores genotípicos arbitrários.** O valor intermediário entre os dois homozigotos foi denominado como zero. Os valores genotípicos $a$, $-a$ e $d$ são calculados em relação a esse ponto zero. \label{valgen}](./figuras/valoresgenotipicos.png)
 
 Portanto, ao medirmos uma amostra de indivíduos de uma população
 qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
@@ -717,7 +717,7 @@ determinado por um único locus multiplicando as frequências
 genotípicas pelos valores genotípicos e somando os resultados para os
 três genótipos (Tabela 1).
 
-Tabela 1. Dependência da média populacional das frequências gênicas
+**Tabela 1. Dependência da média populacional das frequências gênicas.** A frequência dos genótipos é determinada pelo equilíbrio de Hardy-Weinberg e os valores genotípicos são calculados em relação ao ponto equidistante dos dois homozigotos. 
 
 -------------------------------------------------------
   Genótipo     Frequência      Valor      Freq. $\times$ Valor
@@ -764,7 +764,7 @@ ou seja, a soma das médias de todos os loci.
 Para entendermos a herança de caracteres quantitativos, temos que lidar
 com a transmissão de valor dos pais para a prole.
 Isso não pode ser feito com o uso dos valores genotípicos somente,
-pois os pais passam seus genes para sua prole e não seu genótipo.
+pois os pais passam seus genes e não seu genótipo para sua prole. 
 O efeito médio de um alelo é justamente uma medida associada com os
 genes e não com os genótipos.
 Essa medida depende dos valores genotípicos, $a$ e $d$, e, também, das
@@ -785,7 +785,7 @@ população.
 A chance desse alelo se unir a um outro qualquer é determinada pelas
 frequências gênicas desses outros alelos na população.
 
-Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.
+**Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando da média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
 
 \begin{centering}
 \begin{tabular}{lllllll}
@@ -822,15 +822,14 @@ substituição, representado pelo símbolo $\alpha$.
 Os efeitos médios de todos os alelos parentais influenciando um
 caráter determinam o valor genotípico médio de sua prole para esse
 caráter.
-Porém, é impossível medir cada efeito médio de cada alelos nos
+Porém, é impossível medir o efeito médio de cada alelo nos
 indivíduos, pois os efeitos médios são propriedades populacionais,
 envolvendo a associação de cada alelo com todas a diferentes
-combinações genéticas existentes em cada indivíduo.
-Felizmente, podemo medir é valor de acasalamento (simbolizado pela
+combinações genéticas existentes em cada indivíduo. 
+Felizmente, o que podemos medir é o valor de acasalamento (simbolizado pela
 letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
 do caráter em sua prole.
-O valor de acasalamento de vários indivíduos nos fornece uma medida
-indireta dos valores médios dos alelos.
+Ou seja, podemos pegar um indivíduo, sem saber o seu genótipo nem o alelo que ele transmitirá para a próxima geração, e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole. 
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
@@ -846,7 +845,7 @@ O valor de acasalamento, portanto, pode ser expresso em termos dos
 efeitos médios dos alelos (ou efeito médio de uma substituição de
 alelo), como mostrado na tabela 3.
 
-Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.
+**Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.** O valor de acasalamento está apresentado em função dos efeitos médios dos alelos ($\alpha_1$ e $\alpha_2$) e do efeito médio de uma substituição ($\alpha$).
 
 -------------------------------------------------
 Genótipo    Valor de acasalamento
@@ -866,7 +865,7 @@ cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
 O valor de acasalamento é um componente do valor genotípico de um
 indivíduo.
-O resto do valor é denominado desvio de dominância:
+O restante do valor é denominado desvio de dominância:
 
 $$
 G = A + D
@@ -883,9 +882,14 @@ possuí essa dependência, sendo uma propriedade tanto dos genes quanto
 da população.
 A relação entre valores genotípicos, valores de acasalamento e
 desvios de dominância está representada graficamente na figura
-\ref{desviodominancia}.
+\ref{desviodominancia}. 
+Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo. 
+Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos, tendo os pontos pesos conforme a frequência do genótipo que ele representa. 
+A posição dessa reta dá os valores de acsalamento de cada genótipo.
+As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
-![Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos. \label{desviodominancia}](./figuras/desviodominancia.png)
+
+![**Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.** Os círculos abertos representam os valores de acasalamento para os genótipos apresentados no eixo da abscissa. Esse eixo indica o número de alelos $A_1$ no genótipo. Os círculos preenchidos representam os valores genotípicos observados. Os desvios de dominância são as linhas pontilhadas que conectam os valores de acasalamento com os valores genotípicos. A cruz representa amédia populacional. O eixo vertical à esquerda mostra os valores genotípicos, enquanto o eixo à direita mostra os valores de acasalamento correspondentes aos genótipos na abscissa.  \label{desviodominancia}](./figuras/desviodominancia.png)
 
 ##Desvio de interação
 
@@ -894,7 +898,7 @@ os alelos desse locus é adicionada ao valor de acasalamento para a
 determinação do valor genotípico.
 Porém, quando mais loci são considerados, o valor genotípico pode
 ter um componente a mais, o desvio de interação, relacionado com a
-interação entre alelos de diferentes locus (epistasia):
+interação entre alelos de diferentes loci (epistasia):
 
 $$
 G = G_A + G_B + I_{AB}
@@ -910,11 +914,12 @@ populacionais [@Cheverud1996a].
 
 ##Partição de variância
 
-Como vimos anteriormente, a avariação dos caracteres contínuos é
+Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
 [-@Fisher1918], é de sua partição em componentes atribuídos a
-diferentes causas. A magnitude relativa desses componentes determina as
+diferentes causas. 
+A magnitude relativa desses componentes determina as
 propriedades genéticas de uma população, em particular o grau de
 semelhança entre parentes.
 Os componentes nos quais a variância é particionada são os mesmos nos
@@ -934,8 +939,7 @@ fenotípica.
 
 ###Variância aditiva
 
-A variância aditiva, ou a variância devida aos efeitos médios dos
-alelos combinados em um genótipo, é a causa principal de semelhança
+A variância aditiva, ou a variância devida aos valores de acasalamento, é a causa principal de semelhança
 entre parentes, sendo, portanto, o determinante das propriedades
 genéticas da população e de sua resposta à seleção natural.
 A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
@@ -995,22 +999,29 @@ $$
 \frac{S}{\sigma_P} = i
 $$
 
-![Regressão da média dos filhos na média dos pais \label{parentoff}](./figuras/parent-offspring.png)
+![**Resposta à seleção ilustrada na regressão dos resíduos em torno da média do caráter dos pais pelos resíduos da prole.** Cada ponto é um par dos desvios do caráter dos pais e de sua prole em relação à média populacional. A origem do gráfico (0,0) representa a média populacional e assume-se que é a mesma nas duas gerações. A área sombreada representa os indivíduos da geração parental que foram selecionados. A cruz é a média dos pais e da prole selecionados. A diferença da origem (média populacional) para a média dos pais selecionados corresponde ao diferencial de seleção (S). A diferença da origem para a média da prole corresponde à resposta à seleção (R). \label{parentoff}](./figuras/parent-offspring.png)
 
 ###Herdabilidade
 
 Olhando para a regressão pais-prole da figura \ref{parentoff},
 podemos ver que a razão R/S é equivalente à inclinação da reta de
-regressão.
+regressão. 
+Olhando novamente para a Equação do Criador, podemos notar que essa razão corresponde à herdabilidade do caráter em questão.  
+Lembrando que herdabilidade representa a proporção de variância aditiva em relação à variância fenotípica, podemos compreender que a seleção é imposta à variação fenotípica da população de pais, mas a resposta é equivalente ao valor médio de acasalamento dos pais, medido em sua prole, ou seja, a variação aditiva transmitida dos pais para a prole. 
+Quanto mais próxima de 1,0 for a inclinação da reta de regressão pais-prole, maior a semelhança entre pais e prole (maior a herdabilidade), e portanto maior a resposta à uma dada seleção.
 
 ##Mais de um caráter: Equação de Lande
 
-Acabamos de entender como se estudar a resposta univariada à seleção
-natural com os conceitos de resposta fenotípica, diferencial de
-seleção e herdabilidade. Porém, a teoria da genética quantitativa
-também permite que estudemos a resposta multivariada à seleção
-natural, considerando vários caracteres (e subjacente a isso, vários
-loci) simultaneamente. A expansão da equação univariada para a
+Sabemos que quando trabalhamos com mais de um caráter temos que considerar não somente a variância dos caracteres, mas também a covariância ou a correlação dos mesmos. 
+A causa genética principal de covariação entre caracteres é a ação pleiotrópica dos genes: pleiotropia é um fenômeno comum e significa que um gene afeta dois ou mais caracteres ao mesmo tempo. 
+Portanto, se um gene pleiotrópico está segregando na população, isso causa variação simultânea nos caracteres que ele afeta. 
+Por exemplo, genes que aumentam a taxa de crescimento de indivíduos  aumentam tanto a altura quanto o peso destes, causando uma correlação genética entre esses caracteres.
+O grau de correlação expressa o quanto dois caracteres são influenciados pelos mesmos genes.
+A seleção natural atua em vários caracteres simultaneamente  e correlações fenotípicas entre caracteres é comum nos organismos (Lande e Arnold 1983). 
+A correlação entre caracteres causa uma resposta interessante: se X e Y são correlacionados, a seleção direta em X causará uma seleção correlacionada em Y, e uma resposta direta de X e indireta de Y. 
+Como vimos na Equação do Criador, a resposta direta de X é equivalente ao valor médio de acasalamento dos indivíduos selecionados. 
+Já a resposta indireta de Y pode ser prevista sabendo-se o valor da correlação genética entre X e Y e as herdabilidades dos dois caracteres. 
+A expansão da equação univariada para a
 multivariada foi elaborada por Russel Lande [-@Lande1979],
 apresentando a equação:
 
@@ -1019,6 +1030,7 @@ $\Delta z = G\beta$
 ###$\Delta z$
 
 ###$\beta$
+O vetor denominado beta é um conjunto de coeficientes parciais de regressão da aptidão relativa pelos caracteres. Cada elemento betai corresponde à inclinação da reta que melhor descreve a dependência da aptidão relativa do caráter zi, depois de remover os efeitos residuais dos outros caracteres na aptidão. 
 
 ###Matriz Genética
 
