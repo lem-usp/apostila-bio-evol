@@ -1025,7 +1025,9 @@ A expansão da equação univariada para a
 multivariada foi elaborada por Russel Lande [-@Lande1979],
 apresentando a equação:
 
-$\Delta z = G\beta$
+$$
+\Delta z = GP^{-1}S = G\beta
+$$
 
 ###$\Delta z$
 
