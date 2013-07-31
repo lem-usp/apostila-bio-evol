@@ -673,7 +673,7 @@ influência do genótipo e influência do ambiente (considerando todas as
 circunstâncias não-genéticas que influenciam o fenótipo).
 Podemos pensar que o genótipo confere um determinado valor de um
 caráter ao indivíduo, e o ambiente causa um desvio desse valor (ao
-fazer isso, estamos ignorando interações genótipo-ambiente).
+fazer isso, estamos ignorando interações genótipo-ambiente):
 
 $$
 P = G + E,
@@ -705,8 +705,8 @@ em uma determinada população de ratos, e ao pesarmos uma amostra
 encontramos: $P_1$$P_1$ = 14g; $P_1$$P_2$ = 12g; e $P_2$$P_2$ = 6g.
 Então, para calcularmos o ponto zero, temos que achar o valor
 intermediário entre os dois homozigotos: $(14 + 6)/2 = 10$.
-Sendo 10g o ponto zero, o valor de a é: $14-10 = 4$; o valor de -a é:
-$6-10 = -4$; e o valor de d é: $12-10 = 2$.
+Sendo 10g o ponto zero, o valor de a é: $14-10 = 4g$; o valor de -a é:
+$6-10 = -4g$; e o valor de d é: $12-10 = 2g$.
 
 Uma questão fundamental a se compreender sobre os valores genotípico e
 fenotípico é que suas médias populacionais dependem das frequências gênicas.
@@ -743,14 +743,14 @@ calcular a média populacional. Digamos que a frequência de $P_1$ seja
 $p = 0,6$, e lembrando que $a = 4$ e $d = 2$, então:
 
 $$
-M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76
+M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76g
 $$
 
 Se o caráter peso fosse determinado por mais de um locus, teríamos que
 computar a contribuição de todos os loci e achar seu efeito combinado
 na média populacional.
-Supondo que essa combinação seja aditiva, ou seja, que o efeito de um
-locus sobre a média seja independente do efeito dos outros loci, e que
+Supondo que essa combinação é aditiva, ou seja, que o efeito de um
+locus sobre a média é independente do efeito dos outros loci, e que
 todos os loci sejam bialélicos, a média populacional será:
 
 $$
@@ -763,7 +763,7 @@ ou seja, a soma das médias de todos os loci.
 
 Para entendermos a herança de caracteres quantitativos, temos que lidar
 com a transmissão de valor dos pais para a prole.
-Isso não pode ser feito com o uso dos valores genotípicos somente,
+Isso não pode ser feito somente com o uso dos valores genotípicos,
 pois os pais passam seus genes e não seu genótipo para sua prole. 
 O efeito médio de um alelo é justamente uma medida associada com os
 genes e não com os genótipos.
@@ -785,7 +785,7 @@ população.
 A chance desse alelo se unir a um outro qualquer é determinada pelas
 frequências gênicas desses outros alelos na população.
 
-**Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando da média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
+**Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando a média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
 
 \begin{centering}
 \begin{tabular}{lllllll}
@@ -811,11 +811,16 @@ $A_2$ & & $p$ & $q$ & $-qa + pd$ & $-[a(p-q) + 2dpq]$ & $-p[a+d(q-p)]$ \\
 
 O efeito médio de um alelo é representado pelo símbolo $\alpha_1$,
 para o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$.
-Quando estamos com apenas dois alelos, podemos também calcular o efeito
+Quando trabalhamos com apenas dois alelos, podemos também calcular o efeito
 médio da substituição de um alelo.
 Isso sginifica que se todos os genes $A_2$ fossem mutados para o
 gene $A_1$, o efeito médio produzido será o efeito médio da
-substituição, representado pelo símbolo $\alpha$.
+substituição, representado pelo símbolo $\alpha$:
+$$
+\alpha = a + d(q-p)
+$$
+O valor de $\alpha$ é obtido seguindo o raciocínio de que ao mudarmos o genótipo $A_1A_2$ pelo genótipo $A_1A_1$, mudaremos o valor d para o +a, e o efeito será $(a - d)$.
+Ao mudarmos $A_2A_2$ para $A_1A_2$, mudaremos o valor de -a para d, e o efeito será $(d + a)$. 
 
 ##Valor de acasalamento
 
