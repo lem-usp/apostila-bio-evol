@@ -1104,6 +1104,18 @@ Podemos, então, descontar a correlação fenotípica encontrada na
 população para obter um valor de seleção que seja apenas devido a
 seleção direta a cada caráter.
 
+Isso é feito multiplicando o diferencial de seleção pelo inverso da
+matriz de covariação fenotípica, obtendo o gradiente de seleção
+(Fig. \ref{gradsel}).
+O vetor resultante, $\beta$, represente apenas a seleção direta em
+cada caráter, em unidades de variância fenotípica.
+
+![**Gradiente de seleção correlacionado** A partir da situação na figura \ref{difsel},
+descontamos o efeito da covariação fenotípica entre duas variáveis
+e obtemos os gradientes de seleção. Como não existe seleção
+direta sobre $y$, sua componente do gradiente de seleção é nula.
+\label{gradsel}](./figuras/gradientedeselecao.png)
+
 ###Matriz Genética
 
 ###Matriz Fenotípica
