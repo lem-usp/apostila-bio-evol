@@ -830,11 +830,11 @@ caráter.
 Porém, é impossível medir o efeito médio de cada alelo nos
 indivíduos, pois os efeitos médios são propriedades populacionais,
 envolvendo a associação de cada alelo com todas a diferentes
-combinações genéticas existentes em cada indivíduo. 
+combinações genéticas possíveis em cada indivíduo. 
 Felizmente, o que podemos medir é o valor de acasalamento (simbolizado pela
 letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
 do caráter em sua prole.
-Ou seja, podemos pegar um indivíduo, sem saber o seu genótipo nem o alelo que ele transmitirá para a próxima geração, e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole. 
+Ou seja, podemos pegar um indivíduo e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole. 
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
@@ -889,7 +889,7 @@ A relação entre valores genotípicos, valores de acasalamento e
 desvios de dominância está representada graficamente na figura
 \ref{desviodominancia}. 
 Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo. 
-Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos, tendo os pontos pesos conforme a frequência do genótipo que ele representa. 
+Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos e os pontos apresentam pesos conforme a frequência do genótipo que ele representa. 
 A posição dessa reta dá os valores de acsalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
@@ -898,15 +898,15 @@ As diferenças entre valores de acasalamento e valores genotípicos correspondem
 
 ##Desvio de interação
 
-Quando apenas um locus é considerado, apenas a interação entre
-os alelos desse locus é adicionada ao valor de acasalamento para a
+Quando apenas um locus é considerado, apenas o efeito da interação entre
+os alelos desse locus é adicionado ao valor de acasalamento para a
 determinação do valor genotípico.
 Porém, quando mais loci são considerados, o valor genotípico pode
 ter um componente a mais, o desvio de interação, relacionado com a
 interação entre alelos de diferentes loci (epistasia):
 
 $$
-G = G_A + G_B + I_{AB}
+G = A_A + D_A + A_B + D_B + I_{AB}
 $$
 
 $I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$ e $G_B$, o desvio epistático.
@@ -919,6 +919,8 @@ populacionais [@Cheverud1996a].
 
 ##Partição de variância
 
+Valores genotípicos, fenotípicos e de acasalamento e desvios de dominância e de interação são medidas associadas a indivíduos.
+Porém, quando lidamos com a evolulção de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
 Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
@@ -955,8 +957,11 @@ herdabilidade.
 
 Agora que fizemos a conexão entre efeito médio dos alelos, valor de
 acasalamento, variância aditiva e herdabilidade, podemos estudar a
-resposta de um caráter, ou de vários caracteres simultaneamente, à
-seleção natural.
+resposta à
+seleção natural de um caráter ou de vários caracteres simultaneamente. 
+As propriedades genéticas de uma população são um produto da seleção natural que atuou no passado, junto de mutação, recombinação e deriva genética.
+É por meio desses processos que existe variabilidade genética, e é principalmente pela ação da seleção natural que os caracteres diferem, alguns tendo proporcionalmente mais variação genética aditiva que outros.
+A teoria da genética quantitativa fornece duas equações pelas quais poemos compreender a resposta à seleção natural em um único caráter - Equação do Criador - e de vários caracteres simultaneamente - Equação de Lande.
 
 ##Um caráter: Equação do Criador
 
@@ -1010,8 +1015,8 @@ $$
 
 Olhando para a regressão pais-prole da figura \ref{parentoff},
 podemos ver que a razão R/S é equivalente à inclinação da reta de
-regressão. 
-Olhando novamente para a Equação do Criador, podemos notar que essa razão corresponde à herdabilidade do caráter em questão.  
+regressão, ou seja, determina o quanto a prole será semelhante aos pais para um dado caráter. 
+Pela Equação do Criador podemos notar que essa razão corresponde à herdabilidade do caráter em questão.  
 Lembrando que herdabilidade representa a proporção de variância aditiva em relação à variância fenotípica, podemos compreender que a seleção é imposta à variação fenotípica da população de pais, mas a resposta é equivalente ao valor médio de acasalamento dos pais, medido em sua prole, ou seja, a variação aditiva transmitida dos pais para a prole. 
 Quanto mais próxima de 1,0 for a inclinação da reta de regressão pais-prole, maior a semelhança entre pais e prole (maior a herdabilidade), e portanto maior a resposta à uma dada seleção.
 
