@@ -1143,8 +1143,8 @@ direta sobre $y$, sua componente do gradiente de seleção é nula.
 
 ###Matriz Genética
 
-Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de cada caráter, a matriz genética ou $*G*$ possuí como entradas em sua diagonal os valores de variância aditiva ($V_A$) para cada caráter, que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). 
-Ou seja, a diagonal da $*G*$ determina as respostas diretas dos caracteres ao gradiente de seleção.
+Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de cada caráter, a matriz genética ou $G$ possuí como entradas em sua diagonal os valores de variância aditiva ($V_A$) para cada caráter, que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). 
+Ou seja, a diagonal da $G$ determina as respostas diretas dos caracteres ao gradiente de seleção.
 Fora das diagonais, as entradas são as covariâncias genéticas aditivas entre todos os caracteres considerados, que determinam as respostas indiretas dos caracteres aos gradientes de seleção correspondentes aos demais caracteres.
 
 ###Matriz Fenotípica
