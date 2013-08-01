@@ -1074,10 +1074,10 @@ após um evento de seleção na geração parental; $G$ representa
 a matriz de covariância genética aditiva, ou seja, a matriz de
 covariância dos efeitos médios dos alelos para cada um dos carácteres
 em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
-população; e, finalmente, $S$ represente o vetor do diferencial de
-seleção, ou seja, a diferença na média dos indivíduos parentais
-selecionados e a média antes da seleção.
-O produto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
+população; e, finalmente, $S$ representa o vetor do diferencial de
+seleção, ou seja, a diferença na média dos individuos parentais
+selecionados e a média populacional antes da seleção.
+O poduto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
 Vamos detalhar individualmente cada uma dessas quantidades.
 
 ###$\Delta z$
@@ -1091,13 +1091,13 @@ Ele é exatamente equivalente ao R na equação do criador.
 
 ###S e $\beta$
 
-O vetor $S$ é análogo ao S da equação do criador, e represente a
-diferença na média dos parentais antes e depois da seleção, mas agora
-para dos os caracteres simultaneamente.
+O vetor $S$ é análogo ao S da equação do criador, e representa a
+difereça na média dos parentais antes e depois da seleção, mas agora
+para todos os caracteres simultaneamente.
 No caso multivariado, os diferenciais de seleção não são restritos
 ao caráter selecionado, pois, caso haja covariação entre o caráter
 selecionado e um segundo caráter não selecionado, um diferencial de
-seleção indireto se manifesta (Fig. \ref{difsel})
+seleção indireto se manifesta (Fig. \ref{difsel}):
 
 ![**Diferencial de seleção correlacionado** Apenas o caráter $X$
 está sujeito à seleção de truncamento, porém vemos um diferencial
@@ -1121,6 +1121,10 @@ direta sobre $y$, sua componente do gradiente de seleção é nula.
 \label{gradsel}](./figuras/gradientedeselecao.png)
 
 ###Matriz Genética
+
+Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de cada caráter, a matriz genética ou $*G*$ possuí como entradas em sua diagonal os valores de variância aditiva ($V_A$) para cada caráter, que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). 
+Ou seja, a diagonal da $*G*$ determina as respostas diretas dos caracteres ao gradiente de seleção.
+Fora das diagonais, as entradas são as covariâncias genéticas aditivas entre todos os caracteres considerados, que determinam as respostas indiretas dos caracteres aos gradientes de seleção correspondentes aos demais caracteres.
 
 ###Matriz Fenotípica
 
