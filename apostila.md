@@ -855,11 +855,11 @@ caráter.
 Porém, é impossível medir o efeito médio de cada alelo nos
 indivíduos, pois os efeitos médios são propriedades populacionais,
 envolvendo a associação de cada alelo com todas a diferentes
-combinações genéticas possíveis em cada indivíduo. 
+combinações genéticas possíveis em cada indivíduo.
 Felizmente, o que podemos medir é o valor de acasalamento (simbolizado pela
 letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
 do caráter em sua prole.
-Ou seja, podemos pegar um indivíduo e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole. 
+Ou seja, podemos pegar um indivíduo e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole.
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
@@ -912,9 +912,9 @@ possuí essa dependência, sendo uma propriedade tanto dos genes quanto
 da população.
 A relação entre valores genotípicos, valores de acasalamento e
 desvios de dominância está representada graficamente na figura
-\ref{desviodominancia}. 
-Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo. 
-Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos e os pontos apresentam pesos conforme a frequência do genótipo que ele representa. 
+\ref{desviodominancia}.
+Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo.
+Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos e os pontos apresentam pesos conforme a frequência do genótipo que ele representa.
 A posição dessa reta dá os valores de acasalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
@@ -983,7 +983,7 @@ herdabilidade.
 Agora que fizemos a conexão entre efeito médio dos alelos, valor de
 acasalamento, variância aditiva e herdabilidade, podemos estudar a
 resposta à
-seleção natural de um caráter ou de vários caracteres simultaneamente. 
+seleção natural de um caráter ou de vários caracteres simultaneamente.
 As propriedades genéticas de uma população são um produto da seleção natural que atuou no passado, junto de mutação, recombinação e deriva genética.
 É por meio desses processos que existe variabilidade genética, e é principalmente pela ação da seleção natural que os caracteres diferem, alguns tendo proporcionalmente mais variação genética aditiva que outros.
 A teoria da genética quantitativa fornece duas equações pelas quais poemos compreender a resposta à seleção natural em um único caráter - Equação do Criador - e de vários caracteres simultaneamente - Equação de Lande.
@@ -1355,6 +1355,30 @@ efeitos do desenvolvimento. Adaptado de [@Klingenberg2008].
 \label{mapagenfen}](./figuras/mapgenfen.png)
 
 ##Consequências Evolutivas
+
+A organização modular do genoma e do desenvolvimento e a consequente
+estrutura variacional modular leva a consequencias evolutivas
+importantes.
+Quando grupos de caracteres possuem covariação alta, constituindo um
+módulo e provavelmente funcionando de forma integrada no desempenho de
+um função, seleção sobre um dos caracteres, produzindo mudanças em
+uma parte do módulo, poderia ocasionar uma disrrupção na composição
+harmoniosa desse conjunto de caracteristicas.
+Porém, a alta correlação entre caracteres de um módulo impede que
+isso aconteça, pois respostas correlacionadas são observadas nos
+caracteres que não estão sobre seleção, e todos os caracteres do
+módulo acabam por se modificarem de forma conjunta, mantendo sua
+harmonia interna.
+De forma complementar, se todos os caracteres do organismo fossem
+integrados, seleção em um caráter provocaria mudanças em todos os
+outros, até aqueles relacionados com outras funções ou em partes
+distantes do organismo.
+A divisão em módulos permite que partes diferentes se modifiquem de
+forma relativamente independente.
+Evolutivamente, então, integração e modularidade permitem que grupos de
+características funcionalmente ou ontogeneticamente ligadas se
+modifiquem de forma harmoniosa; e que características em módulos
+diferentes possam se alterar de forma relativamente independente.
 
 ##Autovalores e Autovetores
 
