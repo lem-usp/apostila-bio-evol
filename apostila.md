@@ -655,7 +655,7 @@ de técnicas para comparar padrões de populações e especies diferentes
 que tragam informações sobre as propriedades evolutivas das mesmas.
 
 Para matrizes de covariância, podemos usar a técnica de _Random
-Skewers_ [@Cheverud2007], que é baseada na equação de resposta à
+Skewers_ [@Cheverud2007], baseada na equação de resposta à
 seleção de Lande, que veremos em detalhes nas próximas seções.
 Operacionalmente, essa técnica é baseada em multiplicar duas matrizes
 a serem comparadas pelo mesmo vetor e calcular a correlação entre os
@@ -1070,7 +1070,7 @@ da associação genética herdável entre eles.
 
 Paralelo aos efeitos genéticos, a seleção natural atua em vários
 caracteres simultaneamente, e a associação genética entre esses
-caracteres pode alterar a resposta à seleção natural [@Lande1979, @Lande1983].
+caracteres pode alterar a resposta à seleção natural [@Lande1979; @Lande1983a].
 Mais diretamente, a correlação entre caracteres causa uma resposta
 indireta: se X e Y são correlacionados, a seleção direta em X
 causará uma seleção correlacionada em Y, e uma resposta direta de X e
