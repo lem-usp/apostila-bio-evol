@@ -654,6 +654,27 @@ Como os padrões de covariação variam entre populações, precisamos
 de técnicas para comparar padrões de populações e especies diferentes
 que tragam informações sobre as propriedades evolutivas das mesmas.
 
+Para matrizes de covariância, podemos usar a técnica de _Random
+Skewers_ [@Cheverud2007], que é baseada na equação de resposta à
+seleção de Lande, que veremos em detalhes nas próximas seções.
+Operacionalmente, essa técnica é baseada em multiplicar duas matrizes
+a serem comparadas pelo mesmo vetor e calcular a correlação entre os
+vetores resultantes.
+Repetindo esse procedimento para milhares de vetores de entrada, temos
+um estatistica que mede a semelhança de duas matrizes num contexto
+evolutivo.
+Para duas matrizes $\mathbf{A}$ e $\mathbf{B}$, a correlação de _Random Skewers_ é definida como:
+
+$$
+RS(\mathbf{A}, \mathbf{B}) = E[Corr(Ax, Bx)]_x
+$$
+
+onde $E[\cdot]_x$ representa o valor esperado, ou média, para todos os valores de $x$.
+
+Já para as matrizes de correlação, podemos tratar cada entrada da
+matriz como uma observação e simplemente correlacionar os valores
+entre as duas matrizes.
+
 #Propriedades genéticas de populações
 
 Antes de usarmos os princípios matemáticos acima descritos para estudarmos a

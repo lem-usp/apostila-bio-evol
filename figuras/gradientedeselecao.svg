@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="diferencialdeselecao.svg">
+   sodipodi:docname="gradientedeselecao.svg">
   <defs
      id="defs4">
     <marker
@@ -106,7 +106,7 @@
        d="m 280,114.09448 0,470 500,0"
        id="path2987"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"
        sodipodi:nodetypes="ccc"
@@ -118,7 +118,7 @@
        y="952.36218"
        id="text3757"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
@@ -132,7 +132,7 @@
        y="468.93073"
        id="text3757-9"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
@@ -144,7 +144,7 @@
        d="m 500,584.09448 0,-200 -220,0"
        id="path3799"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"
        transform="translate(0,308.2677)" />
@@ -155,7 +155,7 @@
        y="452.36218"
        id="text7887"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
@@ -169,7 +169,7 @@
        height="420"
        x="580.41846"
        y="472.36218"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
@@ -177,7 +177,7 @@
        d="m 620.14507,892.50725 0,-199.83328 -340.29014,0"
        id="path4583"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
@@ -185,7 +185,7 @@
        d="m 500,604.09448 120,0"
        id="path4585"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"
        transform="translate(0,308.2677)" />
@@ -197,7 +197,7 @@
        id="text5789"
        sodipodi:linespacing="125%"
        transform="translate(0,308.2677)"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
@@ -211,7 +211,7 @@
        y="967.36218"
        id="text3757-1"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
@@ -225,7 +225,7 @@
        height="567.70569"
        x="1.0101526"
        y="407.88486"
-       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
@@ -239,7 +239,10 @@
        d="m 940,334.09448 a 70,10 0 0 1 -65.24642,9.97692 L 870,334.09448 z"
        transform="translate(0,308.2677)"
        sodipodi:start="0"
-       sodipodi:end="1.5028357" />
+       sodipodi:end="1.5028357"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -252,7 +255,10 @@
        transform="translate(0,308.2677)"
        sodipodi:start="1.4824857"
        sodipodi:end="1.5028357"
-       sodipodi:open="true" />
+       sodipodi:open="true"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -265,6 +271,9 @@
        transform="matrix(1.8669996,0,0,1.8669996,-1132.6248,75.942882)"
        sodipodi:start="1.4824857"
        sodipodi:end="7.7638672"
-       sodipodi:open="true" />
+       sodipodi:open="true"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/gradientedeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
   </g>
 </svg>
