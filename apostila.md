@@ -1034,7 +1034,17 @@ $$
 \frac{S}{\sigma_P} = i
 $$
 
-![**Resposta à seleção ilustrada na regressão dos resíduos em torno da média do caráter dos pais pelos resíduos da prole.** Cada ponto é um par dos desvios do caráter dos pais e de sua prole em relação à média populacional. A origem do gráfico (0,0) representa a média populacional e assume-se que é a mesma nas duas gerações. A área sombreada representa os indivíduos da geração parental que foram selecionados. A cruz é a média dos pais e da prole selecionados. A diferença da origem (média populacional) para a média dos pais selecionados corresponde ao diferencial de seleção (S). A diferença da origem para a média da prole corresponde à resposta à seleção (R). \label{parentoff}](./figuras/parent-offspring.png)
+![**Resposta à seleção ilustrada na regressão dos resíduos em torno
+da média do caráter dos pais pelos resíduos da prole.** Cada ponto
+é um par dos desvios do caráter dos pais e de sua prole em relação
+à média populacional. A origem do gráfico (0,0) representa a média
+populacional e assume-se que é a mesma nas duas gerações. A área
+sombreada representa os indivíduos da geração parental que foram
+selecionados. A cruz é a média dos pais e da prole selecionados.
+A diferença da origem (média populacional) para a média dos pais
+selecionados corresponde ao diferencial de seleção (S). A diferença
+da origem para a média da prole corresponde à resposta à seleção
+(R). \label{parentoff}](./figuras/parent-offspring.png)
 
 ###Herdabilidade
 
@@ -1120,14 +1130,16 @@ ao caráter selecionado, pois, caso haja covariação entre o caráter
 selecionado e um segundo caráter não selecionado, um diferencial de
 seleção indireto se manifesta (Fig. \ref{difsel}):
 
-![**Diferencial de seleção correlacionado** Apenas o caráter $X$
-está sujeito à seleção de truncamento, porém vemos um diferencial
-correlacionado em $Y$, devido à covariação fenotípica entre as duas
+![**Diferencial de seleção correlacionado** Apenas o caráter
+$X$ está sujeito à seleção de truncamento, porém vemos
+um diferencial correlacionado em $Y$, devido à covariação
+fenotípica entre as duas variáveis. A elipse representa um
+intervalo de confiança de 95% da distribuição fenotípica das duas
 variáveis.\label{difsel}](./figuras/diferencialdeselecao.png)
 
 Podemos, então, descontar a correlação fenotípica encontrada na
 população para obter um valor de seleção que seja apenas devido a
-seleção direta a cada caráter.
+seleção direta em cada caráter.
 
 Isso é feito multiplicando o diferencial de seleção pelo inverso da
 matriz de covariação fenotípica, obtendo o gradiente de seleção
@@ -1382,6 +1394,35 @@ diferentes possam se alterar de forma relativamente independente.
 
 ##Autovalores e Autovetores
 
-##Tamanho
+Quando trabalhamos com muito caracteres, avaliar ao mesmo tempo a
+evolução e a variação de todos simultaneamente se torna pouco
+factível.
+Para sanar essa dificuldade, podemos nos valer de alguns tipos
+de transformação das variáveis que tragam simplificações ou
+caracteristicas marcantes das populações estudadas.
+Uma forma de transformação é a analise de componentes principais,
+também conhecida como decomposição de autovalores e autovetores.
+
+Os autovetores, ou componentes principais, nada mais são que as
+direções de maior variação não correlacioadas (Fig. \ref{autovetores}).
+
+![**Autovetores da distribuição dos caracteres X e Y.** PC1
+representa o primeiro componente principal da matriz $\mathbf{P}$, ou primeiro autovetor,
+e corresponde ao eixo de maior variação fenotípica. PC2, então,
+representa o segundo eixo de maior variação ortgonal ao primeiro.
+\label{autovetores}](./figuras/auto-vetores.png)
+
+A quantidade de variação em cada direção dos componentes principais é medida pelo seu autovalor correspondente.
+O primeiro autovetor é associado ao maior autovalor.
+O autovalor nada mais é que a variância na direção do autovetor correspondente.
+
+O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o numero de caracteres estudados.
+Para cada $p$ caracteres, teremos $p$ autovetores.
+Porém, na maior dos sistêmas morfológicos, grande parte da variação está
+concentrada nos primeiros componentes principais, e portanta podemos
+caracterizar de forma bastante completa a variação na população
+utilizando estes primeiros componentes.
+
+##Tamanho e Linhas de Menor Resistência Evolutiva
 
 #Bibliografia
