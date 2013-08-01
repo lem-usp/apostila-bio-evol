@@ -717,7 +717,7 @@ determinado por um único locus multiplicando as frequências
 genotípicas pelos valores genotípicos e somando os resultados para os
 três genótipos (Tabela 1).
 
-**Tabela 1. Dependência da média populacional das frequências gênicas.** A frequência dos genótipos é determinada pelo equilíbrio de Hardy-Weinberg e os valores genotípicos são calculados em relação ao ponto equidistante dos dois homozigotos. 
+**Tabela 1. Dependência da média populacional das frequências gênicas.** A frequência dos genótipos é determinada pelo equilíbrio de Hardy-Weinberg e os valores genotípicos são calculados em relação ao ponto equidistante dos dois homozigotos.
 
 -------------------------------------------------------
   Genótipo     Frequência      Valor      Freq. $\times$ Valor
@@ -764,7 +764,7 @@ ou seja, a soma das médias de todos os loci.
 Para entendermos a herança de caracteres quantitativos, temos que lidar
 com a transmissão de valor dos pais para a prole.
 Isso não pode ser feito somente com o uso dos valores genotípicos,
-pois os pais passam seus genes e não seu genótipo para sua prole. 
+pois os pais passam seus genes e não seu genótipo para sua prole.
 O efeito médio de um alelo é justamente uma medida associada com os
 genes e não com os genótipos.
 Essa medida depende dos valores genotípicos, $a$ e $d$, e, também, das
@@ -820,7 +820,7 @@ $$
 \alpha = a + d(q-p)
 $$
 O valor de $\alpha$ é obtido seguindo o raciocínio de que ao mudarmos o genótipo $A_1A_2$ pelo genótipo $A_1A_1$, mudaremos o valor d para o +a, e o efeito será $(a - d)$.
-Ao mudarmos $A_2A_2$ para $A_1A_2$, mudaremos o valor de -a para d, e o efeito será $(d + a)$. 
+Ao mudarmos $A_2A_2$ para $A_1A_2$, mudaremos o valor de -a para d, e o efeito será $(d + a)$.
 
 ##Valor de acasalamento
 
@@ -830,11 +830,11 @@ caráter.
 Porém, é impossível medir o efeito médio de cada alelo nos
 indivíduos, pois os efeitos médios são propriedades populacionais,
 envolvendo a associação de cada alelo com todas a diferentes
-combinações genéticas existentes em cada indivíduo. 
+combinações genéticas existentes em cada indivíduo.
 Felizmente, o que podemos medir é o valor de acasalamento (simbolizado pela
 letra A): o valor fenotípico de um indivíduo julgado pelo valor médio
 do caráter em sua prole.
-Ou seja, podemos pegar um indivíduo, sem saber o seu genótipo nem o alelo que ele transmitirá para a próxima geração, e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole. 
+Ou seja, podemos pegar um indivíduo, sem saber o seu genótipo nem o alelo que ele transmitirá para a próxima geração, e realizar cruzamentos com outros indivíduos sorteados da população e tirar a média do valor fenotípico do caráter em sua prole.
 Se um indivíduo se reproduz com um número de parceiros retirados ao
 acaso da população, seu valor de acasalamento é duas vezes o desvio
 médio de sua prole da média populacional.
@@ -887,9 +887,9 @@ possuí essa dependência, sendo uma propriedade tanto dos genes quanto
 da população.
 A relação entre valores genotípicos, valores de acasalamento e
 desvios de dominância está representada graficamente na figura
-\ref{desviodominancia}. 
-Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo. 
-Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos, tendo os pontos pesos conforme a frequência do genótipo que ele representa. 
+\ref{desviodominancia}.
+Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo.
+Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos, tendo os pontos pesos conforme a frequência do genótipo que ele representa.
 A posição dessa reta dá os valores de acsalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
@@ -923,7 +923,7 @@ Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
 [-@Fisher1918], é de sua partição em componentes atribuídos a
-diferentes causas. 
+diferentes causas.
 A magnitude relativa desses componentes determina as
 propriedades genéticas de uma população, em particular o grau de
 semelhança entre parentes.
@@ -1010,34 +1010,94 @@ $$
 
 Olhando para a regressão pais-prole da figura \ref{parentoff},
 podemos ver que a razão R/S é equivalente à inclinação da reta de
-regressão. 
-Olhando novamente para a Equação do Criador, podemos notar que essa razão corresponde à herdabilidade do caráter em questão.  
-Lembrando que herdabilidade representa a proporção de variância aditiva em relação à variância fenotípica, podemos compreender que a seleção é imposta à variação fenotípica da população de pais, mas a resposta é equivalente ao valor médio de acasalamento dos pais, medido em sua prole, ou seja, a variação aditiva transmitida dos pais para a prole. 
-Quanto mais próxima de 1,0 for a inclinação da reta de regressão pais-prole, maior a semelhança entre pais e prole (maior a herdabilidade), e portanto maior a resposta à uma dada seleção.
+regressão.
+Na a Equação do Criador, podemos notar que essa razão corresponde
+à herdabilidade do caráter em questão.
+Lembrando que herdabilidade representa a proporção de variância
+aditiva em relação à variância fenotípica, vemos que a seleção
+atua sobre variação fenotípica da população, mas a resposta na
+próxima geração é proporcional à variação aditiva dos pais, ou
+seja, proporcional à variação nos seus valores de acasalamento.
+Quanto mais próxima de 1,0 for a inclinação da reta de regressão
+pais-prole, maior a semelhança entre pais e prole (maior a
+herdabilidade), e, portanto, mais eficiente a resposta à seleção.
 
 ##Mais de um caráter: Equação de Lande
 
-Sabemos que quando trabalhamos com mais de um caráter temos que considerar não somente a variância dos caracteres, mas também a covariância ou a correlação dos mesmos. 
-A causa genética principal de covariação entre caracteres é a ação pleiotrópica dos genes: pleiotropia é um fenômeno comum e significa que um gene afeta dois ou mais caracteres ao mesmo tempo. 
-Portanto, se um gene pleiotrópico está segregando na população, isso causa variação simultânea nos caracteres que ele afeta. 
-Por exemplo, genes que aumentam a taxa de crescimento de indivíduos  aumentam tanto a altura quanto o peso destes, causando uma correlação genética entre esses caracteres.
-O grau de correlação expressa o quanto dois caracteres são influenciados pelos mesmos genes.
-A seleção natural atua em vários caracteres simultaneamente  e correlações fenotípicas entre caracteres é comum nos organismos (Lande e Arnold 1983). 
-A correlação entre caracteres causa uma resposta interessante: se X e Y são correlacionados, a seleção direta em X causará uma seleção correlacionada em Y, e uma resposta direta de X e indireta de Y. 
-Como vimos na Equação do Criador, a resposta direta de X é equivalente ao valor médio de acasalamento dos indivíduos selecionados. 
-Já a resposta indireta de Y pode ser prevista sabendo-se o valor da correlação genética entre X e Y e as herdabilidades dos dois caracteres. 
-A expansão da equação univariada para a
-multivariada foi elaborada por Russel Lande [-@Lande1979],
-apresentando a equação:
+Sabemos que, quando trabalhamos com mais de um caráter, temos que
+considerar não somente a variância dos caracteres, mas também a
+covariância ou a correlação dos mesmos.
+A principal causa genética de covariação entre caracteres é o
+padrão pleiotrópico dos genes, ou seja, um gene afetando dois ou
+mais caracteres ao mesmo tempo.
+Portanto, se um gene pleiotrópico está segregando na população, isso
+causa variação correlacionada nos caracteres que ele afeta.
+Por exemplo, genes que aumentam a taxa de crescimento de indivíduos
+aumentam tanto a altura quanto o peso destes, causando uma correlação
+genética entre esses caracteres.
+A intensidade da correlação genética entre dois caracteres indica a força
+da associação genética herdável entre eles.
+
+Paralelo aos efeitos genéticos, a seleção natural atua em vários
+caracteres simultaneamente, e a associação genética entre esses
+caracteres pode alterar a resposta à seleção natural [@Lande1979, @Lande1983].
+Mais diretamente, a correlação entre caracteres causa uma resposta
+indireta: se X e Y são correlacionados, a seleção direta em X
+causará uma seleção correlacionada em Y, e uma resposta direta de X e
+indireta de Y.
+Como vimos na Equação do Criador, a resposta direta de X é
+proporcional à variância nos valores de acasalamento dos indivíduos
+selecionados.
+Já a resposta indireta de Y pode ser prevista quando conhecemos o valor
+da correlação genética entre X e Y e as herdabilidades dos dois
+caracteres.
+A expansão da equação univariada para a multivariada foi
+elaborada por Russel Lande [-@Lande1979].
+A equação de resposta multivariada à seleção direcional é análoga
+à equação do criador, e pode ser escrita como:
 
 $$
 \Delta z = GP^{-1}S = G\beta
 $$
 
+Onde $\Delta z$ representa mudança na média entre duas gerações
+após um evento de seleção na geração parental; $G$ representa
+a matriz de covariância genética aditiva, ou seja, a matriz de
+covariância dos efeitos médios dos alelos para cada um dos carácteres
+em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
+população; e, finalmente, $S$ represente o vetor do diferencial de
+seleção, ou seja, a diferença na média dos individuos parentais
+selecionados e a média antes da seleção.
+O poduto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
+Vamos detalhar individualmente cada uma dessas quantidades.
+
 ###$\Delta z$
 
-###$\beta$
-O vetor denominado beta é um conjunto de coeficientes parciais de regressão da aptidão relativa pelos caracteres. Cada elemento betai corresponde à inclinação da reta que melhor descreve a dependência da aptidão relativa do caráter zi, depois de remover os efeitos residuais dos outros caracteres na aptidão. 
+Como agora estamos trabalhando com vários caracteres, nossa
+representação passa a ser vetorial.
+Cada entrada do vetor de médias de uma população representa a média de um caráter.
+O vetor $\Delta z$, portanto, é somente a diferença nas médias de
+duas gerações, após um evento de seleção na geração parental.
+Ele é exatamente equivalente ao R na equação do criador.
+
+###S e $\beta$
+
+O vetor $S$ é análogo ao S da equação do criador, e represente a
+difereça na média dos parentais antes e depois da seleção, mas agora
+para dos os caracteres simultaneamente.
+No caso multivariado, os diferenciais de seleção não são restritos
+ao caráter selecionado, pois, caso haja covariação entre o caráter
+selecionado e um segundo caráter não selecionado, um diferencial de
+seleção indireto se manifesta (Fig. \ref{difsel})
+
+![**Diferencial de seleção correlacionado** Apenas o caráter $X$
+está sujeito à seleção de truncamento, porém vemos um diferencial
+correlacionado em $Y$, devido à covariação fenotípica entre as duas
+variáveis.\label{difsel}](./figuras/diferencialdeselecao.png)
+
+Podemos, então, descontar a correlação fenotípica encontrada na
+população para obter um valor de seleção que seja apenas devido a
+seleção direta a cada caráter.
 
 ###Matriz Genética
 
