@@ -628,7 +628,7 @@ $$
 aa^{-1} = a^{-1}a = a\frac{1}{a} = 1
 $$
 
-como exercicio, verifique que as seguintes matrizes são inversa uma da outra:
+como exercício, verifique que as seguintes matrizes são inversa uma da outra:
 
 $$
 \left (
@@ -648,7 +648,11 @@ $$
 
 ##Comparação de Matrizes
 
-Comparando padrões e estruturas.
+Nas próximas seções, vamos abordar como a estrutura de covariação
+das populações pode alterar suas propriedade evolutivas.
+Como os padrões de covariação variam entre populações, precisamos
+de técnicas para comparar padrões de populações e especies diferentes
+que tragam informações sobre as propriedades evolutivas das mesmas.
 
 #Propriedades genéticas de populações
 
@@ -681,7 +685,7 @@ $$
 
 sendo P o valor fenotípico, G o valor genotípico e E o desvio ambiental.
 Assume-se que o desvio ambiental médio em uma população é zero, pois
-consideramos que os desvios individuais ocorrerm em diversas direções
+consideramos que os desvios individuais ocorrerem em diversas direções
 de forma independente do genótipo, e, na média, se cancelam.
 Assim, o valor médio fenotípico é equivalente ao valor médio
 genotípico em uma população.
@@ -813,7 +817,7 @@ O efeito médio de um alelo é representado pelo símbolo $\alpha_1$,
 para o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$.
 Quando trabalhamos com apenas dois alelos, podemos também calcular o efeito
 médio da substituição de um alelo.
-Isso sginifica que se todos os genes $A_2$ fossem mutados para o
+Isso significa que se todos os genes $A_2$ fossem mutados para o
 gene $A_1$, o efeito médio produzido será o efeito médio da
 substituição, representado pelo símbolo $\alpha$:
 $$
@@ -890,11 +894,11 @@ desvios de dominância está representada graficamente na figura
 \ref{desviodominancia}. 
 Nesta figura, os valores genotípicos estão plotados contra o número de alelos $A_1$ no genótipo. 
 Uma reta de regressão pelo método de quadrados mínimos está ajustada aos valores genotípicos e os pontos apresentam pesos conforme a frequência do genótipo que ele representa. 
-A posição dessa reta dá os valores de acsalamento de cada genótipo.
+A posição dessa reta dá os valores de acasalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
 
-![**Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.** Os círculos abertos representam os valores de acasalamento para os genótipos apresentados no eixo da abscissa. Esse eixo indica o número de alelos $A_1$ no genótipo. Os círculos preenchidos representam os valores genotípicos observados. Os desvios de dominância são as linhas pontilhadas que conectam os valores de acasalamento com os valores genotípicos. A cruz representa amédia populacional. O eixo vertical à esquerda mostra os valores genotípicos, enquanto o eixo à direita mostra os valores de acasalamento correspondentes aos genótipos na abscissa.  \label{desviodominancia}](./figuras/desviodominancia.png)
+![**Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.** Os círculos abertos representam os valores de acasalamento para os genótipos apresentados no eixo da abscissa. Esse eixo indica o número de alelos $A_1$ no genótipo. Os círculos preenchidos representam os valores genotípicos observados. Os desvios de dominância são as linhas pontilhadas que conectam os valores de acasalamento com os valores genotípicos. A cruz representa a média populacional. O eixo vertical à esquerda mostra os valores genotípicos, enquanto o eixo à direita mostra os valores de acasalamento correspondentes aos genótipos na abscissa.  \label{desviodominancia}](./figuras/desviodominancia.png)
 
 ##Desvio de interação
 
@@ -920,7 +924,7 @@ populacionais [@Cheverud1996a].
 ##Partição de variância
 
 Valores genotípicos, fenotípicos e de acasalamento e desvios de dominância e de interação são medidas associadas a indivíduos.
-Porém, quando lidamos com a evolulção de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
+Porém, quando lidamos com a evolução de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
 Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
@@ -1071,9 +1075,9 @@ a matriz de covariância genética aditiva, ou seja, a matriz de
 covariância dos efeitos médios dos alelos para cada um dos carácteres
 em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
 população; e, finalmente, $S$ represente o vetor do diferencial de
-seleção, ou seja, a diferença na média dos individuos parentais
+seleção, ou seja, a diferença na média dos indivíduos parentais
 selecionados e a média antes da seleção.
-O poduto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
+O produto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
 Vamos detalhar individualmente cada uma dessas quantidades.
 
 ###$\Delta z$
@@ -1088,7 +1092,7 @@ Ele é exatamente equivalente ao R na equação do criador.
 ###S e $\beta$
 
 O vetor $S$ é análogo ao S da equação do criador, e represente a
-difereça na média dos parentais antes e depois da seleção, mas agora
+diferença na média dos parentais antes e depois da seleção, mas agora
 para dos os caracteres simultaneamente.
 No caso multivariado, os diferenciais de seleção não são restritos
 ao caráter selecionado, pois, caso haja covariação entre o caráter
