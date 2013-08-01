@@ -920,7 +920,7 @@ populacionais [@Cheverud1996a].
 ##Partição de variância
 
 Valores genotípicos, fenotípicos e de acasalamento e desvios de dominância e de interação são medidas associadas a indivíduos.
-Porém, quando lidamos com a evolulção de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
+Porém, quando lidamos com a evolução de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
 Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
@@ -1070,9 +1070,9 @@ após um evento de seleção na geração parental; $G$ representa
 a matriz de covariância genética aditiva, ou seja, a matriz de
 covariância dos efeitos médios dos alelos para cada um dos carácteres
 em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
-população; e, finalmente, $S$ represente o vetor do diferencial de
+população; e, finalmente, $S$ representa o vetor do diferencial de
 seleção, ou seja, a diferença na média dos individuos parentais
-selecionados e a média antes da seleção.
+selecionados e a média populacional antes da seleção.
 O poduto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
 Vamos detalhar individualmente cada uma dessas quantidades.
 
@@ -1087,13 +1087,13 @@ Ele é exatamente equivalente ao R na equação do criador.
 
 ###S e $\beta$
 
-O vetor $S$ é análogo ao S da equação do criador, e represente a
+O vetor $S$ é análogo ao S da equação do criador, e representa a
 difereça na média dos parentais antes e depois da seleção, mas agora
-para dos os caracteres simultaneamente.
+para todos os caracteres simultaneamente.
 No caso multivariado, os diferenciais de seleção não são restritos
 ao caráter selecionado, pois, caso haja covariação entre o caráter
 selecionado e um segundo caráter não selecionado, um diferencial de
-seleção indireto se manifesta (Fig. \ref{difsel})
+seleção indireto se manifesta (Fig. \ref{difsel}):
 
 ![**Diferencial de seleção correlacionado** Apenas o caráter $X$
 está sujeito à seleção de truncamento, porém vemos um diferencial
@@ -1105,6 +1105,10 @@ população para obter um valor de seleção que seja apenas devido a
 seleção direta a cada caráter.
 
 ###Matriz Genética
+
+Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de cada caráter, a matriz genética ou $*G*$ possuí como entradas em sua diagonal os valores de variância aditiva ($V_A$) para cada caráter, que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). 
+Ou seja, a diagonal da $*G*$ determina as respostas diretas dos caracteres ao gradiente de seleção.
+Fora das diagonais, as entradas são as covariâncias genéticas aditivas entre todos os caracteres considerados, que determinam as respostas indiretas dos caracteres aos gradientes de seleção correspondentes aos demais caracteres.
 
 ###Matriz Fenotípica
 
