@@ -46,7 +46,7 @@ Pearson elaborou diversos métodos para se estudar a variação de
 caracteres contínuos, como as teorias de regressão e de correlação.
 O grande debate entre as duas linhas de pensamento recaia sobre a
 dúvida de os caracteres discretos possuírem as mesmas propriedades de
-hereditariedade e evolução que os caracteres contínuos[@Lynch1998].
+hereditariedade e evolução que os caracteres contínuos [@Lynch1998].
 A reconciliação foi alcançada pelos trabalhos independentes de Ronald
 Fisher, J.B.S. Haldane e Sewall Wright, culminando na elaboração da Síntese
 Moderna da teoria evolutiva.
