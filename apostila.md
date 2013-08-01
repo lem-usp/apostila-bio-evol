@@ -1091,7 +1091,7 @@ $$
 $$
 
 Onde $\Delta z$ representa mudança na média entre duas gerações
-após um evento de seleção na geração parental; $G$ representa
+após um evento de seleção na geração parental; $\mathbf{G}$ representa
 a matriz de covariância genética aditiva, ou seja, a matriz de
 covariância dos efeitos médios dos alelos para cada um dos carácteres
 em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
@@ -1143,11 +1143,70 @@ direta sobre $y$, sua componente do gradiente de seleção é nula.
 
 ###Matriz Genética
 
-Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de cada caráter, a matriz genética ou $G$ possuí como entradas em sua diagonal os valores de variância aditiva ($V_A$) para cada caráter, que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). 
-Ou seja, a diagonal da $G$ determina as respostas diretas dos caracteres ao gradiente de seleção.
-Fora das diagonais, as entradas são as covariâncias genéticas aditivas entre todos os caracteres considerados, que determinam as respostas indiretas dos caracteres aos gradientes de seleção correspondentes aos demais caracteres.
+Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de
+cada caráter, a matriz genética ou $\mathbf{G}$ possuí como entradas em sua
+diagonal os valores de variância aditiva ($V_A$) para cada caráter,
+que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$).
+Ou seja, a diagonal da $\mathbf{G}$ determina as respostas diretas dos caracteres
+ao gradiente de seleção.
+Fora das diagonais, as entradas são as covariâncias genéticas
+aditivas entre todos os caracteres considerados, que determinam
+as respostas indiretas dos caracteres aos gradientes de seleção
+correspondentes aos demais caracteres.
 
 ###Matriz Fenotípica
+
+##Respostas Indiretas
+
+Para entender melhor o efeito das correlações genéticas na resposta
+à seleção, vamos olhar para a equação de Lande no caso de 3
+caracteres e abrir o produto do gradiente de seleção com a matriz $\mathbf{G}$
+em todos os seus termos.
+
+$$
+\mathbf{G}\mathbf{\beta}  =
+\left (
+\begin{matrix}
+G_{11} & G_{12} & G_{13}\\
+G_{21} & G_{22} & G_{23} \\
+G_{31} & G_{32} & G_{33}\\
+\end{matrix}
+\right )
+\left (
+\begin{matrix}
+\beta_{1}  \\
+\beta_{2}   \\
+\beta_{3}  \\
+\end{matrix}
+\right )
+=
+\left (
+\begin{matrix}
+G_{11}\beta_{1} +  G_{12}\beta_{2} +  G_{13}\beta_{3}\\
+G_{21}\beta_{1} +  G_{22}\beta_{2} +  G_{22}\beta_{3}\\
+G_{31}\beta_{1} +  G_{32}\beta_{2} +  G_{32}\beta_{3}\\
+\end{matrix}
+\right )
+=
+\left (
+\begin{matrix}
+\Delta z_{1}  \\
+\Delta z_{2}   \\
+\Delta z_{3}  \\
+\end{matrix}
+\right )
+=
+\Delta z
+$$
+
+Os termos $G_{11}\beta_{1}$, $G_{22}\beta_{2}$ e $G_{33}\beta_{3}$
+representam a resposta à seleção direta em cada caráter.
+Mas, vemos que, além dos termos diretos, temos também todos os
+termos indiretos, que são termos de resposta correlacionada devido à
+covariação genética entre os caracteres.
+Ou seja, o efeito que a seleção em um caráter provoca em todos os
+outros que estão correlacionados com ele.
+
 
 #Modularidade e Integração
 
