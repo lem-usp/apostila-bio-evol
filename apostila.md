@@ -1155,8 +1155,17 @@ e obtemos os gradientes de seleção. Como não existe seleção
 direta sobre $y$, sua componente do gradiente de seleção é nula.
 \label{gradsel}](./figuras/gradientedeselecao.png)
 
-###Respostas Indiretas
 
+###Matriz Genética
+
+A matriz genética ou $\mathbf{G}$ possuí como entradas em sua
+diagonal os valores de variância aditiva ($V_A$) para cada caráter,
+que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$).
+Ou seja, a diagonal da $\mathbf{G}$ determina as respostas diretas dos caracteres
+ao gradiente de seleção.
+Fora das diagonais, as entradas são as covariâncias genéticas
+aditivas entre todos os caracteres considerados, que determinam
+as respostas indiretas dos mesmos.
 Para entender melhor o efeito das correlações genéticas na resposta
 à seleção, vamos olhar para a equação de Lande no caso de 3
 caracteres e abrir o produto do gradiente de seleção com a matriz $\mathbf{G}$
@@ -1205,20 +1214,10 @@ termos indiretos, que são termos de resposta correlacionada devido à
 covariação genética entre os caracteres.
 Ou seja, o efeito que a seleção em um caráter provoca em todos os
 outros que estão correlacionados com ele.
-
-###Matriz Genética
-
-A matriz genética ou $\mathbf{G}$ possuí como entradas em sua
-diagonal os valores de variância aditiva ($V_A$) para cada caráter,
-que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$).
-Ou seja, a diagonal da $\mathbf{G}$ determina as respostas diretas dos caracteres
-ao gradiente de seleção.
-Fora das diagonais, as entradas são as covariâncias genéticas
-aditivas entre todos os caracteres considerados, que determinam
-as respostas indiretas dos caracteres aos gradientes de seleção
-correspondentes aos demais caracteres.
-Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir ou facilitar a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução (@Lande1979, @Arnold1981).
-Porém, a estimativa da $mathbf{G}$ não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos) e assim poder se estimar a proporção de variância aditiva dos caracteres de interesse.
+A presença de respostas indiretas a um dado gradiente de seleção faz com a resposta observada ($\Deltaz$) naão seja na mesma direção que o vetor de seleção.
+Esse desvio da direção de seleção foi denominado restrição evolutiva.
+Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução, no caso de pouca variância [@Lande1979, @Lande1983a].
+Apesar da relevância da $mathbf{G}$ em evolução, sua estimativa não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos). 
 
 ###Matriz Fenotípica
 
