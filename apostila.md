@@ -1051,7 +1051,7 @@ da origem para a média da prole corresponde à resposta à seleção
 Olhando para a regressão pais-prole da figura \ref{parentoff},
 podemos ver que a razão R/S é equivalente à inclinação da reta de
 regressão.
-Na a Equação do Criador, podemos notar que essa razão corresponde
+Na Equação do Criador, podemos notar que essa razão corresponde
 à herdabilidade do caráter em questão.
 Lembrando que herdabilidade representa a proporção de variância
 aditiva em relação à variância fenotípica, vemos que a seleção
@@ -1077,11 +1077,13 @@ aumentam tanto a altura quanto o peso destes, causando uma correlação
 genética entre esses caracteres.
 A intensidade da correlação genética entre dois caracteres indica a força
 da associação genética herdável entre eles.
+O padrão de pleiotropia está relacionado com o sistema de desenvolvimento dos organismos, ou seja, caracteres que compartilham uma mesma via de desenvolvimento, e com o desempenho de uma determinada função, garantindo a coesão dos caracteres.
+Isso será melhor explicado na próxima seção de Modularidade e Integração Morfológica. 
 
 Paralelo aos efeitos genéticos, a seleção natural atua em vários
 caracteres simultaneamente, e a associação genética entre esses
 caracteres pode alterar a resposta à seleção natural [@Lande1979; @Lande1983a].
-Mais diretamente, a correlação entre caracteres causa uma resposta
+A correlação entre caracteres causa uma resposta
 indireta: se X e Y são correlacionados, a seleção direta em X
 causará uma seleção correlacionada em Y, e uma resposta direta de X e
 indireta de Y.
@@ -1103,7 +1105,7 @@ $$
 Onde $\Delta z$ representa mudança na média entre duas gerações
 após um evento de seleção na geração parental; $\mathbf{G}$ representa
 a matriz de covariância genética aditiva, ou seja, a matriz de
-covariância dos efeitos médios dos alelos para cada um dos carácteres
+covariância dos efeitos médios dos alelos para cada um dos caracteres
 em questão; $P^{-1}$ representa a inversa da matriz de covariância fenotípica da
 população; e, finalmente, $S$ representa o vetor do diferencial de
 seleção, ou seja, a diferença na média dos individuos parentais
@@ -1144,7 +1146,7 @@ seleção direta em cada caráter.
 Isso é feito multiplicando o diferencial de seleção pelo inverso da
 matriz de covariação fenotípica, obtendo o gradiente de seleção
 (Fig. \ref{gradsel}).
-O vetor resultante, $\beta$, represente apenas a seleção direta em
+O vetor resultante, $\beta$, representa apenas a seleção direta em
 cada caráter, em unidades de variância fenotípica.
 
 ![**Gradiente de seleção correlacionado** A partir da situação na figura \ref{difsel},
@@ -1155,8 +1157,7 @@ direta sobre $y$, sua componente do gradiente de seleção é nula.
 
 ###Matriz Genética
 
-Similarmente ao $\Delta z$, que é um vetor de respostas à seleção de
-cada caráter, a matriz genética ou $\mathbf{G}$ possuí como entradas em sua
+A matriz genética ou $\mathbf{G}$ possuí como entradas em sua
 diagonal os valores de variância aditiva ($V_A$) para cada caráter,
 que é o numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$).
 Ou seja, a diagonal da $\mathbf{G}$ determina as respostas diretas dos caracteres
@@ -1165,8 +1166,17 @@ Fora das diagonais, as entradas são as covariâncias genéticas
 aditivas entre todos os caracteres considerados, que determinam
 as respostas indiretas dos caracteres aos gradientes de seleção
 correspondentes aos demais caracteres.
+Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir ou facilitar a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução (@Lande1979, @Arnold1981).
+Porém, a estimativa da $mathbf{G}$ não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos) e assim poder se estimar a proporção de variância aditiva dos caracteres de interesse.
 
 ###Matriz Fenotípica
+
+A matriz P é muito mais simples de ser obtida pois não precisamos ter acesso ao grau de parentesco entre os indivíduos amostrados.
+A amostragem pode ser feita em indivíduos de coleções de museu, por exemplo, e grandes amostras podem ser obtidas garantindo uma boa estimativa da $mathbf{P}$.
+A $mathbf{P}$ é semelhante em seu arranjo à $mathbf{G}$, apenas tendo no lugar das variâncias e covariâncias genéticas aditivas, as variâncias e covariâncias fenotípicas.
+Portanto, a $mathbf{P}$ contabiliza tanto os efeitos genéticos aditivos quanto os ambientais.
+Mas, uma vez que a $mathbf{G}$ reflete as relações entre caracteres determinadas pelo desenvolvimento/função dos organismos, as variações ambientais devem atuar pelas mesmas vias de desenvolvimento que as variações genéticas, e portanto o padrão de correlações ambientais também deve refletir as restrições de desenvolvimento (@Cheverud1984).
+Sendo assim, as correlações fenotípicas seriam similares às correlações genéticas.
 
 ##Respostas Indiretas
 
@@ -1369,12 +1379,12 @@ efeitos do desenvolvimento. Adaptado de [@Klingenberg2008].
 ##Consequências Evolutivas
 
 A organização modular do genoma e do desenvolvimento e a consequente
-estrutura variacional modular leva a consequencias evolutivas
+estrutura variacional modular leva a consequências evolutivas
 importantes.
-Quando grupos de caracteres possuem covariação alta, constituindo um
-módulo e provavelmente funcionando de forma integrada no desempenho de
+Quando grupos de caracteres constituem um
+módulo e provavelmente funcionam de forma integrada no desempenho de
 um função, seleção sobre um dos caracteres, produzindo mudanças em
-uma parte do módulo, poderia ocasionar uma disrrupção na composição
+uma parte do módulo, poderia ocasionar uma disrupção na composição
 harmoniosa desse conjunto de caracteristicas.
 Porém, a alta correlação entre caracteres de um módulo impede que
 isso aconteça, pois respostas correlacionadas são observadas nos
@@ -1416,10 +1426,10 @@ A quantidade de variação em cada direção dos componentes principais é medid
 O primeiro autovetor é associado ao maior autovalor.
 O autovalor nada mais é que a variância na direção do autovetor correspondente.
 
-O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o numero de caracteres estudados.
+O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o número de caracteres estudados.
 Para cada $p$ caracteres, teremos $p$ autovetores.
-Porém, na maior dos sistêmas morfológicos, grande parte da variação está
-concentrada nos primeiros componentes principais, e portanta podemos
+Porém, na maior dos sistemas morfológicos, grande parte da variação está
+concentrada nos primeiros componentes principais, e portanto podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
 
