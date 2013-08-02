@@ -1214,7 +1214,7 @@ termos indiretos, que são termos de resposta correlacionada devido à
 covariação genética entre os caracteres.
 Ou seja, o efeito que a seleção em um caráter provoca em todos os
 outros que estão correlacionados com ele.
-A presença de respostas indiretas a um dado gradiente de seleção faz com a resposta observada ($\Deltaz$) naão seja na mesma direção que o vetor de seleção.
+A presença de respostas indiretas a um dado gradiente de seleção faz com a resposta observada ($\Delta z$) naão seja na mesma direção que o vetor de seleção.
 Esse desvio da direção de seleção foi denominado restrição evolutiva.
 Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução, no caso de pouca variância [@Lande1979, @Lande1983a].
 Apesar da relevância da $mathbf{G}$ em evolução, sua estimativa não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos). 
@@ -1440,7 +1440,7 @@ O autovalor nada mais é que a variância na direção do autovetor corresponden
 O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o número de caracteres estudados.
 Para cada $p$ caracteres, teremos $p$ autovetores.
 Porém, na maior dos sistemas morfológicos, grande parte da variação está
-concentrada nos primeiros componentes principais, e, portanto, podemos
+concentrada nos primeiros componentes principais, e portanto podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
 
