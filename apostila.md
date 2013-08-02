@@ -1215,35 +1215,16 @@ termos indiretos, que são termos de resposta correlacionada devido à
 covariação genética entre os caracteres.
 Ou seja, o efeito que a seleção em um caráter provoca em todos os
 outros que estão correlacionados com ele.
-<<<<<<< HEAD
-A presença de respostas indiretas a um dado gradiente de seleção faz com a resposta observada ($\Delta z$) não seja na mesma direção que o vetor de seleção.
-Esse desvio da direção de seleção foi denominado restrição evolutiva.
-Portanto, os componentes de covariância da $\mathbf{G}$ podem restringir a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução, no caso de pouca variância [@Lande1979; @Lande1983a].
-Apesar da relevância da $\mathbf{G}$ em evolução, sua estimativa não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos). 
-
-###Matriz Fenotípica
-
-A matriz P é muito mais simples de ser obtida pois não precisamos ter acesso ao grau de parentesco entre os indivíduos amostrados.
-A amostragem pode ser feita em indivíduos de coleções de museu, por exemplo, e grandes amostras podem ser obtidas garantindo uma boa estimativa da $mathbf{P}$.
-A $mathbf{P}$ é semelhante em seu arranjo à $mathbf{G}$, apenas tendo no lugar das variâncias e covariâncias genéticas aditivas, as variâncias e covariâncias fenotípicas.
-Portanto, a $mathbf{P}$ contabiliza tanto os efeitos genéticos aditivos quanto os ambientais.
-
-Mas, uma vez que a $mathbf{G}$ reflete as relações entre caracteres determinadas pelo desenvolvimento/função dos organismos, as variações ambientais devem atuar pelas mesmas vias de desenvolvimento que as variações genéticas, e portanto o padrão de correlações ambientais também deve refletir as restrições de desenvolvimento (@Cheverud1984).
-Sendo assim, as correlações fenotípicas seriam similares às correlações genéticas.
-A similaridade entre matrizes $mathbf{G}$ e $mathbf{P}$ foi testada empiricamente em espécies de mamíferos por diferentes autores e verificou-se que quando a matriz G é melhor estimada (ou seja, quando o número de indivíduos amostrados é superior a 40), a similaridade com sua matriz P correspondente é alta (@Cheverud1988). 
-A expectativa de similaridade entre $mathbf{G}$ e $mathbf{P}$ é denominada "Conjectura de Cheverud", pois foi esse autor que a propôs e a testou em primeiro lugar.
-
-Portanto, dada a Conjectura de Cheverud, podemos substituir as matrizes G das espécies por suas respectivas matrizes P e realizar estudos macro-evolutivos, isto é, podemos estudar a evolução de caracteres ao longo de uma filogenia.
-=======
 A presença de respostas indiretas a um dado gradiente de seleção faz
-com a resposta observada ($\Delta z$) naão seja na mesma direção que
-o vetor de seleção.
+com a resposta observada ($\Delta z$) não seja na mesma direção que o
+vetor de seleção.
 Esse desvio da direção de seleção foi denominado restrição
 evolutiva.
-Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir
-a evolução de uma população na direção da seleção, enquanto
-que os componentes de variância aditiva podem restringir a taxa de
-evolução, no caso de pouca variância [@Lande1979; @Lande1983a].
+Portanto, os componentes de covariância da $\mathbf{G}$ podem
+restringir a evolução de uma população na direção da seleção,
+enquanto que os componentes de variância aditiva podem restringir
+a taxa de evolução, no caso de pouca variância [@Lande1979;
+@Lande1983a].
 Apesar da relevância da $\mathbf{G}$ em evolução, sua estimativa
 não é uma tarefa simples, pois são necessários delineamentos de
 cruzamento entre os indivíduos de uma população e criação de sua
