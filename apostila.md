@@ -1219,7 +1219,7 @@ A presença de respostas indiretas a um dado gradiente de seleção faz
 com a resposta observada ($\Delta z$) não seja na mesma direção que o
 vetor de seleção.
 Esse desvio da direção de seleção foi denominado restrição
-evolutiva.
+evolutiva (fig. \ref{desvio-trajetorias})
 Portanto, os componentes de covariância da $\mathbf{G}$ podem
 restringir a evolução de uma população na direção da seleção,
 enquanto que os componentes de variância aditiva podem restringir
@@ -1230,6 +1230,10 @@ não é uma tarefa simples, pois são necessários delineamentos de
 cruzamento entre os indivíduos de uma população e criação de sua
 prole para a determinação do parentesco entre eles (pais-filhos,
 irmãos, meio-irmãos).
+
+![**Trajetorias evolutivas de populações com estruturas de
+covariação orientadas de formas distintas na paisagem adaptativa** 
+\label{desvio-trajetorias}](./figuras/desvio-trajetorias.png)
 
 ###Matriz Fenotípica
 
