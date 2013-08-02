@@ -1280,8 +1280,6 @@ a reconstrução de matrizes ancestrais dos nós mais internos da
 filogenia.
 
 
-
-
 #Modularidade e Integração
 
 Na imensa maioria dos organismos, conseguimos identificar partes
