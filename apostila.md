@@ -658,7 +658,7 @@ Para matrizes de covariância, podemos usar a técnica de _Random
 Skewers_ [@Cheverud2007], baseada na equação de resposta à
 seleção de Lande, que veremos em detalhes nas próximas seções.
 Operacionalmente, essa técnica é baseada em multiplicar duas matrizes
-a serem comparadas pelo mesmo vetor e calcular a correlação entre os
+a serem comparadas pelo mesmo vetor de seleção e calcular a correlação entre os
 vetores resultantes.
 Repetindo esse procedimento para milhares de vetores de entrada, temos
 um estatistica que mede a semelhança de duas matrizes num contexto
