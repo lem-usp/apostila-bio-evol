@@ -1216,8 +1216,8 @@ Ou seja, o efeito que a seleção em um caráter provoca em todos os
 outros que estão correlacionados com ele.
 A presença de respostas indiretas a um dado gradiente de seleção faz com a resposta observada ($\Delta z$) naão seja na mesma direção que o vetor de seleção.
 Esse desvio da direção de seleção foi denominado restrição evolutiva.
-Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução, no caso de pouca variância [@Lande1979, @Lande1983a].
-Apesar da relevância da $mathbf{G}$ em evolução, sua estimativa não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos). 
+Portanto,os componentes de covariância da $\mathbf{G}$ podem restringir a evolução de uma população na direção da seleção, enquanto que os componentes de variância aditiva podem restringir a taxa de evolução, no caso de pouca variância [@Lande1979; @Lande1983a].
+Apesar da relevância da $\mathbf{G}$ em evolução, sua estimativa não é uma tarefa simples, pois são necessários delineamentos de cruzamento entre os indivíduos de uma população e criação de sua prole  para a determinação do parentesco entre eles (pais-filhos, irmãos, meio-irmãos). 
 
 ###Matriz Fenotípica
 
@@ -1237,8 +1237,6 @@ $$;
 na qual $(z_i - z_j)$ representa a diferença na média das espécies i e j, e o gradiente de seleção $\beta$  representa as diferenãs na seleção sofrida por cada linhagem independentemente (@Lande1979, @Land1983).
 A aplicação dessa forma macro-evolutiva da Equação de Lande só pode ser feita se existir constância da $mathbf{G}$ (ou no caso, da $mathbf{P}$).
 Essa premissa está relacionada com homogeneidade de variâncias e covariâncias genéticas aditivas entre as espécies estudadas e a reconstrução de matrizes ancestrais dos nós mais internos da filogenia.
-
-
 
 
 #Modularidade e Integração
