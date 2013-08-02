@@ -1,5 +1,5 @@
 % Apostila de Biologia Evolutiva - BIO507
-% Diogo Melo; Gabriel Marroig; Monique Simon
+% Diogo Melo; Monique Simon
 % 6 de junho de 2013
 
 
