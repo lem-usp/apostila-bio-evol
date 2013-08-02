@@ -1440,7 +1440,7 @@ O autovalor nada mais é que a variância na direção do autovetor corresponden
 O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o número de caracteres estudados.
 Para cada $p$ caracteres, teremos $p$ autovetores.
 Porém, na maior dos sistemas morfológicos, grande parte da variação está
-concentrada nos primeiros componentes principais, e portanto podemos
+concentrada nos primeiros componentes principais, e, portanto, podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
 
