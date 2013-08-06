@@ -1237,7 +1237,7 @@ covariação orientadas de formas distintas na paisagem adaptativa**
 
 ###Matriz Fenotípica
 
-A matriz P é muito mais simples de ser obtida pois não precisamos ter
+A matriz P é muito mais simples de ser obtida, pois não precisamos ter
 acesso ao grau de parentesco entre os indivíduos amostrados.
 A amostragem pode ser feita em indivíduos de coleções de museu,
 por exemplo, e grandes amostras podem ser obtidas garantindo uma boa
@@ -1267,15 +1267,17 @@ Portanto, dada a Conjectura de Cheverud, podemos substituir as matrizes
 G das espécies por suas respectivas matrizes P e realizar estudos
 macro-evolutivos, isto é, podemos estudar a evolução de caracteres ao
 longo de uma filogenia.
+
 A Equação de Lande pode ser estendida para sua forma macro-evolutiva:
 
 $$
-\beta = G^{-1} (z_i - z_j)
+\beta = G^{-1} (\overline z_{atual} - \overline z_{ancestral})
 $$
-na qual $(z_i - z_j)$ representa a diferença na média das espécies
-_i_ e _j_, e o gradiente de seleção $\beta$ representa as diferenãs na
-seleção sofrida por cada linhagem independentemente [@Lande1979;
-@Lande1983a].
+
+na qual $(\overline z_{atual} - \overline z_{ancestral})$ representa a diferença na média
+das espécies atuais e ancestrais, e o gradiente de
+seleção $\beta$ representa o padrão de seleção cumulativo sofrida por cada
+linhagem independentemente [@Lande1979; @Marroig2005].
 A aplicação dessa forma macro-evolutiva da Equação de Lande só
 pode ser feita se existir constância da $\mathbf{G}$ (ou no caso, da
 $\mathbf{P}$).
@@ -1440,7 +1442,7 @@ Quando grupos de caracteres constituem um
 módulo e provavelmente funcionam de forma integrada no desempenho de
 um função, seleção sobre um dos caracteres, produzindo mudanças em
 uma parte do módulo, poderia ocasionar uma disrupção na composição
-harmoniosa desse conjunto de caracteristicas.
+harmoniosa desse conjunto de características.
 Porém, a alta correlação entre caracteres de um módulo impede que
 isso aconteça, pois respostas correlacionadas são observadas nos
 caracteres que não estão sobre seleção, e todos os caracteres do
@@ -1464,17 +1466,17 @@ evolução e a variação de todos simultaneamente se torna pouco
 factível.
 Para sanar essa dificuldade, podemos nos valer de alguns tipos
 de transformação das variáveis que tragam simplificações ou
-caracteristicas marcantes das populações estudadas.
+características marcantes das populações estudadas.
 Uma forma de transformação é a analise de componentes principais,
 também conhecida como decomposição de autovalores e autovetores.
 
 Os autovetores, ou componentes principais, nada mais são que as
-direções de maior variação não correlacioadas (Fig. \ref{autovetores}).
+direções de maior variação não correlacionadas (Fig. \ref{autovetores}).
 
 ![**Autovetores da distribuição dos caracteres X e Y.** PC1
 representa o primeiro componente principal da matriz $\mathbf{P}$, ou primeiro autovetor,
 e corresponde ao eixo de maior variação fenotípica. PC2, então,
-representa o segundo eixo de maior variação ortgonal ao primeiro.
+representa o segundo eixo de maior variação ortogonal ao primeiro.
 \label{autovetores}](./figuras/auto-vetores.png)
 
 A quantidade de variação em cada direção dos componentes principais é medida pelo seu autovalor correspondente.
@@ -1489,5 +1491,23 @@ caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
 
 ##Tamanho e Linhas de Menor Resistência Evolutiva
+
+Os componentes principais trazem uma informação importante sobre a
+distribuição de variação no morfoespaço.
+Lembrando que a seleção natural sempre atua sobre variação existente
+na população, podemos pensar no primeiro componente principal, o eixo
+de maior variação, como uma direção especialmente favorável para a
+resposta à seleção.
+Por esse motivo, essa direção ficou conhecida como linha de menor
+resistência evolutiva [@Schluter1996].
+Frequentemente, vemos a linha de menor resistência evolutiva
+enviesando o vetor de resposta à seleção, mesmo quando o gradiente
+de seleção está orientado em outra direção [@Schluter1996;
+@Marroig2005].
+Esse desvio se dá pela ação da seleção indireta, descrita nas
+seções anteriores (fig. \ref{desvio-trajetorias})
+Quando maior for a porção da variação presente no primeiro
+componente principal, maior será o desvio da seleção em direção à
+linha de menor resistência evolutiva.
 
 #Bibliografia
