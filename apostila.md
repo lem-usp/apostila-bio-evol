@@ -1231,9 +1231,17 @@ cruzamento entre os indivíduos de uma população e criação de sua
 prole para a determinação do parentesco entre eles (pais-filhos,
 irmãos, meio-irmãos).
 
-![**Trajetorias evolutivas de populações com estruturas de
-covariação orientadas de formas distintas na paisagem adaptativa** 
-\label{desvio-trajetorias}](./figuras/desvio-trajetorias.png)
+![**Trajetórias evolutivas de populações com estruturas de
+covariação orientadas de formas distintas na paisagem adaptativa** Estão
+apresentadas três matrizes G (elipses cinzas) dispostas em uma paisagem
+adaptativa, na qual as elipses concêntricas reperesentam diferentes valores de
+aptidão. A cruz ao centro da paisagem indica o ótimo adaptativo, e portanto a
+direção para qual as matrizes são puxadas pela seleção. As matrizes _a_ e _b_
+respondem de maneira linear (sem desvios) à seleção, pois possuem um de seus
+eixos de variação alinhados com a paisagem. Já a matriz _c_, que não está
+alinhada com a paisagem, apresenta uma resposta curva à seleção, ou seja, sua
+trajetória evolutiva está restringida pela sua estrutura de covariância
+genética aditiva. \label{desvio-trajetorias}](./figuras/desvio-trajetorias.png)
 
 ###Matriz Fenotípica
 
