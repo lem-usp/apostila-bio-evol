@@ -1505,9 +1505,20 @@ enviesando o vetor de resposta à seleção, mesmo quando o gradiente
 de seleção está orientado em outra direção [@Schluter1996;
 @Marroig2005].
 Esse desvio se dá pela ação da seleção indireta, descrita nas
-seções anteriores (fig. \ref{desvio-trajetorias})
+seções anteriores (fig. \ref{desvio-trajetorias}).
 Quando maior for a porção da variação presente no primeiro
 componente principal, maior será o desvio da seleção em direção à
 linha de menor resistência evolutiva.
+
+Na maior parte dos mamíferos, podemos identificar o primeiro componente
+principal com uma característica bastante simples: Tamanho.
+Essa identificação vem do fato de todos os componentes do primeiro
+autovetor terem, frequentemente, o mesmo sinal.
+Mudanças evolutivas ao longo desse eixo do morfoespaço representam,
+portanto, alteração coordenadas entre todos os caracteres avaliados,
+ou seja, todos aumentam ou diminuem juntos.
+Assim, essas mudanças representam mudanças de tamanho, e o principal
+eixo de variação dentro de populações é no tamanho dos indivíduos
+[@Marroig2005; @Porto2009; @Marroig2010].
 
 #Bibliografia
