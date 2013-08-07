@@ -1325,11 +1325,11 @@ Módulos, então, são caracterizados por uma alta conectividade interna e
 relativa independência de outros módulos.
 
 ![Representação esquemática da organização modular dos seres
-  vivos. As setes representam qualquer tipo de relação entre as partes
+  vivos. As setas representam qualquer tipo de relação entre as partes
   de um indivíduo. Adaptado de [@Klingenberg2008]. \label{modulos}](./figuras/modulos.png)
 
 Podemos classificar os tipos de módulos de acordo com o tipo de
-interação que o define [@Wagner2007].
+interação que os define [@Wagner2007].
 Porém, todos os níveis de modularidade estão relacionados, e não
 podemos tratar de um sem considerar o outro.
 
@@ -1390,7 +1390,7 @@ Módulo variacional:
 No contexto de caracteres contínuos, a teoria da integração
 morfológica foi inicialmente elaborada por Olson e Miller [-@Olson1958]
 em seu livro "Integração Morfológica".
-Neste livre, os autores apresentam a integração morfológica como
+Neste livro, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
 concebendo-os como uma abstração baseada em associações de medidas
 [@Olson1958].
@@ -1491,7 +1491,7 @@ O autovalor nada mais é que a variância na direção do autovetor corresponden
 
 O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o número de caracteres estudados.
 Para cada $p$ caracteres, teremos $p$ autovetores.
-Porém, na maior dos sistemas morfológicos, grande parte da variação está
+Porém, na maior parte dos sistemas morfológicos, grande parte da variação está
 concentrada nos primeiros componentes principais, e portanto podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
