@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="diferencialdeselecao.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="StopL"
+       style="overflow:visible">
+      <path
+         id="path4760"
+         d="M 0.0,5.65 L 0.0,-5.65"
+         style="fill:none;fill-opacity:0.75000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DistanceStart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DistanceStart">
+      <g
+         id="g2300">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1.15;stroke-linecap:square"
+           d="M 0,0 L 2,0"
+           id="path2306" />
+        <path
+           style="fill:#000000;fill-rule:evenodd;stroke:none"
+           d="M 0,0 L 13,4 L 9,0 13,-4 L 0,0 z "
+           id="path2302" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square"
+           d="M 0,-4 L 0,40"
+           id="path2304" />
+      </g>
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="822.05831"
+     inkscape:cy="306.2969"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1055"
+     inkscape:window-x="1280"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5px"
+       spacingy="0.5px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 280,114.09448 0,470 500,0"
+       id="path2987"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       sodipodi:nodetypes="ccc"
+       transform="translate(0,308.2677)" />
+    <text
+       xml:space="preserve"
+       style="font-size:60px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="740"
+       y="952.36218"
+       id="text3757"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="740"
+         y="952.36218">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:60px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="218.98985"
+       y="468.93073"
+       id="text3757-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         x="218.98985"
+         y="468.93073"
+         id="tspan3782">y</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3786"
+       sodipodi:cx="560"
+       sodipodi:cy="314.09448"
+       sodipodi:rx="140"
+       sodipodi:ry="90"
+       d="m 700,314.09448 a 140,90 0 1 1 -0.0148,-1.30951"
+       transform="matrix(1.1502873,-0.79580641,0.79580641,1.1502873,-393.76713,782.42913)"
+       sodipodi:start="0"
+       sodipodi:end="6.2686347"
+       sodipodi:open="true"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:9,9;stroke-dashoffset:0"
+       d="m 500,584.09448 0,-200 -220,0"
+       id="path3799"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="translate(0,308.2677)" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="580"
+       y="452.36218"
+       id="text7887"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan7889"
+         x="580"
+         y="452.36218">Limiar de seleção</tspan></text>
+    <rect
+       style="opacity:0.15;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect8602"
+       width="150"
+       height="420"
+       x="580.41846"
+       y="472.36218"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:9,9;stroke-dashoffset:0"
+       d="m 620,584.09448 0,-245 -340,0"
+       id="path4583"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="translate(0,308.2677)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+       d="m 500,604.09448 120,0"
+       id="path4585"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="translate(0,308.2677)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+       d="m 260,647.3412 0,45.09273"
+       id="path5413"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-size:50px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       x="533.36053"
+       y="647.11981"
+       id="text5789"
+       sodipodi:linespacing="125%"
+       transform="translate(0,308.2677)"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan5791"
+         x="533.36053"
+         y="647.11981">s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="560"
+       y="962.36218"
+       id="text3757-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3759-5"
+         x="560"
+         y="962.36218">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="193.36053"
+       y="675.38751"
+       id="text5789-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan5791-0"
+         x="193.36053"
+         y="675.38751">s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="220"
+       y="682.36218"
+       id="text3757-1-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3759-5-5"
+         x="220"
+         y="682.36218">y</tspan></text>
+    <rect
+       style="fill:none;stroke:none"
+       id="rect5841"
+       width="1052.579"
+       height="567.70569"
+       x="1.0101526"
+       y="407.88486"
+       inkscape:export-filename="/home/diogro/projects/apostila-bio-evol/figuras/diferencialdeselecao.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+  </g>
+</svg>
