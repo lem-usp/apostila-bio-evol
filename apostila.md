@@ -3,6 +3,9 @@
 % 6 de junho de 2013
 
 
+
+\newpage
+
 #Introdução
 
 O objetivo dessa apostila é explorar os princípios da Genética
@@ -275,8 +278,8 @@ diferentes espécies.
 Um variação de 1cm no tamanho médio do antebraço de uma população
 de cavalos pode ser insignificante, mas uma mudança de mesmo tamanho em
 uma população de camundongos é brutal.
-Nesse caso, comparar a direção da resposta evolutiva é a única métrica que
-faz sentido biológico.
+Portanto, comparar a norma da resposta evolutiva entre populações
+com escalas diferentes é uma métrica que não faz sentido biológico.
 Quando estamos interessados somente na direção dos vetores estudados, é
 conveniente, então, padronizar a magnitude dos vetores de todas as
 populações ou espécies envolvidas na analise.
@@ -669,7 +672,7 @@ $$
 RS(\mathbf{A}, \mathbf{B}) = E[Corr(Ax, Bx)]_x
 $$
 
-onde $E[\cdot]_x$ representa o valor esperado, ou média, para todos os valores de $x$.
+onde $E[\cdot]_x$ representa o valor esperado, ou média, para todos os valores de vetores aleatórios $x$.
 
 Já para as matrizes de correlação, podemos tratar cada entrada da
 matriz como uma observação e simplemente correlacionar os valores
@@ -757,6 +760,8 @@ três genótipos (Tabela 1).
 -------------------------------------------------------
 
 
+\newpage 
+
 Podemos ver, então, que a contribuição de qualquer locus para a média
 populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
 $2dpq$ atribuído aos heterozigotos.
@@ -809,6 +814,8 @@ está na junção ao acaso do alelo específico com os provenientes da
 população.
 A chance desse alelo se unir a um outro qualquer é determinada pelas
 frequências gênicas desses outros alelos na população.
+
+\newpage 
 
 **Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando a média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
 
@@ -893,9 +900,9 @@ cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
 ##Desvio de dominância
 
-O valor de acasalamento é um componente do valor genotípico de um
+O valor de acasalamento é componente aditivo do valor genotípico de um
 indivíduo.
-O restante do valor é denominado desvio de dominância:
+O restante do valor genotípico é denominado desvio de dominância:
 
 $$
 G = A + D
@@ -977,6 +984,8 @@ genéticas da população e de sua resposta à seleção natural.
 A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
 determinados pelos genes transmitidos pelos pais, e é denominada
 herdabilidade.
+
+\newpage 
 
 #Seleção Natural e Genética Quantitativa
 
@@ -1394,7 +1403,7 @@ morfológica foi inicialmente elaborada por Olson e Miller [-@Olson1958]
 em seu livro "Integração Morfológica".
 Neste livro, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
-concebendo-os como uma abstração baseada em associações de medidas
+concebendo-os como uma abstração, baseada em associações entre medidas
 [@Olson1958].
 Estas associações de medidas são representadas por correlações
 fenotípicas e organizadas em módulos variacionais.
