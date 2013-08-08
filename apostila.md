@@ -59,8 +59,8 @@ distribuição dos caracteres, extensivamente utilizado na genética
 quantitativa.
 Os trabalhos clássicos em genética de populações de Fisher, Haldane e Wright
 demonstraram que a seleção natural pode funcionar com os tipos de variação
-observados em populações naturais e com as leis de herança mendelianas
-[@Ridley1996]. Com  o debate entre mendelianos e biometricistas resolvido, a
+observados em populações naturais e com as leis de herança mendelianas.
+Com  o debate entre mendelianos e biometricistas resolvido, a
 biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
 temas macroevoutivos, como especiação por exemplo.
@@ -90,7 +90,7 @@ indivíduos ou entre espécies.
 O critério fundamental para garantirmos que são os mesmos caracteres em todos
 os indivíduos é o de homologia.
 Nós reconhecemos estruturas homólogas por serem discretas e reconhecíveis em
-todos os indivíduos [@Zelditch].
+todos os indivíduos.
 Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira,
 podemos estudar diferenças em caracteres homólogos em um contexto evolutivo
 usando de informações de parentesco dos indivíduos amostrados.
@@ -229,17 +229,17 @@ Para calcular o cosseno do angulo entre dois vetores a partir de
 suas componentes, devemos fazer uso da lei dos cossenos (figura
 \ref{leidoscossenos}).
 Utilizando a notação da figura \ref{leidoscossenos}, a correlação
-entre os vetores $\Delta z_1 = (x_1, y_1)$ e $\Delta z_2 = (x_2, y_2)$
+entre os vetores $\Delta z_1 = (\Delta z_{11}, \Delta z_{12})$ e $\Delta z_2 = (\Delta z_{21}, \Delta z_{22})$
 seria:
 
 $$
-Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(x_1  x_2) + (y_1  y_2)}{|\Delta z_1|  |\Delta z_2|} = \frac{(x_1  x_2) + (y_1  y_2)}{\sqrt{x_1^2 + y_1^2}  \sqrt{x_2^2 + y_2^2}}
+Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(\Delta z_{11}  \Delta z_{21}) + (\Delta z_{12}  \Delta z_{22})}{| \Delta z_1|  | \Delta z_2|} = \frac{(\Delta z_{11}  \Delta z_{21}) + (\Delta z_{12}  \Delta z_{22})}{\sqrt{\Delta z_{11}^2 + \Delta z_{12}^2}  \sqrt{\Delta z_{21}^2 + \Delta z_{22}^2}}
 $$
 
 Em outras palavras, o cosseno do angulo $\alpha$ é calculado como a
 soma dos produtos cruzados entre os dois vetores dividido pela sua
 norma.
-O termo de soma dos produto cruzados, $(x_1 x_2) + (y_1 y_2)$, é
+O termo de soma dos produto cruzados, $(\Delta z_{11} \Delta z_{21}) + (\Delta z_{12} \Delta z_{22})$, é
 conhecido como o produto escalar entre dos vetores, e pode ser
 generalizado para um numero arbitrário de dimensões.
 Para dois vetores $\mathbf{x} = (x_1, x_2, \cdots, x_p)$ e $\mathbf{y} =
@@ -1327,11 +1327,11 @@ Módulos, então, são caracterizados por uma alta conectividade interna e
 relativa independência de outros módulos.
 
 ![Representação esquemática da organização modular dos seres
-  vivos. As setes representam qualquer tipo de relação entre as partes
+  vivos. As setas representam qualquer tipo de relação entre as partes
   de um indivíduo. Adaptado de [@Klingenberg2008]. \label{modulos}](./figuras/modulos.png)
 
 Podemos classificar os tipos de módulos de acordo com o tipo de
-interação que o define [@Wagner2007].
+interação que os define [@Wagner2007].
 Porém, todos os níveis de modularidade estão relacionados, e não
 podemos tratar de um sem considerar o outro.
 
@@ -1392,7 +1392,7 @@ Módulo variacional:
 No contexto de caracteres contínuos, a teoria da integração
 morfológica foi inicialmente elaborada por Olson e Miller [-@Olson1958]
 em seu livro "Integração Morfológica".
-Neste livre, os autores apresentam a integração morfológica como
+Neste livro, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
 concebendo-os como uma abstração baseada em associações de medidas
 [@Olson1958].
@@ -1493,7 +1493,7 @@ O autovalor nada mais é que a variância na direção do autovetor corresponden
 
 O numero de autovetores e autovalores é dado pela dimensão do espaço que estamos trabalhando, ou seja, o número de caracteres estudados.
 Para cada $p$ caracteres, teremos $p$ autovetores.
-Porém, na maior dos sistemas morfológicos, grande parte da variação está
+Porém, na maior parte dos sistemas morfológicos, grande parte da variação está
 concentrada nos primeiros componentes principais, e portanto podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
