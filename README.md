@@ -1,7 +1,7 @@
 Apostila Bio evolutiva
 ======================
 
-Guia de aulas práticas da disciplina BIO507 - Biologia Evolutiva
+Notas de aula para a disciplina BIO507 - Biologia Evolutiva
 
 ##Requisitos
 
