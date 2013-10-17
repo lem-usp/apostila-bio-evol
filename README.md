@@ -24,4 +24,4 @@ $ make
 
 ##Arquivo Experimental
 
-[Notas possivelmente atualizadas](https://dl.dropboxusercontent.com/u/891794/apostila-Bio507.pdf)
+[Notas atualizadas](https://github.com/lem-usp/apostila-bio-evol/blob/master/apostila.pdf?raw=true)
