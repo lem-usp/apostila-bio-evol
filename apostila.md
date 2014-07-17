@@ -3,7 +3,6 @@
 % 6 de junho de 2013
 
 
-
 \newpage
 
 #Introdução
