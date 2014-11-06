@@ -7,7 +7,7 @@
 \usepackage{setspace}
 \usepackage{booktabs}
 \doublespacing
-\usepackage[vmargin=1in,hmargin=1.5in]{geometry}
+\usepackage[vmargin=0.9in,hmargin=1.2in]{geometry}
 %\usepackage{lineno}
 %\linenumbers
 % use upquote if available, for straight quotes in verbatim environments
