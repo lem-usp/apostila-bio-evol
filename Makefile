@@ -1,16 +1,36 @@
-FILE = apostila
+FILE? = apostila
 
 all :
-	pandoc -o $(FILE)-Bio312.pdf -M lang=portuges --template=template.latex --variable mainfont="FreeSerif" --latex-engine=xelatex --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
+	pandoc \
+	$(FILE).md \
+	--latex-engine=lualatex \
+	--smart \
+	--biblatex \
+	--template tufte-book.tex \
+	--bibliography library.bib \
+	-o tufte-book-body.tex
 
-doc :
-	pandoc -o $(FILE).docx --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
+	# WTF is autocite?!
+	sed -i 's/\\autocite/\\cite/g' tufte-book-body.tex
+	sed -i '/cites/s/}{/,/g' tufte-book-body.tex
+	sed -i 's/cites/cite/g' tufte-book-body.tex
+	cp tufte-book-body.tex ./output/2014-RC-$(FILE).tex
 
-latex :
-	pandoc -o $(FILE).tex --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
+	 #Generate the PDF.
+	lualatex tufte-book-body
+	bibtex tufte-book-body
+	lualatex tufte-book-body
+	lualatex tufte-book-body
+	mv tufte-book-body.pdf ./output/2014-RC-$(FILE).pdf
 
-html :
-	pandoc -o $(FILE).html --toc --bibliography $(FILE).bib --csl ./evolution.csl $(FILE).md
-
-clean : 
-	rm *.pdf *.docx *.html
+	 #Remove these files after the work is done.
+	rm  \
+	tufte-book-body.aux \
+	tufte-book-body.bbl \
+	tufte-book-body.blg \
+	tufte-book-body.log \
+	tufte-book-body.out 
+	tufte-book-body.tex \
+	#tufte-book.bcf \
+	#tufte-book.run.xml \
+	#tufte-book.toc \

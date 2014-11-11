@@ -1,6 +1,15 @@
-% Apostila de Biologia Evolutiva - BIO312
-% Diogo Melo; Monique Simon
-% 6 de junho de 2013
+---
+title: Apostila de Biologia Evolutiva - BIO312
+author:
+- name: Diogo Melo
+  affiliation: Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo
+  email: diogro@cecm.usp.br
+- name: Monique Simon
+  affiliation: Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo
+  email: monique.nouailhetas@gmail.com
+date: Novembro de 2014
+lang: portuges
+...
 
 
 \newpage
@@ -12,7 +21,7 @@ Quantitativa, passando pelos tipos de dados tratados, sua descrição e
 análise, e como isso se insere na teoria evolutiva moderna.
 A teoria da Genética Quantitativa refere-se à herança de caracteres
 contínuos, nos quais as diferenças entre indivíduos são
-quantitativas e não qualitativas [@Falconer1996].
+quantitativas e não qualitativas.
 Como exemplo, podemos pensar no caráter "altura" em uma determinada
 população, e verificar que ele possuí uma distribuição contínua de
 valores individuais, não apenas tipos distintos separados em classes
@@ -20,7 +29,7 @@ bem definidas (como textura por exemplo, lisa ou rugosa).
 A compreensão da herança dos caracteres contínuos é de fundamental
 importância para a teoria evolutiva, pois diferenças individuais
 quantitativas constituem a base na qual a seleção natural pode atuar
-e promover mudanças entre as gerações de uma população[@Falconer1996].
+e promover mudanças entre as gerações de uma população.
 
 #Um pouco de história
 
@@ -67,7 +76,12 @@ biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
 temas macroevoutivos, como especiação por exemplo.
 
-![**Vários loci podem atuar sobre o mesmo caráter, dando a este uma variação continua na população.** \label{variosloci}](./figuras/variosalelos.png)
+\begin{marginfigure}
+\includegraphics{./figuras/variosalelos.png}
+\caption{Vários loci podem atuar sobre o mesmo caráter, dando a
+este uma variação continua na população.}
+\label{variosloci}
+\end{marginfigure}
 
 #Princípios matemáticos em Genética Quantitativa
 
@@ -77,7 +91,7 @@ lançar mão de certos princípios matemáticos relacionados com variação, com
 média, variância e covariância, e relacionados com a representação destes em um
 morfoespaço, como vetores e matrizes.
 
-##Caracteres contínuos
+#Caracteres contínuos
 
 Agora que temos uma noção do que são e como podem ser herdados os caracteres
 contínuos, podemos pensar em quais critérios podemos utilizar para escolher os
@@ -97,7 +111,7 @@ Homologia implica em uma mesma origem ancestral do caráter, e dessa maneira,
 podemos estudar diferenças em caracteres homólogos em um contexto evolutivo
 usando de informações de parentesco dos indivíduos amostrados.
 
-##Distâncias e Vetores
+#Distâncias e Vetores
 
 Uma vez escolhidos quais serão os caracteres usados no estudo,
 precisamos fazer as medidas e representar esses dados de forma
@@ -120,9 +134,13 @@ A figura \ref{vetores} ilustra a representação de um par de medidas
 utilizando um vetor bidimensional.
 A partir dessa abstração, podemos construir uma teoria bastante completa.
 
-![**Representação de medidas reais na forma vetorial.** Vemos duas
-medidas de tamanho linear de ossos do braço representadas num vetor.
-\label{vetores}](./figuras/medidas-vetores.png)
+\begin{marginfigure}
+\includegraphics{./figuras/medidas-vetores.png}
+\caption{Representação de medidas reais na forma vetorial.
+Vemos duas medidas de tamanho linear de ossos do braço representadas num
+vetor.}
+\label{vetores}
+\end{marginfigure}
 
 No plano $(x,y)$ representado na figura \ref{vetores}, podemos
 representar qualquer combinação de tamanhos do braço e do antebraço.
@@ -163,7 +181,7 @@ enquanto o segundo caráter diminuiu em 3 unidades.
 O vetor de mudança, $\Delta \overline z$, representa matematicamente o
 evento evolutivo.
 
-##Comparação de Vetores
+#Comparação de Vetores
 
 Frequentemente estaremos interessados em comparar vetores.
 Por exemplo, será que as mudanças nas médias de duas populações
@@ -176,15 +194,19 @@ magnitude quando em suas direção.
 A figura \ref{deltazes} mostra algumas possibilidades para as
 diferenças entre vetores de mudanças evolutivas de duas populações.
 
-![**Possíveis mudanças nas médias de duas populações.** No caso
-(a) magnitudes de mudança iguais mas direções diferentes. (b)
+\begin{marginfigure}
+\includegraphics{./figuras/deltazes.png}
+\caption{Possíveis mudanças nas médias de duas populações. No
+caso (a) magnitudes de mudança iguais mas direções diferentes. (b)
 direções iguais mas magnitudes diferentes e (c) magnitudes e direções
-diferentes.\label{deltazes}](./figuras/deltazes.png)
+diferentes.}
+\label{deltazes}
+\end{marginfigure}
 
 Vemos, então, que uma forma natural de comparar vetores é
 representando-os pela sua magnitude e direção.
 
-###Magnitude ou norma de vetores
+#Magnitude ou norma de vetores
 
 Para calcular a magnitude de um vetor, podemos nos valer da teorema de
 Pitágoras para triângulos retângulos (figura \ref{pitagoras}).
@@ -212,9 +234,14 @@ $$
 |\mathbf{x}| = \sqrt{\sum_{i=1}^p x_i^2}
 $$
 
-![**Calculando a norma ou magnitude de um vetor pelo Teorema de Pitágoras.** \label{pitagoras}](./figuras/pitagoras.png)
+\begin{marginfigure}
+\includegraphics{./figuras/pitagoras.png}
+\caption{Calculando a norma ou magnitude de um vetor pelo
+Teorema de Pitágoras.}
+\label{pitagoras}
+\end{marginfigure}
 
-###Correlação de vetores
+#Correlação de vetores
 
 Além de comparações de magnitudes, podemos comparar vetores pelo
 angulo formado entre eles, ou seja, a diferença em suas direções.
@@ -258,12 +285,15 @@ Corr(\mathbf{x}, \mathbf{y}) = \frac{\mathbf{x} \cdot \mathbf{y}}{|\mathbf{x}||\
 $$
 
 
-![**Utilizando a lei dos cossenos para calcular o
-cosseno do angulo $\alpha$ entre dois vetores.**
-\label{leidoscossenos}](./figuras/leidoscossenos.png)
+\begin{marginfigure}
+\includegraphics{./figuras/leidoscossenos.png}
+\caption{Utilizando a lei dos cossenos para calcular o cosseno
+do angulo \(\alpha\) entre dois vetores.}
+\label{leidoscossenos}
+\end{marginfigure}
 
 
-###Normalização de vetores
+#Normalização de vetores
 
 Para populações uma mesma espécie, onde os indivíduos são
 relativamente parecidos, a magnitude de um vetor de mudança evolutiva
@@ -310,9 +340,9 @@ $$
 Corr(\mathbf{x}, \mathbf{y}) = \frac{ \mathbf{x} \cdot \mathbf{y} }{|\mathbf{x}||\mathbf{y}|} = \frac{ \mathbf{x} \cdot \mathbf{y} }{1 \cdot 1} =  \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^p x_iy_i
 $$
 
-##Variâncias, Covariâncias e Correlações
+#Variâncias, Covariâncias e Correlações
 
-###Um caráter
+#Um caráter
 
 O estudo dos caracteres contínuos é centrado em sua variação, uma vez que é em
 termos de variação que as questões genéticas primárias são formuladas.  A
@@ -352,7 +382,7 @@ Essas regras gerais podem ser bastante úteis quando confrontados
 com dados pela primeira vez, pois permitem rapidamente identificar
 particularidades ou erros nas medidas.
 
-###Mais de um caráter
+#Mais de um caráter
 
 Quando trabalhamos com mais de um caráter, além de quantificar a
 variância individual de cada um, devemos também medir a interação
@@ -412,7 +442,7 @@ $$
 Vale notar que a fórmula da covariância se torna igual a da variância quando $i=k$.
 
 
-###Correlação
+#Correlação
 
 Assim como no caso da variância, a covariância sofre efeitos da escala
 da medida em questão.
@@ -441,7 +471,7 @@ apresentada para correlação entre medidas se reduz à formula de correlação 
 cosseno entre vetores, justificando o uso do mesmo nome para a
 correlação entre medidas e a correlação de vetores.
 
-##Matrizes
+#Matrizes
 
 Variâncias, covariâncias e correlações são formas de descrever a
 variação de caracteres morfológicos, e, frequentemente, estudamos um
@@ -502,7 +532,7 @@ cov(z_1, z_p) & cov(z_1, z_p) & \cdots & var(z_p) \\
 \right )
 $$
 
-##Operações com Matrizes
+#Operações com Matrizes
 
 Para trabalhar com matrizes, precisamos relembrar algumas regras de operação matricial.
 A mais simples é a soma de matrizes, que é feita simplesmente somando os elementos equivalentes.
@@ -648,7 +678,7 @@ $$
 \right )
 $$
 
-##Comparação de Matrizes
+#Comparação de Matrizes
 
 Nas próximas seções, vamos abordar como a estrutura de covariação
 das populações pode alterar suas propriedade evolutivas.
@@ -684,13 +714,13 @@ herança e evolução dos caracteres contínuos em populações, vamos olhar as
 propriedades genéticas dos caracteres nas populações.
 Para tanto, precisamos conseguir fazer a conexão entre frequência de genes e
 genótipos com as diferenças quantitativas observadas em
-caracteres contínuos [@Falconer1996].
+caracteres contínuos.
 Essa conexão é feita com a compreensão dos conceitos de valores genotípico
 e fenotípico, efeito médio de um alelo, valor de acasalamento e partição de
 variância. Nas seções seguintes veremos as definições desses conceitos.
-O texto a seguir foi adaptado de Falconer e Mackay [-@Falconer1996].
+O texto a seguir foi adaptado de Falconer e Mackay [@Falconer1996].
 
-##Valores genotípico e fenotípico
+#Valores genotípico e fenotípico
 
 O valor observado para um caráter medido em um indivíduo qualquer é o valor
 fenotípico desse indivíduo.
@@ -722,7 +752,14 @@ acasalamento, podemos utilizar valores arbitrários para os genótipos de um
 -a, valor do homozigoto $A_2$$A_2$; e finalmente d, valor do heterozigoto $A_1$$A_2$
 (Fig. \ref{valgen}).
 
-![**Valores genotípicos arbitrários.** O valor intermediário entre os dois homozigotos foi denominado como zero. Os valores genotípicos $a$, $-a$ e $d$ são calculados em relação a esse ponto zero. \label{valgen}](./figuras/valoresgenotipicos.png)
+\begin{marginfigure}
+\includegraphics{./figuras/valoresgenotipicos.png}
+\caption{Valores genotípicos arbitrários. O valor intermediário
+entre os dois homozigotos foi denominado como zero. Os valores
+genotípicos \(a\), \(-a\) e \(d\) são calculados em relação a esse ponto
+zero.}
+\label{valgen}
+\end{marginfigure}
 
 Portanto, ao medirmos uma amostra de indivíduos de uma população
 qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
@@ -759,7 +796,7 @@ três genótipos (Tabela 1).
 -------------------------------------------------------
 
 
-\newpage 
+\newpage
 
 Podemos ver, então, que a contribuição de qualquer locus para a média
 populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
@@ -788,7 +825,7 @@ $$
 
 ou seja, a soma das médias de todos os loci.
 
-##Efeito médio de um alelo
+#Efeito médio de um alelo
 
 Para entendermos a herança de caracteres quantitativos, temos que lidar
 com a transmissão de valor dos pais para a prole.
@@ -814,11 +851,10 @@ população.
 A chance desse alelo se unir a um outro qualquer é determinada pelas
 frequências gênicas desses outros alelos na população.
 
-\newpage 
+\newpage
 
 **Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando a média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
 
-\begin{centering}
 \begin{tabular}{lllllll}
 \hline
 & & & & & \\
@@ -838,7 +874,6 @@ $A_2$ & & $p$ & $q$ & $-qa + pd$ & $-[a(p-q) + 2dpq]$ & $-p[a+d(q-p)]$ \\
 & & & & & \\
 \hline
 \end{tabular}
-\end{centering}
 
 O efeito médio de um alelo é representado pelo símbolo $\alpha_1$,
 para o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$.
@@ -853,7 +888,7 @@ $$
 O valor de $\alpha$ é obtido seguindo o raciocínio de que ao mudarmos o genótipo $A_1A_2$ pelo genótipo $A_1A_1$, mudaremos o valor d para o +a, e o efeito será $(a - d)$.
 Ao mudarmos $A_2A_2$ para $A_1A_2$, mudaremos o valor de -a para d, e o efeito será $(d + a)$.
 
-##Valor de acasalamento
+#Valor de acasalamento
 
 Os efeitos médios de todos os alelos parentais influenciando um
 caráter determinam o valor genotípico médio de sua prole para esse
@@ -897,7 +932,7 @@ A extensão para vários loci é direta: o valor de acasalamento para um
 genótipo particular é a soma dos valores de acasalamento atribuídos a
 cada loci separado (assumindo que os efeitos dos alelos são aditivos).
 
-##Desvio de dominância
+#Desvio de dominância
 
 O valor de acasalamento é componente aditivo do valor genotípico de um
 indivíduo.
@@ -925,9 +960,22 @@ A posição dessa reta dá os valores de acasalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
 
-![**Valores genotípicos, valores de acasalamento e desvios de dominância para um locus com dois alelos.** Os círculos abertos representam os valores de acasalamento para os genótipos apresentados no eixo da abscissa. Esse eixo indica o número de alelos $A_1$ no genótipo. Os círculos preenchidos representam os valores genotípicos observados. Os desvios de dominância são as linhas pontilhadas que conectam os valores de acasalamento com os valores genotípicos. A cruz representa a média populacional. O eixo vertical à esquerda mostra os valores genotípicos, enquanto o eixo à direita mostra os valores de acasalamento correspondentes aos genótipos na abscissa.  \label{desviodominancia}](./figuras/desviodominancia.png)
+\begin{marginfigure}
+\includegraphics{./figuras/desviodominancia.png}
+\caption{Valores genotípicos, valores de acasalamento e desvios
+de dominância para um locus com dois alelos. Os círculos abertos
+representam os valores de acasalamento para os genótipos apresentados no
+eixo da abscissa. Esse eixo indica o número de alelos \(A_1\) no
+genótipo. Os círculos preenchidos representam os valores genotípicos
+observados. Os desvios de dominância são as linhas pontilhadas que
+conectam os valores de acasalamento com os valores genotípicos. A cruz
+representa a média populacional. O eixo vertical à esquerda mostra os
+valores genotípicos, enquanto o eixo à direita mostra os valores de
+acasalamento correspondentes aos genótipos na abscissa.}
+\label{desviodominancia}
+\end{marginfigure}
 
-##Desvio de interação
+#Desvio de interação
 
 Quando apenas um locus é considerado, apenas o efeito da interação entre
 os alelos desse locus é adicionado ao valor de acasalamento para a
@@ -948,14 +996,14 @@ Além disso, epistasia pode funcionar como uma forma de armazenar
 variação críptica, liberada em eventos seletivos intensos ou gargalos
 populacionais [@Cheverud1996a].
 
-##Partição de variância
+#Partição de variância
 
 Valores genotípicos, fenotípicos e de acasalamento e desvios de dominância e de interação são medidas associadas a indivíduos.
 Porém, quando lidamos com a evolução de populações, usamos a combinação dessas quantidades expressada em termos de variação em torno da média.
 Como vimos anteriormente, a variação dos caracteres contínuos é
 expressa em termos de variância.
 A ideia básica no estudo de variação, introduzida por Fisher
-[-@Fisher1918], é de sua partição em componentes atribuídos a
+[@Fisher1918], é de sua partição em componentes atribuídos a
 diferentes causas.
 A magnitude relativa desses componentes determina as
 propriedades genéticas de uma população, em particular o grau de
@@ -975,7 +1023,7 @@ A importância relativa de uma determinada fonte de variação é a
 variância devida a essa fonte, como uma proporção da variância
 fenotípica.
 
-###Variância aditiva
+#Variância aditiva
 
 A variância aditiva, ou a variância devida aos valores de acasalamento, é a causa principal de semelhança
 entre parentes, sendo, portanto, o determinante das propriedades
@@ -984,7 +1032,7 @@ A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
 determinados pelos genes transmitidos pelos pais, e é denominada
 herdabilidade.
 
-\newpage 
+\newpage
 
 #Seleção Natural e Genética Quantitativa
 
@@ -996,7 +1044,7 @@ As propriedades genéticas de uma população são um produto da seleção natur
 É por meio desses processos que existe variabilidade genética, e é principalmente pela ação da seleção natural que os caracteres diferem, alguns tendo proporcionalmente mais variação genética aditiva que outros.
 A teoria da genética quantitativa fornece duas equações pelas quais poemos compreender a resposta à seleção natural em um único caráter - Equação do Criador - e de vários caracteres simultaneamente - Equação de Lande.
 
-##Um caráter: Equação do Criador
+#Um caráter: Equação do Criador
 
 Quando estamos trabalhando com apenas um caráter, podemos calcular
 sua a resposta à seleção natural (R) conforme o diferencial de
@@ -1016,7 +1064,7 @@ determinação da resposta à seleção natural. Quanto maior for essa
 proporção, maior será a resposta à seleção para um mesmo diferencial
 de seleção.
 
-###Médias
+#Médias
 
 Apesar de um episódio de seleção alterar as frequências alélicas
 do caráter, os efeitos da seleção passíveis de observação
@@ -1025,7 +1073,7 @@ Portanto, a resposta à seleção (R) é uma diferença entre as médias
 fenotípicas do caráter na prole dos pais selecionados e na geração
 parental antes da seleção.
 
-###Diferencial de Seleção
+#Diferencial de Seleção
 
 O diferencial de seleção é definido como a diferença na média dos
 indivíduos selecionados e a média populacional antes da seleção.
@@ -1042,19 +1090,22 @@ $$
 \frac{S}{\sigma_P} = i
 $$
 
-![**Resposta à seleção ilustrada na regressão dos resíduos em torno
-da média do caráter dos pais pelos resíduos da prole.** Cada ponto
-é um par dos desvios do caráter dos pais e de sua prole em relação
+\begin{marginfigure}
+\includegraphics{./figuras/parent-offspring.png}
+\caption{Resposta à seleção ilustrada na regressão dos resíduos
+em torno da média do caráter dos pais pelos resíduos da prole. Cada
+ponto é um par dos desvios do caráter dos pais e de sua prole em relação
 à média populacional. A origem do gráfico (0,0) representa a média
 populacional e assume-se que é a mesma nas duas gerações. A área
 sombreada representa os indivíduos da geração parental que foram
-selecionados. A cruz é a média dos pais e da prole selecionados.
-A diferença da origem (média populacional) para a média dos pais
-selecionados corresponde ao diferencial de seleção (S). A diferença
-da origem para a média da prole corresponde à resposta à seleção
-(R). \label{parentoff}](./figuras/parent-offspring.png)
+selecionados. A cruz é a média dos pais e da prole selecionados. A
+diferença da origem (média populacional) para a média dos pais
+selecionados corresponde ao diferencial de seleção (S). A diferença da
+origem para a média da prole corresponde à resposta à seleção (R).}
+\label{parentoff}
+\end{marginfigure}
 
-###Herdabilidade
+#Herdabilidade
 
 Olhando para a regressão pais-prole da figura \ref{parentoff},
 podemos ver que a razão R/S é equivalente à inclinação da reta de
@@ -1070,7 +1121,7 @@ Quanto mais próxima de 1,0 for a inclinação da reta de regressão
 pais-prole, maior a semelhança entre pais e prole (maior a
 herdabilidade), e, portanto, mais eficiente a resposta à seleção.
 
-##Mais de um caráter: Equação de Lande
+#Mais de um caráter: Equação de Lande
 
 Sabemos que, quando trabalhamos com mais de um caráter, temos que
 considerar não somente a variância dos caracteres, mas também a
@@ -1086,11 +1137,11 @@ genética entre esses caracteres.
 A intensidade da correlação genética entre dois caracteres indica a força
 da associação genética herdável entre eles.
 O padrão de pleiotropia está relacionado com o sistema de desenvolvimento dos organismos, ou seja, caracteres que compartilham uma mesma via de desenvolvimento, e com o desempenho de uma determinada função, garantindo a coesão dos caracteres.
-Isso será melhor explicado na próxima seção de Modularidade e Integração Morfológica. 
+Isso será melhor explicado na próxima seção de Modularidade e Integração Morfológica.
 
 Paralelo aos efeitos genéticos, a seleção natural atua em vários
 caracteres simultaneamente, e a associação genética entre esses
-caracteres pode alterar a resposta à seleção natural [@Lande1979; @Lande1983a].
+caracteres pode alterar a resposta à seleção natural [@Lande1983a].
 A correlação entre caracteres causa uma resposta
 indireta: se X e Y são correlacionados, a seleção direta em X
 causará uma seleção correlacionada em Y, e uma resposta direta de X e
@@ -1102,7 +1153,7 @@ Já a resposta indireta de Y pode ser prevista quando conhecemos o valor
 da correlação genética entre X e Y e as herdabilidades dos dois
 caracteres.
 A expansão da equação univariada para a multivariada foi
-elaborada por Russel Lande [-@Lande1979].
+elaborada por Russel Lande [@Lande1979].
 A equação de resposta multivariada à seleção direcional é análoga
 à equação do criador, e pode ser escrita como:
 
@@ -1121,7 +1172,7 @@ selecionados e a média populacional antes da seleção.
 O poduto $P^{-1}S$ também é chamado de gradiente de seleção, ou $\beta$.
 Vamos detalhar individualmente cada uma dessas quantidades.
 
-###Vetor de Resposta à Seleção $\cdot$ $\Delta z$
+#Vetor de Resposta à Seleção $\cdot$ $\Delta z$
 
 Como agora estamos trabalhando com vários caracteres, nossa
 representação passa a ser vetorial.
@@ -1130,7 +1181,7 @@ O vetor $\Delta z$, portanto, é somente a diferença nas médias de
 duas gerações, após um evento de seleção na geração parental.
 Ele é exatamente equivalente ao R na equação do criador.
 
-###Diferencial e Gradiente de Seleção $\cdot$ S e $\beta$
+#Diferencial e Gradiente de Seleção $\cdot$ S e $\beta$
 
 O vetor $S$ é análogo ao S da equação do criador, e representa a
 difereça na média dos parentais antes e depois da seleção, mas agora
@@ -1140,12 +1191,15 @@ ao caráter selecionado, pois, caso haja covariação entre o caráter
 selecionado e um segundo caráter não selecionado, um diferencial de
 seleção indireto se manifesta (Fig. \ref{difsel}):
 
-![**Diferencial de seleção correlacionado** Apenas o caráter
-$X$ está sujeito à seleção de truncamento, porém vemos
-um diferencial correlacionado em $Y$, devido à covariação
-fenotípica entre as duas variáveis. A elipse representa um
-intervalo de confiança de 95% da distribuição fenotípica das duas
-variáveis.\label{difsel}](./figuras/diferencialdeselecao.png)
+\begin{marginfigure}
+\includegraphics{./figuras/diferencialdeselecao.png}
+\caption{Diferencial de seleção correlacionado Apenas o caráter
+\(X\) está sujeito à seleção de truncamento, porém vemos um diferencial
+correlacionado em \(Y\), devido à covariação fenotípica entre as duas
+variáveis. A elipse representa um intervalo de confiança de 95\% da
+distribuição fenotípica das duas variáveis.}
+\label{difsel}
+\end{marginfigure}
 
 Podemos, então, descontar a correlação fenotípica encontrada na
 população para obter um valor de seleção que seja apenas devido a
@@ -1157,14 +1211,18 @@ matriz de covariação fenotípica, obtendo o gradiente de seleção
 O vetor resultante, $\beta$, representa apenas a seleção direta em
 cada caráter, em unidades de variância fenotípica.
 
-![**Gradiente de seleção correlacionado** A partir da situação na figura \ref{difsel},
-descontamos o efeito da covariação fenotípica entre duas variáveis
-e obtemos os gradientes de seleção. Como não existe seleção
-direta sobre $y$, sua componente do gradiente de seleção é nula.
-\label{gradsel}](./figuras/gradientedeselecao.png)
+\begin{marginfigure}
+\includegraphics{./figuras/gradientedeselecao.png}
+\caption{Gradiente de seleção correlacionado. A partir da
+situação na figura \ref{difsel}, descontamos o efeito da covariação
+fenotípica entre duas variáveis e obtemos os gradientes de seleção. Como
+não existe seleção direta sobre $y$, sua componente do gradiente de
+seleção é nula.}
+\label{gradsel}
+\end{marginfigure}
 
 
-###Matriz Genética
+#Matriz Genética
 
 A matriz genética ou $\mathbf{G}$ possuí como entradas em sua
 diagonal os valores de variância aditiva ($V_A$) para cada caráter,
@@ -1180,8 +1238,8 @@ Para entender melhor o efeito das correlações genéticas na resposta
 caracteres e abrir o produto do gradiente de seleção com a matriz $\mathbf{G}$
 em todos os seus termos.
 
-$$
-\mathbf{G}\mathbf{\beta}  =
+\begin{align}
+\mathbf{G}\beta  =
 \left (
 \begin{matrix}
 G_{11} & G_{12} & G_{13}\\
@@ -1196,7 +1254,7 @@ G_{31} & G_{32} & G_{33}\\
 \beta_{3}  \\
 \end{matrix}
 \right )
-=
+&=
 \left (
 \begin{matrix}
 G_{11}\beta_{1} +  G_{12}\beta_{2} +  G_{13}\beta_{3}\\
@@ -1204,7 +1262,8 @@ G_{21}\beta_{1} +  G_{22}\beta_{2} +  G_{22}\beta_{3}\\
 G_{31}\beta_{1} +  G_{32}\beta_{2} +  G_{32}\beta_{3}\\
 \end{matrix}
 \right )
-=
+\\
+&=
 \left (
 \begin{matrix}
 \Delta z_{1}  \\
@@ -1214,7 +1273,7 @@ G_{31}\beta_{1} +  G_{32}\beta_{2} +  G_{32}\beta_{3}\\
 \right )
 =
 \Delta z
-$$
+\end{align}
 
 Os termos $G_{11}\beta_{1}$, $G_{22}\beta_{2}$ e $G_{33}\beta_{3}$
 representam a resposta à seleção direta em cada caráter.
@@ -1231,27 +1290,31 @@ evolutiva (fig. \ref{desvio-trajetorias})
 Portanto, os componentes de covariância da $\mathbf{G}$ podem
 restringir a evolução de uma população na direção da seleção,
 enquanto que os componentes de variância aditiva podem restringir
-a taxa de evolução, no caso de pouca variância [@Lande1979;
-@Lande1983a].
+a taxa de evolução, no caso de pouca variância.
 Apesar da relevância da $\mathbf{G}$ em evolução, sua estimativa
 não é uma tarefa simples, pois são necessários delineamentos de
 cruzamento entre os indivíduos de uma população e criação de sua
 prole para a determinação do parentesco entre eles (pais-filhos,
 irmãos, meio-irmãos).
 
-![**Trajetórias evolutivas de populações com estruturas de
-covariação orientadas de formas distintas na paisagem adaptativa** Estão
+\begin{marginfigure}
+\includegraphics{./figuras/desvio-trajetorias.png}
+\caption{Trajetórias evolutivas de populações com estruturas de
+covariação orientadas de formas distintas na paisagem adaptativa. Estão
 apresentadas três matrizes G (elipses cinzas) dispostas em uma paisagem
-adaptativa, na qual as elipses concêntricas reperesentam diferentes valores de
-aptidão. A cruz ao centro da paisagem indica o ótimo adaptativo, e portanto a
-direção para qual as matrizes são puxadas pela seleção. As matrizes _a_ e _b_
-respondem de maneira linear (sem desvios) à seleção, pois possuem um de seus
-eixos de variação alinhados com a paisagem. Já a matriz _c_, que não está
-alinhada com a paisagem, apresenta uma resposta curva à seleção, ou seja, sua
+adaptativa, na qual as elipses concêntricas reperesentam diferentes
+valores de aptidão. A cruz ao centro da paisagem indica o ótimo
+adaptativo, e portanto a direção para qual as matrizes são puxadas pela
+seleção. As matrizes \emph{a} e \emph{b} respondem de maneira linear
+(sem desvios) à seleção, pois possuem um de seus eixos de variação
+alinhados com a paisagem. Já a matriz \emph{c}, que não está alinhada
+com a paisagem, apresenta uma resposta curva à seleção, ou seja, sua
 trajetória evolutiva está restringida pela sua estrutura de covariância
-genética aditiva. \label{desvio-trajetorias}](./figuras/desvio-trajetorias.png)
+genética aditiva.}
+\label{desvio-trajetorias}
+\end{marginfigure}
 
-###Matriz Fenotípica
+#Matriz Fenotípica
 
 A matriz P é muito mais simples de ser obtida, pois não precisamos ter
 acesso ao grau de parentesco entre os indivíduos amostrados.
@@ -1293,7 +1356,7 @@ $$
 na qual $(\overline z_{atual} - \overline z_{ancestral})$ representa a diferença na média
 das espécies atuais e ancestrais, e o gradiente de
 seleção $\beta$ representa o padrão de seleção cumulativo sofrida por cada
-linhagem independentemente [@Lande1979; @Marroig2005].
+linhagem independentemente [@Marroig2005].
 A aplicação dessa forma macro-evolutiva da Equação de Lande só
 pode ser feita se existir constância da $\mathbf{G}$ (ou no caso, da
 $\mathbf{P}$).
@@ -1334,9 +1397,13 @@ módulo, como esquematizado na figura \ref{modulos}.
 Módulos, então, são caracterizados por uma alta conectividade interna e
 relativa independência de outros módulos.
 
-![Representação esquemática da organização modular dos seres
-  vivos. As setas representam qualquer tipo de relação entre as partes
-  de um indivíduo. Adaptado de [@Klingenberg2008]. \label{modulos}](./figuras/modulos.png)
+\begin{marginfigure}
+\includegraphics{./figuras/modulos.png}
+\caption{Representação esquemática da organização modular dos seres
+vivos. As setas representam qualquer tipo de relação entre as partes de
+um indivíduo. Adaptado de Klingenberg 2008.}
+\label{modulos}
+\end{marginfigure}
 
 Podemos classificar os tipos de módulos de acordo com o tipo de
 interação que os define [@Wagner2007].
@@ -1395,10 +1462,10 @@ Módulo variacional:
     no desenvolvimento quanto na estrutura genética dos indivíduos, e são
     moldadas por demandas evolutivas [@Klingenberg2008].
 
-##Integração Morfológica
+#Integração Morfológica
 
 No contexto de caracteres contínuos, a teoria da integração
-morfológica foi inicialmente elaborada por Olson e Miller [-@Olson1958]
+morfológica foi inicialmente elaborada por Olson e Miller [@Olson1958]
 em seu livro "Integração Morfológica".
 Neste livro, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
@@ -1409,7 +1476,7 @@ fenotípicas e organizadas em módulos variacionais.
 A relevância em se investigar complexos de caracteres em vez de
 caracteres isolados está na visão de que mudanças em um caráter
 podem não ser independentes de mudanças em outros caracteres do
-organismo [@Lande1979].
+organismo.
 Olson e Miller já ponderavam sobre as relações
 entre magnitude de integração e evolução.
 Seria a intensidade de integração, ou seja, o quão fortemente os
@@ -1426,7 +1493,7 @@ o primeiro.
 Na próxima seção vamos discutir essa dualidade em detalhes num
 contexto evolutivo.
 
-Günter P. Wagner [-@Wagner1996] ressaltou que é preciso haver uma
+Günter P. Wagner [@Wagner1996] ressaltou que é preciso haver uma
 razão biológica para que o plano corpóreo dos organismos seja
 organizado de maneira tão obviamente modular, tornando facilmente
 reconhecíveis suas unidades naturais (como mostrado pela nossa
@@ -1445,11 +1512,14 @@ caracteres envolvidos com uma determinada função.
 Essa organização modular do mapa genótipo-fenótipo seria responsável
 ela organização dos caracteres em módulos variacionais.
 
-![Mapa genótipo-fenótipo modular clássico, e mapa incluindo
-efeitos do desenvolvimento. Adaptado de [@Klingenberg2008].
-\label{mapagenfen}](./figuras/mapgenfen.png)
+\begin{marginfigure}
+\includegraphics{./figuras/mapgenfen.png}
+\caption{Mapa genótipo-fenótipo modular clássico, e mapa incluindo
+efeitos do desenvolvimento. Adaptado de Klingenberg 2008.}
+\label{mapagenfen}
+\end{marginfigure}
 
-##Consequências Evolutivas
+#Consequências Evolutivas
 
 A organização modular do genoma e do desenvolvimento e a consequente
 estrutura variacional modular leva a consequências evolutivas
@@ -1475,7 +1545,7 @@ características funcionalmente ou ontogeneticamente ligadas se
 modifiquem de forma harmoniosa; e que características em módulos
 diferentes possam se alterar de forma relativamente independente.
 
-##Autovalores e Autovetores
+#Autovalores e Autovetores
 
 Quando trabalhamos com muito caracteres, avaliar ao mesmo tempo a
 evolução e a variação de todos simultaneamente se torna pouco
@@ -1489,11 +1559,15 @@ também conhecida como decomposição de autovalores e autovetores.
 Os autovetores, ou componentes principais, nada mais são que as
 direções de maior variação não correlacionadas (Fig. \ref{autovetores}).
 
-![**Autovetores da distribuição dos caracteres X e Y.** PC1
-representa o primeiro componente principal da matriz $\mathbf{P}$, ou primeiro autovetor,
-e corresponde ao eixo de maior variação fenotípica. PC2, então,
-representa o segundo eixo de maior variação ortogonal ao primeiro.
-\label{autovetores}](./figuras/auto-vetores.png)
+\begin{marginfigure}
+\includegraphics{./figuras/auto-vetores.png}
+\caption{Autovetores da distribuição dos caracteres X e Y. PC1
+representa o primeiro componente principal da matriz \(\mathbf{P}\), ou
+primeiro autovetor, e corresponde ao eixo de maior variação fenotípica.
+PC2, então, representa o segundo eixo de maior variação ortogonal ao
+primeiro.}
+\label{autovetores}
+\end{marginfigure}
 
 A quantidade de variação em cada direção dos componentes principais é medida pelo seu autovalor correspondente.
 O primeiro autovetor é associado ao maior autovalor.
@@ -1506,7 +1580,7 @@ concentrada nos primeiros componentes principais, e portanto podemos
 caracterizar de forma bastante completa a variação na população
 utilizando estes primeiros componentes.
 
-##Tamanho e Linhas de Menor Resistência Evolutiva
+#Tamanho e Linhas de Menor Resistência Evolutiva
 
 Os componentes principais trazem uma informação importante sobre a
 distribuição de variação no morfoespaço.
@@ -1518,8 +1592,7 @@ Por esse motivo, essa direção ficou conhecida como linha de menor
 resistência evolutiva [@Schluter1996].
 Frequentemente, vemos a linha de menor resistência evolutiva
 enviesando o vetor de resposta à seleção, mesmo quando o gradiente
-de seleção está orientado em outra direção [@Schluter1996;
-@Marroig2005].
+de seleção está orientado em outra direção [@Marroig2005].
 Esse desvio se dá pela ação da seleção indireta, descrita nas
 seções anteriores (fig. \ref{desvio-trajetorias}).
 Quando maior for a porção da variação presente no primeiro
@@ -1535,6 +1608,6 @@ portanto, alteração coordenadas entre todos os caracteres avaliados,
 ou seja, todos aumentam ou diminuem juntos.
 Assim, essas mudanças representam mudanças de tamanho, e o principal
 eixo de variação dentro de populações é no tamanho dos indivíduos
-[@Marroig2005; @Porto2009; @Marroig2010].
+[@Porto2009].
 
 #Bibliografia
