@@ -1,4 +1,4 @@
-FILE? = apostila
+FILE = apostila
 
 all :
 	pandoc \
@@ -14,14 +14,14 @@ all :
 	sed -i 's/\\autocite/\\cite/g' tufte-book-body.tex
 	sed -i '/cites/s/}{/,/g' tufte-book-body.tex
 	sed -i 's/cites/cite/g' tufte-book-body.tex
-	cp tufte-book-body.tex ./output/2014-RC-$(FILE).tex
+	cp tufte-book-body.tex ./output/apostila-bio302.tex
 
 	 #Generate the PDF.
 	lualatex tufte-book-body
 	bibtex tufte-book-body
 	lualatex tufte-book-body
 	lualatex tufte-book-body
-	mv tufte-book-body.pdf ./output/2014-RC-$(FILE).pdf
+	mv tufte-book-body.pdf ./output/apostila-bio302.pdf
 
 	 #Remove these files after the work is done.
 	rm  \
@@ -30,7 +30,6 @@ all :
 	tufte-book-body.blg \
 	tufte-book-body.log \
 	tufte-book-body.out 
-	tufte-book-body.tex \
 	#tufte-book.bcf \
 	#tufte-book.run.xml \
 	#tufte-book.toc \

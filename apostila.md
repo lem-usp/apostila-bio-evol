@@ -76,12 +76,13 @@ biologia pôde ser unificada no eixo comum da teoria evolutiva, permitindo o
 aprofundamento dos estudos em genética de populações e genética quantitativa em
 temas macroevoutivos, como especiação por exemplo.
 
-\begin{marginfigure}
-\includegraphics{./figuras/variosalelos.png}
-\caption{Vários loci podem atuar sobre o mesmo caráter, dando a
-este uma variação continua na população.}
-\label{variosloci}
-\end{marginfigure}
+\begin{figure}
+  \includegraphics{./figuras/variosalelos.png}
+  \caption{Vários loci podem atuar sobre o mesmo caráter, dando a
+      este uma variação continua na população.}
+  \label{variosloci}
+  \setfloatalignment{b}
+\end{figure}
 
 #Princípios matemáticos em Genética Quantitativa
 
@@ -165,6 +166,15 @@ como $(4.94, 9.94, 15.11, 20.17)$, cada um representando um dado
 caráter de um indivíduo.
 O morfoespaço nesse caso seria um hiperplano com 4 dimensões.
 
+\begin{marginfigure}
+\includegraphics{./figuras/deltazes.png}
+\caption{Possíveis mudanças nas médias de duas populações. No
+caso (a) magnitudes de mudança iguais mas direções diferentes. (b)
+direções iguais mas magnitudes diferentes e (c) magnitudes e direções
+diferentes.}
+\label{deltazes}
+\end{marginfigure}
+
 Vetores podem representar também mudanças em fenótipos.
 Suponha que a média bivariada de uma população tenha se alterado
 entre os momentos a e b, passando de $\overline z_a=(10, 50)$ para $\overline z_b=(15, 47)$.
@@ -181,6 +191,7 @@ enquanto o segundo caráter diminuiu em 3 unidades.
 O vetor de mudança, $\Delta \overline z$, representa matematicamente o
 evento evolutivo.
 
+
 #Comparação de Vetores
 
 Frequentemente estaremos interessados em comparar vetores.
@@ -194,14 +205,6 @@ magnitude quando em suas direção.
 A figura \ref{deltazes} mostra algumas possibilidades para as
 diferenças entre vetores de mudanças evolutivas de duas populações.
 
-\begin{marginfigure}
-\includegraphics{./figuras/deltazes.png}
-\caption{Possíveis mudanças nas médias de duas populações. No
-caso (a) magnitudes de mudança iguais mas direções diferentes. (b)
-direções iguais mas magnitudes diferentes e (c) magnitudes e direções
-diferentes.}
-\label{deltazes}
-\end{marginfigure}
 
 Vemos, então, que uma forma natural de comparar vetores é
 representando-os pela sua magnitude e direção.
@@ -781,22 +784,24 @@ determinado por um único locus multiplicando as frequências
 genotípicas pelos valores genotípicos e somando os resultados para os
 três genótipos (Tabela 1).
 
-**Tabela 1. Dependência da média populacional das frequências gênicas.** A frequência dos genótipos é determinada pelo equilíbrio de Hardy-Weinberg e os valores genotípicos são calculados em relação ao ponto equidistante dos dois homozigotos.
-
--------------------------------------------------------
-  Genótipo     Frequência      Valor      Freq. $\times$ Valor
------------ ----------------  -------   ---------------
- $A_1A_1$          $p^2$           +a         $p^2a$
-
- $A_1A_2$          $2pq$            d         $2pqd$
-
- $A_2A_2$          $q^2$           -a         $-q^2a$
-
-                              soma =     $a(p-q)+2dpq$
--------------------------------------------------------
-
-
-\newpage
+\begin{table}
+  \centering
+  \fontfamily{ppl}\selectfont
+  \caption{Dependência da média populacional das frequências
+gênicas. A frequência dos genótipos é determinada pelo equilíbrio
+de Hardy-Weinberg e os valores genotípicos são calculados em relação
+ao ponto equidistante dos dois homozigotos.}
+  \begin{tabular}{llll}
+    \toprule
+  Genótipo  &  Frequência   &  Valor   &   Freq. $\times$ Valor \\
+    \midrule
+ $A_1A_1$   &       $p^2$   &        +a &        $p^2a$ \\
+ $A_1A_2$   &       $2pq$   &         d &        $2pqd$ \\
+ $A_2A_2$   &       $q^2$   &        -a &        $-q^2a$ \\
+            &               &   soma =  &   $a(p-q)+2dpq$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 Podemos ver, então, que a contribuição de qualquer locus para a média
 populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
@@ -853,8 +858,13 @@ frequências gênicas desses outros alelos na população.
 
 \newpage
 
-**Tabela 2. Efeito médio dos alelos $A_1$ e $A_2$.** Cada gameta pode produzir dois genótipos distintos (homozigoto e heterozigoto) conforme as frequências dos outros gametas na população. Somando-se os valores genotípicos multiplicados por suas frequências e descontando a média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
+**Tabela 2 **. Efeito médio dos alelos $A_1$ e $A_2$. Cada gameta pode
+produzir dois genótipos distintos (homozigoto e heterozigoto) conforme
+as frequências dos outros gametas na população. Somando-se os valores
+genotípicos multiplicados por suas frequências e descontando a média
+populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
 
+\begin{table}
 \begin{tabular}{lllllll}
 \hline
 & & & & & \\
@@ -873,7 +883,9 @@ $A_1$ & $p$ & $q$ & & $pa + qd$ & $-[a(p-q) + 2dpq]$ & $q[a+d(q-p)]$ \\
 $A_2$ & & $p$ & $q$ & $-qa + pd$ & $-[a(p-q) + 2dpq]$ & $-p[a+d(q-p)]$ \\
 & & & & & \\
 \hline
+
 \end{tabular}
+\end{table}
 
 O efeito médio de um alelo é representado pelo símbolo $\alpha_1$,
 para o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$.
@@ -916,17 +928,23 @@ O valor de acasalamento, portanto, pode ser expresso em termos dos
 efeitos médios dos alelos (ou efeito médio de uma substituição de
 alelo), como mostrado na tabela 3.
 
-**Tabela 3. Valores de acasalamento para os genótipos de um locus com dois alelos.** O valor de acasalamento está apresentado em função dos efeitos médios dos alelos ($\alpha_1$ e $\alpha_2$) e do efeito médio de uma substituição ($\alpha$).
-
--------------------------------------------------
-Genótipo    Valor de acasalamento
----------   -------------------------------------
-$A_1$$A_1$  $2\alpha_1 = 2q\alpha$
-
-$A_1$$A_2$  $\alpha_1 + \alpha_2 = (q-p)\alpha$
-
-$A_2$$A_2$  $2\alpha_2 = -2p\alpha$
--------------------------------------------------
+\begin{margintable}
+  \centering
+  \fontfamily{ppl}\selectfont
+  \caption{Valores de acasalamento para os genótipos de um locus com
+dois alelos. O valor de acasalamento está apresentado em função dos
+efeitos médios dos alelos ($\alpha_1$ e $\alpha_2$) e do efeito médio
+de uma substituição ($\alpha$).}
+  \begin{tabular}{ll}
+    \toprule
+Genótipo &   Valor de acasalamento \\
+    \midrule
+$A_1$$A_1$ & $2\alpha_1 = 2q\alpha$ \\
+$A_1$$A_2$ & $\alpha_1 + \alpha_2 = (q-p)\alpha$ \\
+$A_2$$A_2$ & $2\alpha_2 = -2p\alpha$ \\
+    \bottomrule
+  \end{tabular}
+\end{margintable}
 
 A extensão para vários loci é direta: o valor de acasalamento para um
 genótipo particular é a soma dos valores de acasalamento atribuídos a
@@ -941,6 +959,21 @@ O restante do valor genotípico é denominado desvio de dominância:
 $$
 G = A + D
 $$
+
+\begin{marginfigure}
+\includegraphics{./figuras/desviodominancia.png}
+\caption{Valores genotípicos, valores de acasalamento e desvios
+de dominância para um locus com dois alelos. Os círculos abertos
+representam os valores de acasalamento para os genótipos apresentados no
+eixo da abscissa. Esse eixo indica o número de alelos \(A_1\) no
+genótipo. Os círculos preenchidos representam os valores genotípicos
+observados. Os desvios de dominância são as linhas pontilhadas que
+conectam os valores de acasalamento com os valores genotípicos. A cruz
+representa a média populacional. O eixo vertical à esquerda mostra os
+valores genotípicos, enquanto o eixo à direita mostra os valores de
+acasalamento correspondentes aos genótipos na abscissa.}
+\label{desviodominancia}
+\end{marginfigure}
 
 Esse desvio tem origem na propriedade de dominância entre alelos de um
 mesmo locus, ou seja, na interação dentro do locus.
@@ -959,21 +992,6 @@ Uma reta de regressão pelo método de quadrados mínimos está ajustada aos val
 A posição dessa reta dá os valores de acasalamento de cada genótipo.
 As diferenças entre valores de acasalamento e valores genotípicos correspondem aos desvios de dominância.
 
-
-\begin{marginfigure}
-\includegraphics{./figuras/desviodominancia.png}
-\caption{Valores genotípicos, valores de acasalamento e desvios
-de dominância para um locus com dois alelos. Os círculos abertos
-representam os valores de acasalamento para os genótipos apresentados no
-eixo da abscissa. Esse eixo indica o número de alelos \(A_1\) no
-genótipo. Os círculos preenchidos representam os valores genotípicos
-observados. Os desvios de dominância são as linhas pontilhadas que
-conectam os valores de acasalamento com os valores genotípicos. A cruz
-representa a média populacional. O eixo vertical à esquerda mostra os
-valores genotípicos, enquanto o eixo à direita mostra os valores de
-acasalamento correspondentes aos genótipos na abscissa.}
-\label{desviodominancia}
-\end{marginfigure}
 
 #Desvio de interação
 
@@ -1031,8 +1049,6 @@ genéticas da população e de sua resposta à seleção natural.
 A razão $V_A/V_P$ expressa a extensão na qual os fenótipos são
 determinados pelos genes transmitidos pelos pais, e é denominada
 herdabilidade.
-
-\newpage
 
 #Seleção Natural e Genética Quantitativa
 
@@ -1297,7 +1313,7 @@ cruzamento entre os indivíduos de uma população e criação de sua
 prole para a determinação do parentesco entre eles (pais-filhos,
 irmãos, meio-irmãos).
 
-\begin{marginfigure}
+\begin{figure}
 \includegraphics{./figuras/desvio-trajetorias.png}
 \caption{Trajetórias evolutivas de populações com estruturas de
 covariação orientadas de formas distintas na paisagem adaptativa. Estão
@@ -1312,7 +1328,7 @@ com a paisagem, apresenta uma resposta curva à seleção, ou seja, sua
 trajetória evolutiva está restringida pela sua estrutura de covariância
 genética aditiva.}
 \label{desvio-trajetorias}
-\end{marginfigure}
+\end{figure}
 
 #Matriz Fenotípica
 
@@ -1386,9 +1402,8 @@ constituintes dos organismos através das relações entre elas,
 sendo cada tipo de relação adequada a um nível de complexidade ou
 organização.
 As partes do organismo as quais nos referimos podem ser as
-bases nitrogenadas de uma molécula de RNA [@Ancel2000], genes
-[@Costanzo2010], proteínas [@Han2004], ou caracteres morfológicos, como
-temos visto até agora [@Klingenberg2008; @Porto2009; @Marroig2009].
+bases nitrogenadas de uma molécula de RNA, genes, proteínas, ou caracteres morfológicos, como
+temos visto até agora [@Wagner2007].
 Essas relações podem ser medidas de diversas formas, como interação
 física entre proteínas, padrões de expressão conjunta entre genes,
 ou, no nosso caso, correlação entre caracteres quantitativos.
@@ -1512,12 +1527,12 @@ caracteres envolvidos com uma determinada função.
 Essa organização modular do mapa genótipo-fenótipo seria responsável
 ela organização dos caracteres em módulos variacionais.
 
-\begin{marginfigure}
+\begin{figure}
 \includegraphics{./figuras/mapgenfen.png}
 \caption{Mapa genótipo-fenótipo modular clássico, e mapa incluindo
 efeitos do desenvolvimento. Adaptado de Klingenberg 2008.}
 \label{mapagenfen}
-\end{marginfigure}
+\end{figure}
 
 #Consequências Evolutivas
 
