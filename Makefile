@@ -14,14 +14,14 @@ all :
 	sed -i 's/\\autocite/\\cite/g' tufte-book-body.tex
 	sed -i '/cites/s/}{/,/g' tufte-book-body.tex
 	sed -i 's/cites/cite/g' tufte-book-body.tex
-	cp tufte-book-body.tex ./output/apostila-bio302.tex
+	cp tufte-book-body.tex ./output/apostila-bio312.tex
 
 	 #Generate the PDF.
 	lualatex tufte-book-body
 	bibtex tufte-book-body
 	lualatex tufte-book-body
 	lualatex tufte-book-body
-	mv tufte-book-body.pdf ./output/apostila-bio302.pdf
+	mv tufte-book-body.pdf ./output/apostila-bio312.pdf
 
 	 #Remove these files after the work is done.
 	rm  \
