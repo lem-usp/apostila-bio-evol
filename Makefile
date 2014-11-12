@@ -29,6 +29,7 @@ all :
 	tufte-book-body.bbl \
 	tufte-book-body.blg \
 	tufte-book-body.log \
+	tufte-book-body.tex \
 	tufte-book-body.out 
 	#tufte-book.bcf \
 	#tufte-book.run.xml \

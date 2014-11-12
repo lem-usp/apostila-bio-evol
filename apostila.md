@@ -1374,7 +1374,7 @@ das espécies atuais e ancestrais, e o gradiente de
 seleção $\beta$ representa o padrão de seleção cumulativo sofrida por cada
 linhagem independentemente [@Marroig2005].
 A aplicação dessa forma macro-evolutiva da Equação de Lande só
-pode ser feita se existir constância da $\mathbf{G}$ (ou no caso, da
+pode ser feita se existir constância da $\mathbf{G}$ (ou, no caso, da
 $\mathbf{P}$).
 Essa premissa está relacionada com homogeneidade de variâncias e
 covariâncias genéticas aditivas entre as espécies estudadas e
@@ -1480,7 +1480,7 @@ Módulo variacional:
 #Integração Morfológica
 
 No contexto de caracteres contínuos, a teoria da integração
-morfológica foi inicialmente elaborada por Olson e Miller [@Olson1958]
+morfológica foi inicialmente elaborada por Olson e Miller
 em seu livro "Integração Morfológica".
 Neste livro, os autores apresentam a integração morfológica como
 uma forma de estudar a evolução dos animais como organismos totais,
