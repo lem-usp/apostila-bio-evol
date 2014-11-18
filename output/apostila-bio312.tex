@@ -49,8 +49,8 @@
 
 \title{Apostila de Biologia Evolutiva - BIO312}
 %\author{ Diogo Melo - Monique Simon}
-\author{\Large Diogo Melo\vspace{0.05in} \newline\normalsize Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo \newline\footnotesize diogro@cecm.usp.br\vspace*{0.2in}\newline \Large Monique Simon\vspace{0.05in} \newline\normalsize Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo \newline\footnotesize monique.nouailhetas@gmail.com\vspace*{0.2in}\newline }
-%\author{Diogo Melo (Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo) \and Monique Simon (Laboratório de evolução de mamíferos $\cdot$ Universidade de São Paulo)}
+\author{\Large Diogo Melo\vspace{0.05in} \newline\normalsize Laboratório de evolução de mamíferos \(\cdot\) Universidade de São Paulo \newline\footnotesize diogro@cecm.usp.br\vspace*{0.2in}\newline \Large Monique Simon\vspace{0.05in} \newline\normalsize Laboratório de evolução de mamíferos \(\cdot\) Universidade de São Paulo \newline\footnotesize monique.nouailhetas@gmail.com\vspace*{0.2in}\newline }
+%\author{Diogo Melo (Laboratório de evolução de mamíferos \(\cdot\) Universidade de São Paulo) \and Monique Simon (Laboratório de evolução de mamíferos \(\cdot\) Universidade de São Paulo)}
 \date{Novembro de 2014}
 
 
@@ -187,10 +187,10 @@ vetor.}
 \label{vetores}
 \end{marginfigure}
 
-No plano $(x,y)$ representado na figura \ref{vetores}, podemos
+No plano \((x,y)\) representado na figura \ref{vetores}, podemos
 representar qualquer combinação de tamanhos do braço e do antebraço. Por
 exemplo, na convenção da figura \ref{vetores}, um individuo com 15 cm de
-braço e 20 cm de antebraço é representando pelo vetor $(20, 15)$.
+braço e 20 cm de antebraço é representando pelo vetor \((20, 15)\).
 Qualquer fenótipo do tamanho desses dois ossos pode ser descrito por um
 par de números. Como todos os fenótipos possíveis estão representados
 nesse plano, ele é chamado de morfoespaço.
@@ -202,9 +202,9 @@ de medidas, chegando até centenas variáveis observadas em cada
 indivíduo. Ainda assim, podemos continuar representando nossos
 indivíduos por vetores, agora compostos por muito mais números,
 representando todas as medidas tomadas. Para 4 medidas, por exemplo, os
-vetores são listas de 4 números, como $(4.94, 9.94, 15.11, 20.17)$, cada
-um representando um dado caráter de um indivíduo. O morfoespaço nesse
-caso seria um hiperplano com 4 dimensões.
+vetores são listas de 4 números, como \((4.94, 9.94, 15.11, 20.17)\),
+cada um representando um dado caráter de um indivíduo. O morfoespaço
+nesse caso seria um hiperplano com 4 dimensões.
 
 \begin{marginfigure}
 \includegraphics{./figuras/deltazes.png}
@@ -217,10 +217,10 @@ diferentes.}
 
 Vetores podem representar também mudanças em fenótipos. Suponha que a
 média bivariada de uma população tenha se alterado entre os momentos a e
-b, passando de $\overline z_a=(10, 50)$ para $\overline z_b=(15, 47)$.
-Essa mudança pode ter uma série de motivos, um episodio de seleção
-direcional ou um gargalo populacional, por exemplo. Podemos representar
-essa mudança na média como um vetor:
+b, passando de \(\overline z_a=(10, 50)\) para
+\(\overline z_b=(15, 47)\). Essa mudança pode ter uma série de motivos,
+um episodio de seleção direcional ou um gargalo populacional, por
+exemplo. Podemos representar essa mudança na média como um vetor:
 
 \[
 \overline z_b - \overline z_a = \Delta \overline z_{ba} = (15, 47)_b - (10, 50)_a = (5, -3)
@@ -228,7 +228,7 @@ essa mudança na média como um vetor:
 
 Ou seja, o primeiro caráter aumentou em 5 unidades na sua média,
 enquanto o segundo caráter diminuiu em 3 unidades. O vetor de mudança,
-$\Delta \overline z$, representa matematicamente o evento evolutivo.
+\(\Delta \overline z\), representa matematicamente o evento evolutivo.
 
 \section{Comparação de Vetores}\label{comparauxe7uxe3o-de-vetores}
 
@@ -249,8 +249,8 @@ vetores}\label{magnitude-ou-norma-de-vetores}
 
 Para calcular a magnitude de um vetor, podemos nos valer da teorema de
 Pitágoras para triângulos retângulos (figura \ref{pitagoras}). Para um
-vetor $\Delta z$ com componentes $(\Delta z_x, \Delta z_y)$, podemos
-calcular sua norma (ou magnitude) $|\Delta z|$ como:
+vetor \(\Delta z\) com componentes \((\Delta z_x, \Delta z_y)\), podemos
+calcular sua norma (ou magnitude) \(|\Delta z|\) como:
 
 \[
 |\Delta z| = \sqrt{\Delta z_x^2 + \Delta z_y^2}
@@ -258,7 +258,7 @@ calcular sua norma (ou magnitude) $|\Delta z|$ como:
 
 A boa notícia é que essa formula continua valendo para dimensionalidades
 altas. Suponha que queiramos calcular a norma de um vetor em 4 dimensões
-$\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)$. A conta
+\(\Delta z = (\Delta z_x, \Delta z_y, \Delta z_z, \Delta z_w)\). A conta
 seria simplesmente:
 
 \[
@@ -266,7 +266,7 @@ seria simplesmente:
 \]
 
 Para um vetor de dimensionalidade arbitraria
-$\mathbf{x} = (x_1, x_2, \cdots, x_p)$, sua norma pode ser expressa
+\(\mathbf{x} = (x_1, x_2, \cdots, x_p)\), sua norma pode ser expressa
 como:
 
 \[
@@ -294,22 +294,22 @@ vetores também é chamado de correlação de vetores. Para calcular o
 cosseno do angulo entre dois vetores a partir de suas componentes,
 devemos fazer uso da lei dos cossenos (figura \ref{leidoscossenos}).
 Utilizando a notação da figura \ref{leidoscossenos}, a correlação entre
-os vetores $\Delta z_1 = (\Delta z_{11}, \Delta z_{12})$ e
-$\Delta z_2 = (\Delta z_{21}, \Delta z_{22})$ seria:
+os vetores \(\Delta z_1 = (\Delta z_{11}, \Delta z_{12})\) e
+\(\Delta z_2 = (\Delta z_{21}, \Delta z_{22})\) seria:
 
 \[
 Corr(\Delta z_1, \Delta z_2) = cos(\alpha) = \frac{(\Delta z_{11}  \Delta z_{21}) + (\Delta z_{12}  \Delta z_{22})}{| \Delta z_1|  | \Delta z_2|} = \frac{(\Delta z_{11}  \Delta z_{21}) + (\Delta z_{12}  \Delta z_{22})}{\sqrt{\Delta z_{11}^2 + \Delta z_{12}^2}  \sqrt{\Delta z_{21}^2 + \Delta z_{22}^2}}
 \]
 
-Em outras palavras, o cosseno do angulo $\alpha$ é calculado como a soma
-dos produtos cruzados entre os dois vetores dividido pela sua norma. O
-termo de soma dos produto cruzados,
-$(\Delta z_{11} \Delta z_{21}) + (\Delta z_{12} \Delta z_{22})$, é
+Em outras palavras, o cosseno do angulo \(\alpha\) é calculado como a
+soma dos produtos cruzados entre os dois vetores dividido pela sua
+norma. O termo de soma dos produto cruzados,
+\((\Delta z_{11} \Delta z_{21}) + (\Delta z_{12} \Delta z_{22})\), é
 conhecido como o produto escalar entre dos vetores, e pode ser
 generalizado para um numero arbitrário de dimensões. Para dois vetores
-$\mathbf{x} = (x_1, x_2, \cdots, x_p)$ e
-$\mathbf{y} = (y_1, y_2, \cdots, y_p)$, o seu produto escalar é definido
-como:
+\(\mathbf{x} = (x_1, x_2, \cdots, x_p)\) e
+\(\mathbf{y} = (y_1, y_2, \cdots, y_p)\), o seu produto escalar é
+definido como:
 
 \[
 \mathbf{x} \cdot \mathbf{y} = \sum_{i=1}^p x_iy_i
@@ -347,12 +347,12 @@ estudados, é conveniente, então, padronizar a magnitude dos vetores de
 todas as populações ou espécies envolvidas na analise. Normalmente
 modificamos os vetores para que eles tenham magnitude unitária, ou seja,
 igual a 1. Esse procedimento é chamado de normalização, e se
-$\mathbf{x_N}$ é normalizado, então $|\mathbf{x_N}| = 1$.
+\(\mathbf{x_N}\) é normalizado, então \(|\mathbf{x_N}| = 1\).
 
-Suponha que $\mathbf{x}$ seja um vetor não normalizado (então
-$|\mathbf{x}| \neq 1$), como fazemos para obter sua versão normalizada
-$\mathbf{x_N}$? Basta dividir todos os elementos de $\mathbf{x}$ por
-$|\mathbf{x}|$! Note que:
+Suponha que \(\mathbf{x}\) seja um vetor não normalizado (então
+\(|\mathbf{x}| \neq 1\)), como fazemos para obter sua versão normalizada
+\(\mathbf{x_N}\)? Basta dividir todos os elementos de \(\mathbf{x}\) por
+\(|\mathbf{x}|\)! Note que:
 
 \[
 |\mathbf{x}| = \sqrt{\sum_{i=1}^p x_i^2}
@@ -365,7 +365,7 @@ Então:
 \]
 
 Outra vantagem de usar vetores normalizados é na hora do calculo de suas
-correlações. Se $\mathbf{x}$ e $\mathbf{y}$ são normalizados, sua
+correlações. Se \(\mathbf{x}\) e \(\mathbf{y}\) são normalizados, sua
 correlação é simplesmente seu produto interno (ou a soma dos seus
 produtos cruzados), pois:
 
@@ -383,8 +383,8 @@ que é em termos de variação que as questões genéticas primárias são
 formuladas. A quantidade de variação é medida e expressa como a
 variância. A variância é uma medida comum, que quantifica desvios de
 cada indivíduo em relação à média global. A variância de um caráter
-contínuo $z$, expresso em uma população com $n$ indivíduos $z_1$ a
-$z_n$, e média $\overline z$, é dada por:
+contínuo \(z\), expresso em uma população com \(n\) indivíduos \(z_1\) a
+\(z_n\), e média \(\overline z\), é dada por:
 
 \[
 var(z) = \frac{1}{n-1}\sum_{i=1}^n (z_i - \overline z)^2
@@ -398,7 +398,7 @@ menos um.
 Como as diferenças da média são elevadas ao quadrado, a variância tem
 unidades quadráticas em relação às unidades iniciais. Ou seja, se
 estamos trabalhando com distâncias, e medindo os caracteres em cm, a
-variância tem unidades de cm$^2$. Alternativamente, podemos trabalhar
+variância tem unidades de cm\(^2\). Alternativamente, podemos trabalhar
 com a raiz quadrada da variância, chamada desvio padrão, que tem
 unidades iguais às medidas originais e frequentemente é mais simples de
 ser interpretada intuitivamente. Em uma distribuição normal, 95\% dos
@@ -421,9 +421,10 @@ eles. Esse tipo de medida é fundamental no estudo de modularidade, como
 veremos nas próximas seções.
 
 De forma análoga ao calculo da variância, a covariância mede a variação
-conjunta de dois caracteres. Para dois caráteres $z_1$ e $z_2$,
-expressos em uma população com $n$ indivíduos, com médias
-$\overline z_1$ e $\overline z_2$, a covariância entre eles é dada por:
+conjunta de dois caracteres. Para dois caráteres \(z_1\) e \(z_2\),
+expressos em uma população com \(n\) indivíduos, com médias
+\(\overline z_1\) e \(\overline z_2\), a covariância entre eles é dada
+por:
 
 \[
 cov(z_1, z_2) = \frac{1}{n-1} \sum_{i=1}^n (z_{1i} - \overline z_1)(z_{2i} - \overline z_2)
@@ -440,20 +441,20 @@ ainda, os desvios não tiverem relação nenhuma, desvios coordenados e
 opostos tendem a se cancelar, e a covariação será próxima de zero.
 
 Suponha agora que estivéssemos estudando um grande número de caracteres
-métricos, numerados de $1$ a $p$, que descrevem de forma completa alguma
-estrutura anatômica. O fenótipo de cada um dos $n$ indivíduos da
-população estudada pode ser representado por um vetor
-$\mathbf{z}_j = (z_{1j}, z_{2j}, \cdots, z_{pj})$. Como podemos
+métricos, numerados de \(1\) a \(p\), que descrevem de forma completa
+alguma estrutura anatômica. O fenótipo de cada um dos \(n\) indivíduos
+da população estudada pode ser representado por um vetor
+\(\mathbf{z}_j = (z_{1j}, z_{2j}, \cdots, z_{pj})\). Como podemos
 descrever a variação nessa população? Primeiro, calculamos o vetor de
 médias da população,
-$\mathbf{\overline z} = (\overline z_1, \overline z_2, \cdots, \overline z_p)$,
+\(\mathbf{\overline z} = (\overline z_1, \overline z_2, \cdots, \overline z_p)\),
 onde:
 
 \[
 \overline z_i = \frac{1}{n} \sum_{j=1}^n z_{ij}
 \]
 
-Lembre-se que $z_{ij}$ significa o caráter $i$ do indivíduo $j$.
+Lembre-se que \(z_{ij}\) significa o caráter \(i\) do indivíduo \(j\).
 
 Com as médias, podemos calcular a variância de cada caráter na
 população:
@@ -470,7 +471,7 @@ cov(z_i, z_k)_{i \ne k} = \frac{1}{n-1} \sum_{j=1}^n (z_{ij} - \overline z_i)(z_
 \]
 
 Vale notar que a fórmula da covariância se torna igual a da variância
-quando $i=k$.
+quando \(i=k\).
 
 \section{Correlação}\label{correlauxe7uxe3o}
 
@@ -509,13 +510,13 @@ matricial resolve esse problema, além de fornecer muitas facilidades
 matemáticas e computacionais no estudo da variação em populações
 biológicas.
 
-Suponha que estejamos trabalhando com dois caráteres, $x$ e $y$, medidos
-em uma população qualquer que descrevem uma estrutura $z$. Após a
-medição, calculamos as médias, $\overline x$ e $\overline y$, as
-variâncias, $var(x)$ e $var(y)$, e, por fim, as covariâncias e
-correlações $cov(x, y)$ e $corr(x, y)$. Como esses dados seriam
+Suponha que estejamos trabalhando com dois caráteres, \(x\) e \(y\),
+medidos em uma população qualquer que descrevem uma estrutura \(z\).
+Após a medição, calculamos as médias, \(\overline x\) e \(\overline y\),
+as variâncias, \(var(x)\) e \(var(y)\), e, por fim, as covariâncias e
+correlações \(cov(x, y)\) e \(corr(x, y)\). Como esses dados seriam
 representados? As médias seriam um vetor
-$\overline z = (\overline x, \overline y)$. Já as variâncias e
+\(\overline z = (\overline x, \overline y)\). Já as variâncias e
 covariâncias seriam organizadas em uma matriz, chamada matriz de
 variância-covariância, ou, simplesmente, matriz de covariância. A
 estrutura dessa matriz seria:
@@ -531,7 +532,7 @@ cov(x,y) & var(y)  \\
 
 Ou seja, na diagonal, temos as variâncias de cada medida, e, fora da
 diagonal, as covariâncias. A matriz de correlação tem exatamente a mesma
-forma, porem com $1$ na diagonal, representando a correlação de uma
+forma, porem com \(1\) na diagonal, representando a correlação de uma
 medida com ela mesma.
 
 \[
@@ -544,8 +545,8 @@ corr(x,y) & 1  \\
 \]
 
 Essas representações de estendem trivialmente para dimensões mais altas.
-Por exemplo, se medirmos $p$ distâncias de uma estrutura
-$z = (z_1, z_2, \cdots, z_n)$, sua matriz de covariância seria:
+Por exemplo, se medirmos \(p\) distâncias de uma estrutura
+\(z = (z_1, z_2, \cdots, z_n)\), sua matriz de covariância seria:
 
 \[
 Var(z) = \left (
@@ -563,8 +564,9 @@ cov(z_1, z_p) & cov(z_1, z_p) & \cdots & var(z_p) \\
 Para trabalhar com matrizes, precisamos relembrar algumas regras de
 operação matricial. A mais simples é a soma de matrizes, que é feita
 simplesmente somando os elementos equivalentes. Para somar matrizes duas
-matrizes $\mathbf{A}$ e $\mathbf{B}$, elas devem ter a mesma dimensão.
-Por exemplo, se $\mathbf{A}$ e $\mathbf{B}$ forem matrizes $2$ por $2$:
+matrizes \(\mathbf{A}\) e \(\mathbf{B}\), elas devem ter a mesma
+dimensão. Por exemplo, se \(\mathbf{A}\) e \(\mathbf{B}\) forem matrizes
+\(2\) por \(2\):
 
 \[
 \mathbf{A} + \mathbf{B} =
@@ -594,15 +596,16 @@ Outra operação comum é a de multiplicação de matrizes. Essa operação já
 é mais complicada, e NÃO se resume apenas a multiplicar os elementos
 equivalentes. Na multiplicação de matrizes, uma dada posição é definida
 como o produto escalar entre a linha equivalente da primeira matriz com
-a coluna da segunda. Ou seja, a posição $ij$ da matriz produto é o
-poduto escalar da linha $i$ da primeira matriz com a coluna $j$ da
-segunda. Isso significa que, em geral, $\mathbf{A}\mathbf{B}$ pode ser
-diferente de $\mathbf{B}\mathbf{A}$. Para que essa operação seja
+a coluna da segunda. Ou seja, a posição \(ij\) da matriz produto é o
+poduto escalar da linha \(i\) da primeira matriz com a coluna \(j\) da
+segunda. Isso significa que, em geral, \(\mathbf{A}\mathbf{B}\) pode ser
+diferente de \(\mathbf{B}\mathbf{A}\). Para que essa operação seja
 possivel, a primeira matriz deve ter o mesmo numero que linhas que a
 segunda tenha de colunas. A matriz desultante terá o mesmo numero de
 linhas que a primeira e o mesmo numero de colunas que a segunda. Se
-$\mathbf{A}$ for uma matriz $3$ por $2$ e $\mathbf{B}$ uma matriz $2$
-por $3$, o produto entre elas seria a seguinte matrix $3$ por $3$:
+\(\mathbf{A}\) for uma matriz \(3\) por \(2\) e \(\mathbf{B}\) uma
+matriz \(2\) por \(3\), o produto entre elas seria a seguinte matrix
+\(3\) por \(3\):
 
 \[
 \mathbf{A}\mathbf{B} =
@@ -631,8 +634,8 @@ A_{31}B_{11} +  A_{32}B_{21} & A_{31}B_{12} +  A_{32}B_{22} & A_{31}B_{13} +  A_
 
 Na verdade, o caso mais interessante para nós será o de multiplicação de
 uma matriz por um vetor, que pode ser pensado como uma matriz de uma
-coluna. A mesma regra vale, e temos, para uma matriz $\mathbf{A}$ e um
-vetor $\mathbf{x}$:
+coluna. A mesma regra vale, e temos, para uma matriz \(\mathbf{A}\) e um
+vetor \(\mathbf{x}\):
 
 \[
 \mathbf{A}\mathbf{x}  =
@@ -663,14 +666,14 @@ A_{31}x_{1} +  A_{32}x_{2} +  A_{32}x_{3}\\
 Uma última operação importante, que geralmente é feita de forma
 exclusivamente computacional, devido à sua dificuldade operacional, é a
 de inversão de matrizes. A inversão permite definir o análogo matricial
-de divisão. A inversa de uma matriz $\mathbf{A}$ é denominada
-$\mathbf{A}^{-1}$ e definida pela propriedade:
+de divisão. A inversa de uma matriz \(\mathbf{A}\) é denominada
+\(\mathbf{A}^{-1}\) e definida pela propriedade:
 
 \[
 \mathbf{A}\mathbf{A}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}
 \]
 
-onde $\mathbf{I}$ representa a matriz identidade, que tem apenas 1 na
+onde \(\mathbf{I}\) representa a matriz identidade, que tem apenas 1 na
 diagonal e zero fora dela. A matriz identidade é o elemento neutro da
 multiplicação de matrizes, ou seja:
 
@@ -718,15 +721,15 @@ Operacionalmente, essa técnica é baseada em multiplicar duas matrizes a
 serem comparadas pelo mesmo vetor de seleção e calcular a correlação
 entre os vetores resultantes. Repetindo esse procedimento para milhares
 de vetores de entrada, temos um estatistica que mede a semelhança de
-duas matrizes num contexto evolutivo. Para duas matrizes $\mathbf{A}$ e
-$\mathbf{B}$, a correlação de \emph{Random Skewers} é definida como:
+duas matrizes num contexto evolutivo. Para duas matrizes \(\mathbf{A}\)
+e \(\mathbf{B}\), a correlação de \emph{Random Skewers} é definida como:
 
 \[
 RS(\mathbf{A}, \mathbf{B}) = E[Corr(Ax, Bx)]_x
 \]
 
-onde $E[\cdot]_x$ representa o valor esperado, ou média, para todos os
-valores de vetores aleatórios $x$.
+onde \(E[\cdot]_x\) representa o valor esperado, ou média, para todos os
+valores de vetores aleatórios \(x\).
 
 Já para as matrizes de correlação, podemos tratar cada entrada da matriz
 como uma observação e simplemente correlacionar os valores entre as duas
@@ -774,9 +777,10 @@ na prática, o que pode ser mensurado nos indivíduos.
 
 Para definir os conceitos de efeito médio de um alelo e valor de
 acasalamento, podemos utilizar valores arbitrários para os genótipos de
-um único locus com dois alelos, $A_1$ e $A_2$, sendo +a, valor
-genotípico do homozigoto $A_1$$A_1$; -a, valor do homozigoto $A_2$$A_2$;
-e finalmente d, valor do heterozigoto $A_1$$A_2$ (Fig. \ref{valgen}).
+um único locus com dois alelos, \(A_1\) e \(A_2\), sendo +a, valor
+genotípico do homozigoto \(A_1\)\(A_1\); -a, valor do homozigoto
+\(A_2\)\(A_2\); e finalmente d, valor do heterozigoto \(A_1\)\(A_2\)
+(Fig. \ref{valgen}).
 
 \begin{marginfigure}
 \includegraphics{./figuras/valoresgenotipicos.png}
@@ -791,11 +795,12 @@ Portanto, ao medirmos uma amostra de indivíduos de uma população
 qualquer, e, conhecendo seus genótipos, podemos chegar nos seus valores
 genotípicos correspondentes. Por exemplo, digamos que o gene P, com dois
 alelos, determine o peso em uma determinada população de ratos, e ao
-pesarmos uma amostra encontramos: $P_1$$P_1$ = 14g; $P_1$$P_2$ = 12g; e
-$P_2$$P_2$ = 6g. Então, para calcularmos o ponto zero, temos que achar o
-valor intermediário entre os dois homozigotos: $(14 + 6)/2 = 10$. Sendo
-10g o ponto zero, o valor de a é: $14-10 = 4g$; o valor de -a é:
-$6-10 = -4g$; e o valor de d é: $12-10 = 2g$.
+pesarmos uma amostra encontramos: \(P_1\)\(P_1\) = 14g; \(P_1\)\(P_2\) =
+12g; e \(P_2\)\(P_2\) = 6g. Então, para calcularmos o ponto zero, temos
+que achar o valor intermediário entre os dois homozigotos:
+\((14 + 6)/2 = 10\). Sendo 10g o ponto zero, o valor de a é:
+\(14-10 = 4g\); o valor de -a é: \(6-10 = -4g\); e o valor de d é:
+\(12-10 = 2g\).
 
 Uma questão fundamental a se compreender sobre os valores genotípico e
 fenotípico é que suas médias populacionais dependem das frequências
@@ -826,13 +831,13 @@ ao ponto equidistante dos dois homozigotos.}
 \end{table}
 
 Podemos ver, então, que a contribuição de qualquer locus para a média
-populacional tem dois termos: $a(p-q)$ atribuído aos homozigotos, e
-$2dpq$ atribuído aos heterozigotos. Se o alelo $A_1$ fosse fixado na
-população ($p = 1$), a média populacional seria a; se o alelo $A_2$
-fosse fixado ($q = 1$), a média seria -a. Vamos voltar ao exemplo do
+populacional tem dois termos: \(a(p-q)\) atribuído aos homozigotos, e
+\(2dpq\) atribuído aos heterozigotos. Se o alelo \(A_1\) fosse fixado na
+população (\(p = 1\)), a média populacional seria a; se o alelo \(A_2\)
+fosse fixado (\(q = 1\)), a média seria -a. Vamos voltar ao exemplo do
 gene P, que determina o peso nos ratos, e calcular a média populacional.
-Digamos que a frequência de $P_1$ seja $p = 0,6$, e lembrando que
-$a = 4$ e $d = 2$, então:
+Digamos que a frequência de \(P_1\) seja \(p = 0,6\), e lembrando que
+\(a = 4\) e \(d = 2\), então:
 
 \[
 M = (0,6)^2 4 + 2(0,6)(0,4) 2 + (0,4)^2 -4 = 1,76g
@@ -857,27 +862,28 @@ com a transmissão de valor dos pais para a prole. Isso não pode ser
 feito somente com o uso dos valores genotípicos, pois os pais passam
 seus genes e não seu genótipo para sua prole. O efeito médio de um alelo
 é justamente uma medida associada com os genes e não com os genótipos.
-Essa medida depende dos valores genotípicos, $a$ e $d$, e, também, das
-frequências gênicas. Trata-se, portanto, de uma propriedade não só dos
-genes, mas também da população. O efeito médio de um alelo particular é
-o valor médio dos indivíduos que receberam esse alelo de um dos pais
-descontado da média populacional, sendo o outro alelo proveniente ao
-acaso da população (Tabela 2). Dito de uma outra maneira: vamos
-considerar um número de gametas carregando o alelo $A_1$ unindo-se ao
-acaso com gametas da população. O genótipo médio produzido desvia da
-média populacional por uma quantidade que é o efeito médio do alelo
-$A_1$. A dependência do efeito médio de um alelo das frequências gênicas
-está na junção ao acaso do alelo específico com os provenientes da
-população. A chance desse alelo se unir a um outro qualquer é
+Essa medida depende dos valores genotípicos, \(a\) e \(d\), e, também,
+das frequências gênicas. Trata-se, portanto, de uma propriedade não só
+dos genes, mas também da população. O efeito médio de um alelo
+particular é o valor médio dos indivíduos que receberam esse alelo de um
+dos pais descontado da média populacional, sendo o outro alelo
+proveniente ao acaso da população (Tabela 2). Dito de uma outra maneira:
+vamos considerar um número de gametas carregando o alelo \(A_1\)
+unindo-se ao acaso com gametas da população. O genótipo médio produzido
+desvia da média populacional por uma quantidade que é o efeito médio do
+alelo \(A_1\). A dependência do efeito médio de um alelo das frequências
+gênicas está na junção ao acaso do alelo específico com os provenientes
+da população. A chance desse alelo se unir a um outro qualquer é
 determinada pelas frequências gênicas desses outros alelos na população.
 
 \newpage
 
-\textbf{Tabela 2 }. Efeito médio dos alelos $A_1$ e $A_2$. Cada gameta
-pode produzir dois genótipos distintos (homozigoto e heterozigoto)
-conforme as frequências dos outros gametas na população. Somando-se os
-valores genotípicos multiplicados por suas frequências e descontando a
-média populacional, obtemos os efeitos médios dos alelos $A_1$ e $A_2$.
+\textbf{Tabela 2 }. Efeito médio dos alelos \(A_1\) e \(A_2\). Cada
+gameta pode produzir dois genótipos distintos (homozigoto e
+heterozigoto) conforme as frequências dos outros gametas na população.
+Somando-se os valores genotípicos multiplicados por suas frequências e
+descontando a média populacional, obtemos os efeitos médios dos alelos
+\(A_1\) e \(A_2\).
 
 \begin{table}
 \begin{tabular}{lllllll}
@@ -902,17 +908,19 @@ $A_2$ & & $p$ & $q$ & $-qa + pd$ & $-[a(p-q) + 2dpq]$ & $-p[a+d(q-p)]$ \\
 \end{tabular}
 \end{table}
 
-O efeito médio de um alelo é representado pelo símbolo $\alpha_1$, para
-o alelo $A_1$, e $\alpha_2$ para o alelo $A_2$. Quando trabalhamos com
-apenas dois alelos, podemos também calcular o efeito médio da
-substituição de um alelo. Isso significa que se todos os genes $A_2$
-fossem mutados para o gene $A_1$, o efeito médio produzido será o efeito
-médio da substituição, representado pelo símbolo $\alpha$: \[
+O efeito médio de um alelo é representado pelo símbolo \(\alpha_1\),
+para o alelo \(A_1\), e \(\alpha_2\) para o alelo \(A_2\). Quando
+trabalhamos com apenas dois alelos, podemos também calcular o efeito
+médio da substituição de um alelo. Isso significa que se todos os genes
+\(A_2\) fossem mutados para o gene \(A_1\), o efeito médio produzido
+será o efeito médio da substituição, representado pelo símbolo
+\(\alpha\): \[
 \alpha = a + d(q-p)
-\] O valor de $\alpha$ é obtido seguindo o raciocínio de que ao mudarmos
-o genótipo $A_1A_2$ pelo genótipo $A_1A_1$, mudaremos o valor d para o
-+a, e o efeito será $(a - d)$. Ao mudarmos $A_2A_2$ para $A_1A_2$,
-mudaremos o valor de -a para d, e o efeito será $(d + a)$.
+\] O valor de \(\alpha\) é obtido seguindo o raciocínio de que ao
+mudarmos o genótipo \(A_1A_2\) pelo genótipo \(A_1A_1\), mudaremos o
+valor d para o +a, e o efeito será \((a - d)\). Ao mudarmos \(A_2A_2\)
+para \(A_1A_2\), mudaremos o valor de -a para d, e o efeito será
+\((d + a)\).
 
 \section{Valor de acasalamento}\label{valor-de-acasalamento}
 
@@ -995,7 +1003,7 @@ possuí essa dependência, sendo uma propriedade tanto dos genes quanto da
 população. A relação entre valores genotípicos, valores de acasalamento
 e desvios de dominância está representada graficamente na figura
 \ref{desviodominancia}. Nesta figura, os valores genotípicos estão
-plotados contra o número de alelos $A_1$ no genótipo. Uma reta de
+plotados contra o número de alelos \(A_1\) no genótipo. Uma reta de
 regressão pelo método de quadrados mínimos está ajustada aos valores
 genotípicos e os pontos apresentam pesos conforme a frequência do
 genótipo que ele representa. A posição dessa reta dá os valores de
@@ -1016,12 +1024,12 @@ loci (epistasia):
 G = A_A + D_A + A_B + D_B + I_{AB}
 \]
 
-$I_{AB}$ é o desvio da combinação aditiva dos valores genotípicos $G_A$
-e $G_B$, o desvio epistático. Interações epistáticas são fundamentais na
-formação de associações gênicas funcionais e modulares, como veremos nas
-próximas seções. Além disso, epistasia pode funcionar como uma forma de
-armazenar variação críptica, liberada em eventos seletivos intensos ou
-gargalos populacionais \cite{Cheverud1996a}.
+\(I_{AB}\) é o desvio da combinação aditiva dos valores genotípicos
+\(G_A\) e \(G_B\), o desvio epistático. Interações epistáticas são
+fundamentais na formação de associações gênicas funcionais e modulares,
+como veremos nas próximas seções. Além disso, epistasia pode funcionar
+como uma forma de armazenar variação críptica, liberada em eventos
+seletivos intensos ou gargalos populacionais \cite{Cheverud1996a}.
 
 \section{Partição de variância}\label{partiuxe7uxe3o-de-variuxe2ncia}
 
@@ -1041,10 +1049,10 @@ grau de semelhança entre parentes. Os componentes nos quais a variância
 V_P = V_A + V_D + V_I + V_E
 \]
 
-sendo $V_P$ a variância dos valores fenotípicos, $V_A$ a variância dos
-valores de acasalamento (chamada de variância aditiva), $V_D$ a
-variância dos desvios de dominância, $V_I$ a variância dos desvios
-epistáticos, e finalmente $V_E$ a variância dos desvios ambientais. A
+sendo \(V_P\) a variância dos valores fenotípicos, \(V_A\) a variância
+dos valores de acasalamento (chamada de variância aditiva), \(V_D\) a
+variância dos desvios de dominância, \(V_I\) a variância dos desvios
+epistáticos, e finalmente \(V_E\) a variância dos desvios ambientais. A
 importância relativa de uma determinada fonte de variação é a variância
 devida a essa fonte, como uma proporção da variância fenotípica.
 
@@ -1053,7 +1061,7 @@ devida a essa fonte, como uma proporção da variância fenotípica.
 A variância aditiva, ou a variância devida aos valores de acasalamento,
 é a causa principal de semelhança entre parentes, sendo, portanto, o
 determinante das propriedades genéticas da população e de sua resposta à
-seleção natural. A razão $V_A/V_P$ expressa a extensão na qual os
+seleção natural. A razão \(V_A/V_P\) expressa a extensão na qual os
 fenótipos são determinados pelos genes transmitidos pelos pais, e é
 denominada herdabilidade.
 
@@ -1078,7 +1086,7 @@ Criador}\label{um-caruxe1ter-equauxe7uxe3o-do-criador}
 
 Quando estamos trabalhando com apenas um caráter, podemos calcular sua a
 resposta à seleção natural (R) conforme o diferencial de seleção
-aplicado (S) e a herdabilidade ($h^2$) desse caráter. Essa resposta
+aplicado (S) e a herdabilidade (\(h^2\)) desse caráter. Essa resposta
 univariada à seleção natural foi nomeada como Equação do Criador
 (``Breeder's equation''), em referência a criadores de animais e de
 plantas que aplicavam seleção artificial com intuito de atingir maior
@@ -1108,11 +1116,11 @@ O diferencial de seleção é definido como a diferença na média dos
 indivíduos selecionados e a média populacional antes da seleção. Na
 figura \ref{parentoff} podemos ver um evento de seleção de truncamento,
 ou seja, apenas indivíduos com fenótipo acima de um certo valor
-sobrevivem. O diferencial de seleção $S$ está relacionado com a
-intensidade de seleção, quando maior o $S$ mais intensa é a seleção.
+sobrevivem. O diferencial de seleção \(S\) está relacionado com a
+intensidade de seleção, quando maior o \(S\) mais intensa é a seleção.
 Como o diferencial de seleção é expresso na escala da medida original,
 podemos padronizá-lo pelo desvio padrão fenotípico. A quantidade
-resultante é usualmente chamada de intensidade de seleção ($i$) e é
+resultante é usualmente chamada de intensidade de seleção (\(i\)) e é
 adimensional.
 
 \[
@@ -1187,31 +1195,31 @@ equação do criador, e pode ser escrita como:
 \Delta z = GP^{-1}S = G\beta
 \]
 
-Onde $\Delta z$ representa mudança na média entre duas gerações após um
-evento de seleção na geração parental; $\mathbf{G}$ representa a matriz
-de covariância genética aditiva, ou seja, a matriz de covariância dos
-efeitos médios dos alelos para cada um dos caracteres em questão;
-$P^{-1}$ representa a inversa da matriz de covariância fenotípica da
-população; e, finalmente, $S$ representa o vetor do diferencial de
+Onde \(\Delta z\) representa mudança na média entre duas gerações após
+um evento de seleção na geração parental; \(\mathbf{G}\) representa a
+matriz de covariância genética aditiva, ou seja, a matriz de covariância
+dos efeitos médios dos alelos para cada um dos caracteres em questão;
+\(P^{-1}\) representa a inversa da matriz de covariância fenotípica da
+população; e, finalmente, \(S\) representa o vetor do diferencial de
 seleção, ou seja, a diferença na média dos individuos parentais
-selecionados e a média populacional antes da seleção. O poduto $P^{-1}S$
-também é chamado de gradiente de seleção, ou $\beta$. Vamos detalhar
-individualmente cada uma dessas quantidades.
+selecionados e a média populacional antes da seleção. O poduto
+\(P^{-1}S\) também é chamado de gradiente de seleção, ou \(\beta\).
+Vamos detalhar individualmente cada uma dessas quantidades.
 
-\section{Vetor de Resposta à Seleção $\cdot$
-$\Delta z$}\label{vetor-de-resposta-uxe0-seleuxe7uxe3o-cdot-delta-z}
+\section{Vetor de Resposta à Seleção \(\cdot\)
+\(\Delta z\)}\label{vetor-de-resposta-uxe0-seleuxe7uxe3o-cdot-delta-z}
 
 Como agora estamos trabalhando com vários caracteres, nossa
 representação passa a ser vetorial. Cada entrada do vetor de médias de
-uma população representa a média de um caráter. O vetor $\Delta z$,
+uma população representa a média de um caráter. O vetor \(\Delta z\),
 portanto, é somente a diferença nas médias de duas gerações, após um
 evento de seleção na geração parental. Ele é exatamente equivalente ao R
 na equação do criador.
 
-\section{Diferencial e Gradiente de Seleção $\cdot$ S e
-$\beta$}\label{diferencial-e-gradiente-de-seleuxe7uxe3o-cdot-s-e-beta}
+\section{Diferencial e Gradiente de Seleção \(\cdot\) S e
+\(\beta\)}\label{diferencial-e-gradiente-de-seleuxe7uxe3o-cdot-s-e-beta}
 
-O vetor $S$ é análogo ao S da equação do criador, e representa a
+O vetor \(S\) é análogo ao S da equação do criador, e representa a
 difereça na média dos parentais antes e depois da seleção, mas agora
 para todos os caracteres simultaneamente. No caso multivariado, os
 diferenciais de seleção não são restritos ao caráter selecionado, pois,
@@ -1235,8 +1243,8 @@ seleção direta em cada caráter.
 
 Isso é feito multiplicando o diferencial de seleção pelo inverso da
 matriz de covariação fenotípica, obtendo o gradiente de seleção (Fig.
-\ref{gradsel}). O vetor resultante, $\beta$, representa apenas a seleção
-direta em cada caráter, em unidades de variância fenotípica.
+\ref{gradsel}). O vetor resultante, \(\beta\), representa apenas a
+seleção direta em cada caráter, em unidades de variância fenotípica.
 
 \begin{marginfigure}
 \includegraphics{./figuras/gradientedeselecao.png}
@@ -1250,17 +1258,17 @@ seleção é nula.}
 
 \section{Matriz Genética}\label{matriz-genuxe9tica}
 
-A matriz genética ou $\mathbf{G}$ possuí como entradas em sua diagonal
-os valores de variância aditiva ($V_A$) para cada caráter, que é o
-numerador do cálculo de herdabilidade ($h^2 = V_A/V_P$). Ou seja, a
-diagonal da $\mathbf{G}$ determina as respostas diretas dos caracteres
+A matriz genética ou \(\mathbf{G}\) possuí como entradas em sua diagonal
+os valores de variância aditiva (\(V_A\)) para cada caráter, que é o
+numerador do cálculo de herdabilidade (\(h^2 = V_A/V_P\)). Ou seja, a
+diagonal da \(\mathbf{G}\) determina as respostas diretas dos caracteres
 ao gradiente de seleção. Fora das diagonais, as entradas são as
 covariâncias genéticas aditivas entre todos os caracteres considerados,
 que determinam as respostas indiretas dos mesmos.
 
 Para entender melhor o efeito das correlações genéticas na resposta à
 seleção, vamos olhar para a equação de Lande no caso de 3 caracteres e
-abrir o produto do gradiente de seleção com a matriz $\mathbf{G}$ em
+abrir o produto do gradiente de seleção com a matriz \(\mathbf{G}\) em
 todos os seus termos.
 
 \begin{align}
@@ -1300,23 +1308,24 @@ G_{31}\beta_{1} +  G_{32}\beta_{2} +  G_{32}\beta_{3}\\
 \Delta z
 \end{align}
 
-Os termos $G_{11}\beta_{1}$, $G_{22}\beta_{2}$ e $G_{33}\beta_{3}$
+Os termos \(G_{11}\beta_{1}\), \(G_{22}\beta_{2}\) e \(G_{33}\beta_{3}\)
 representam a resposta à seleção direta em cada caráter. Mas, vemos que,
 além dos termos diretos, temos também todos os termos indiretos, que são
 termos de resposta correlacionada devido à covariação genética entre os
 caracteres. Ou seja, o efeito que a seleção em um caráter provoca em
 todos os outros que estão correlacionados com ele. A presença de
 respostas indiretas a um dado gradiente de seleção faz com a resposta
-observada ($\Delta z$) não seja na mesma direção que o vetor de seleção.
-Esse desvio da direção de seleção foi denominado restrição evolutiva
-(fig. \ref{desvio-trajetorias}) Portanto, os componentes de covariância
-da $\mathbf{G}$ podem restringir a evolução de uma população na direção
-da seleção, enquanto que os componentes de variância aditiva podem
-restringir a taxa de evolução, no caso de pouca variância. Apesar da
-relevância da $\mathbf{G}$ em evolução, sua estimativa não é uma tarefa
-simples, pois são necessários delineamentos de cruzamento entre os
-indivíduos de uma população e criação de sua prole para a determinação
-do parentesco entre eles (pais-filhos, irmãos, meio-irmãos).
+observada (\(\Delta z\)) não seja na mesma direção que o vetor de
+seleção. Esse desvio da direção de seleção foi denominado restrição
+evolutiva (fig. \ref{desvio-trajetorias}) Portanto, os componentes de
+covariância da \(\mathbf{G}\) podem restringir a evolução de uma
+população na direção da seleção, enquanto que os componentes de
+variância aditiva podem restringir a taxa de evolução, no caso de pouca
+variância. Apesar da relevância da \(\mathbf{G}\) em evolução, sua
+estimativa não é uma tarefa simples, pois são necessários delineamentos
+de cruzamento entre os indivíduos de uma população e criação de sua
+prole para a determinação do parentesco entre eles (pais-filhos, irmãos,
+meio-irmãos).
 
 \begin{figure}
 \includegraphics{./figuras/desvio-trajetorias.png}
@@ -1341,28 +1350,28 @@ A matriz P é muito mais simples de ser obtida, pois não precisamos ter
 acesso ao grau de parentesco entre os indivíduos amostrados. A
 amostragem pode ser feita em indivíduos de coleções de museu, por
 exemplo, e grandes amostras podem ser obtidas garantindo uma boa
-estimativa da $\mathbf{P}$. A $\mathbf{P}$ é semelhante em seu arranjo à
-$\mathbf{G}$, apenas tendo no lugar das variâncias e covariâncias
-genéticas aditivas, as variâncias e covariâncias fenotípicas. Portanto,
-a $\mathbf{P}$ contabiliza tanto os efeitos genéticos aditivos quanto os
-ambientais. Mas, uma vez que a $\mathbf{G}$ reflete as relações entre
-caracteres determinadas pelo desenvolvimento/função dos organismos, as
-variações ambientais devem atuar pelas mesmas vias de desenvolvimento
-que as variações genéticas, e portanto o padrão de correlações
-ambientais também deve refletir as restrições de desenvolvimento
-\cite{Cheverud1984}. Sendo assim, as correlações fenotípicas seriam
-similares às correlações genéticas. A similaridade entre matrizes
-$\mathbf{G}$ e $\mathbf{P}$ foi testada empiricamente em espécies de
-mamíferos por diferentes autores e verificou-se que quando a matriz G é
-melhor estimada (ou seja, quando o número de indivíduos amostrados é
-superior a 40), a similaridade com sua matriz P correspondente é alta
-\cite{Cheverud1988}. A expectativa de similaridade entre
-$\mathbf{G}$ e $\mathbf{P}$ é denominada ``Conjectura de Cheverud'',
-pois foi esse autor que a propôs e a testou em primeiro lugar. Portanto,
-dada a Conjectura de Cheverud, podemos substituir as matrizes G das
-espécies por suas respectivas matrizes P e realizar estudos
-macro-evolutivos, isto é, podemos estudar a evolução de caracteres ao
-longo de uma filogenia.
+estimativa da \(\mathbf{P}\). A \(\mathbf{P}\) é semelhante em seu
+arranjo à \(\mathbf{G}\), apenas tendo no lugar das variâncias e
+covariâncias genéticas aditivas, as variâncias e covariâncias
+fenotípicas. Portanto, a \(\mathbf{P}\) contabiliza tanto os efeitos
+genéticos aditivos quanto os ambientais. Mas, uma vez que a
+\(\mathbf{G}\) reflete as relações entre caracteres determinadas pelo
+desenvolvimento/função dos organismos, as variações ambientais devem
+atuar pelas mesmas vias de desenvolvimento que as variações genéticas, e
+portanto o padrão de correlações ambientais também deve refletir as
+restrições de desenvolvimento \cite{Cheverud1984}. Sendo assim, as
+correlações fenotípicas seriam similares às correlações genéticas. A
+similaridade entre matrizes \(\mathbf{G}\) e \(\mathbf{P}\) foi testada
+empiricamente em espécies de mamíferos por diferentes autores e
+verificou-se que quando a matriz G é melhor estimada (ou seja, quando o
+número de indivíduos amostrados é superior a 40), a similaridade com sua
+matriz P correspondente é alta \cite{Cheverud1988}. A expectativa de
+similaridade entre \(\mathbf{G}\) e \(\mathbf{P}\) é denominada
+``Conjectura de Cheverud'', pois foi esse autor que a propôs e a testou
+em primeiro lugar. Portanto, dada a Conjectura de Cheverud, podemos
+substituir as matrizes G das espécies por suas respectivas matrizes P e
+realizar estudos macro-evolutivos, isto é, podemos estudar a evolução de
+caracteres ao longo de uma filogenia.
 
 A Equação de Lande pode ser estendida para sua forma macro-evolutiva:
 
@@ -1370,15 +1379,15 @@ A Equação de Lande pode ser estendida para sua forma macro-evolutiva:
 \beta = G^{-1} (\overline z_{atual} - \overline z_{ancestral})
 \]
 
-na qual $(\overline z_{atual} - \overline z_{ancestral})$ representa a
+na qual \((\overline z_{atual} - \overline z_{ancestral})\) representa a
 diferença na média das espécies atuais e ancestrais, e o gradiente de
-seleção $\beta$ representa o padrão de seleção cumulativo sofrida por
+seleção \(\beta\) representa o padrão de seleção cumulativo sofrida por
 cada linhagem independentemente \cite{Marroig2005}. A aplicação
 dessa forma macro-evolutiva da Equação de Lande só pode ser feita se
-existir constância da $\mathbf{G}$ (ou, no caso, da $\mathbf{P}$). Essa
-premissa está relacionada com homogeneidade de variâncias e covariâncias
-genéticas aditivas entre as espécies estudadas e a reconstrução de
-matrizes ancestrais dos nós mais internos da filogenia.
+existir constância da \(\mathbf{G}\) (ou, no caso, da \(\mathbf{P}\)).
+Essa premissa está relacionada com homogeneidade de variâncias e
+covariâncias genéticas aditivas entre as espécies estudadas e a
+reconstrução de matrizes ancestrais dos nós mais internos da filogenia.
 
 \section{Modularidade e
 Integração}\label{modularidade-e-integrauxe7uxe3o}
@@ -1562,8 +1571,8 @@ direção do autovetor correspondente.
 
 O numero de autovetores e autovalores é dado pela dimensão do espaço que
 estamos trabalhando, ou seja, o número de caracteres estudados. Para
-cada $p$ caracteres, teremos $p$ autovetores. Porém, na maior parte dos
-sistemas morfológicos, grande parte da variação está concentrada nos
+cada \(p\) caracteres, teremos \(p\) autovetores. Porém, na maior parte
+dos sistemas morfológicos, grande parte da variação está concentrada nos
 primeiros componentes principais, e portanto podemos caracterizar de
 forma bastante completa a variação na população utilizando estes
 primeiros componentes.
